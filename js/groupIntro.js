@@ -106,4 +106,13 @@ window.onload = function() {
         }
         return children;
     };
+
+
+
+    var lineListContent=$(".lineListContent");
+    lineListContent.click(function() {
+       lineListContent.filter('.action')
+       .removeClass("action");
+       $(this).addClass("action");
+    });
 }

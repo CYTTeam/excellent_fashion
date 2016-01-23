@@ -248,12 +248,12 @@
     margin-top: -30px;
 }
 
-.lineList li.active {
+.lineList li.action {
     font-size: 20px;
     color: #44bcbc;
 }
 
-.lineList li.active:before {
+.lineList li.action:before {
     display: inline-block;
     content: " ";
     height: 10px;
@@ -264,19 +264,53 @@
     background: url("../images/page1/top-angle.png");
 }
 
-.lineList li.active:after {
+.lineList li.action:after {
     width: 205px;
     font-size: 12px;
     color: #000;
     position: absolute;
     top: -170px;
-    margin-left: -123px;
     display: inline-block;
-    content: "2008:卓尚服饰全年销售增加265%";
 }
 
 
 
+.lineList li:nth-child(2).action:after {
+    margin-left: -123px;
+    content: "2008:卓尚服饰全年销售增加265%";
+}
+.lineList li:nth-child(3).action:after {
+    margin-left: -123px;
+    content: "2008:卓尚服饰全年销售增加265%";
+}
+.lineList li:nth-child(4).action:after {
+    margin-left: -123px;
+    content: "2008:卓尚服饰全年销售增加265%";
+}
+.lineList li:nth-child(5).action:after {
+    margin-left: -123px;
+    content: "2008:卓尚服饰全年销售增加265%";
+}
+.lineList li:nth-child(6).action:after {
+    margin-left: -123px;
+    content: "2008:卓尚服饰全年销售增加265%";
+}
+.lineList li:nth-child(7).action:after {
+    margin-left: -123px;
+    content: "2008:卓尚服饰全年销售增加265%";
+}
+.lineList li:nth-child(8).action:after {
+    margin-left: -123px;
+    content: "2008:卓尚服饰全年销售增加265%";
+}
+.lineList li:nth-child(9).action:after {
+    margin-left: -123px;
+    content: "2008:卓尚服饰全年销售增加265%";
+}
+.lineList li:nth-child(10).action:after {
+    margin-left: -123px;
+    content: "2008:卓尚服饰全年销售增加265%";
+}
 
 
 
@@ -345,11 +379,3 @@
 
 
 
-
-/**
- * footer
- */
-
-.footList {
-    line-height: 32px;
-}
