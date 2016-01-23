@@ -14,6 +14,7 @@ a,
 hr,
 pre,
 ul,
+ol,
 li,
 a {
     padding: 0;
@@ -45,9 +46,57 @@ pre {
     background: none;
     border: none;
 }
+a,
+a:visited,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
 
 .section {
     min-width: 1200px!important;
+}
+
+.breadcrumb2 {
+    padding: 8px 15px;
+    list-style: none;
+
+}
+
+.vmove {
+    tiansition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.navs {
+    padding: 50px 0 50px;
+}
+
+.navs [role="tab"] {
+    color: rgb(116, 116, 116);
+    background-color: rgb(236, 236, 236);
+    margin-right: 30px;
+    padding: 8px 32px;
+}
+
+.navs .active [role="tab"] {
+    color: #fff;
+    background-color: rgb(68, 188, 187);
+}
+
+.breadcrumb2>li {
+    display: inline-block;
+    color: #333;
+}
+
+.breadcrumb2>li>a {
+    color: #333;
+}
+
+.breadcrumb2>li+li:before {
+    padding: 0 5px;
+    content: ">";
 }
 
 .Liz-relative {
