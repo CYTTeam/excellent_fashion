@@ -40,6 +40,7 @@ body,
 html {
     padding: 0;
     margin: 0;
+    font-family: Arial,"Microsoft Yahei","微软雅黑";
 }
 
 pre {
@@ -81,6 +82,17 @@ a:hover {
 }
 
 .navs .active [role="tab"] {
+    color: #fff;
+    background-color: rgb(68, 188, 187);
+}
+
+.link {
+    color: rgb(116, 116, 116);
+    background-color: rgb(236, 236, 236);
+    padding: 11px 16px;
+}
+
+.link:hover {
     color: #fff;
     background-color: rgb(68, 188, 187);
 }
@@ -218,8 +230,13 @@ a:hover {
 }
 
 .Liz-margin-vertical-lg {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.Liz-margin-vertical-xlg {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .Liz-margin-left-30px {
