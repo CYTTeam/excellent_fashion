@@ -481,19 +481,19 @@ a:hover {
     z-index: 2;
     text-align: center;
     overflow: hidden;
-    top: 200px;
+    top: 130px;
     width: 50px;
     height: 50px;
 }
 
 #arrow_l {
     float: left;
-    left: -50px
+    left: -70px
 }
 
 #arrow_r {
     float: right;
-    right: -50px
+    right: -70px
 }
 #arrow_r:after,
 #arrow_l:after,
