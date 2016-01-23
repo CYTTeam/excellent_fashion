@@ -46,6 +46,10 @@ pre {
     border: none;
 }
 
+.section {
+    min-width: 1200px!important;
+}
+
 .Liz-relative {
     position: relative;
 }
@@ -68,6 +72,7 @@ pre {
 .Liz-fullWidth{
     width: 100%;
 }
+
 /**
  * 对齐
  */
@@ -184,9 +189,11 @@ pre {
 .Liz-bg-default1 {
     background: rgba(192, 192, 192, .2);
 }
+
 .Liz-bg-blue{
     background:#44bcbc!important;
 }
+
 /**
  * 字体色
  */
@@ -194,12 +201,14 @@ pre {
 .Liz-text-default {
     color: #C0C0C0;
 }
+
 .Liz-text-white {
     color: #ffffff;
 }
 .Liz-text-black {
     color: #000000;
 }
+
 .Liz-text-lg {
     /* font-size: 20px; */
 }
@@ -211,6 +220,7 @@ pre {
 .Liz-border-0 {
     border:0!important;
 }
+
 .Liz-border-bottom {
     border: 1px solid transparent;
     border-bottom: 1px solid #C0C0C0;
@@ -322,25 +332,36 @@ pre {
     align-items: baseline;
 }
 
-
 .Liz-header-nav {
     text-align: center;
     cursor: pointer;
 }
+
 .Liz-header-nav>li {
+}
+
+.Liz-header-nav li>a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: rgba(0, 0, 0, .6);
+    text-decoration: none;
     padding: 23px 0;
 }
-.Liz-header-nav li>a {
-    color: rgba(0, 0, 0, .6);
-    text-decoration: none;
-    color: rgba(0, 0, 0, .6);
-    text-decoration: none;
-    display: block;
-}
+
 .Liz-header-nav>li.active {
     background: #C0C0C0;
 }
-.anim-fadeIn{
+.dropdown-menu{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+.dropdown-menu li>a{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.anim-fadeIn {
     -webkit-animation: fadeIn 0.3s ease both;
 }
 
