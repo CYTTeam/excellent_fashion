@@ -394,3 +394,11 @@ pre {
     background: #44bcbc;
     color: #FFFFFF;
 }
+
+/**
+ * footer
+ */
+
+.footList {
+    line-height: 32px;
+}
