@@ -1,0 +1,28 @@
+.maintitle {
+    font-size: 14px;
+    padding: 8px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: right;
+    padding-bottom: 5px;
+    border-bottom: #ebebeb 1px solid;
+    margin-bottom: 20px;
+    color: #dcdcdc;
+    text-align: center;
+}
+
+.maintext {
+    color: #666666;
+    line-height: 20px;
+}
+
+.share-link {
+    background-image: url(../img/share.png);
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    margin: 0 5px;
+}
