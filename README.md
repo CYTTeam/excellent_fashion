@@ -11,7 +11,7 @@
 
 
 ## <a name="project_structure"></a>项目文件结构
-整个项目采用MVC架构，基本项目结构如下图
+基本项目结构如下图
 
 ```asciidoc
 tian_ya_hai_jiao_api/         项目根目录
