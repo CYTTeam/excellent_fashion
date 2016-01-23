@@ -451,3 +451,92 @@ a:hover {
 .footList {
     line-height: 32px;
 }
+
+
+/**
+ * #arrow_r,#arrow_l
+ */
+#arrow_r,
+#arrow_l {
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+    text-align: center;
+    overflow: hidden;
+    top: 200px;
+    width: 50px;
+    height: 50px;
+}
+
+#arrow_l {
+    float: left;
+    left: -50px
+}
+
+#arrow_r {
+    float: right;
+    right: -50px
+}
+#arrow_r:after,
+#arrow_l:after,
+#arrow_r:before,
+#arrow_l:before {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+}
+
+#arrow_r:before,
+#arrow_l:before {
+    content:"";
+    background:#ffffff;
+}
+
+#arrow_r:after {
+    top: 12px;
+    content: url("../images/page1/nex-black.png");
+}
+
+#arrow_l:after {
+    top: 12px;
+    content: url("../images/page1/pre-black.png");
+}
+#arrow_r:hover#arrow_r:after {
+    content: url("../images/page1/nex-white.png");
+}
+
+#arrow_l:hover#arrow_l:after {
+    content: url("../images/page1/pre-white.png");
+}
+
+#arrow_r:hover#arrow_r:before,
+#arrow_l:hover#arrow_l:before {
+    content:"";
+    background:#44bcbc;
+}
+
+#arrow_l:hover#arrow_l:before {
+
+    -webkit-animation: comeLeft .3s ease-out forwards;
+}
+
+#arrow_r:hover#arrow_r:before {
+    -webkit-animation: comeRight .3s ease-out forwards;
+}
+
+@-webkit-keyframes comeRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(-100px, 0);
+    }
+}
+
+@-webkit-keyframes comeLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(100px, 0);
+    }
+}

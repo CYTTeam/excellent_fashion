@@ -111,8 +111,8 @@ window.onload = function() {
 
     var lineListContent=$(".lineListContent");
     lineListContent.click(function() {
-       lineListContent.filter('.action')
-       .removeClass("action");
-       $(this).addClass("action");
+       lineListContent.filter('.active')
+       .removeClass("active");
+       $(this).addClass("active");
     });
 }
