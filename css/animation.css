@@ -174,3 +174,16 @@
         -webkit-transform: translate(100px, 0);
     }
 }
+@-webkit-keyframes comeRight1 {
+    to {
+        opacity: 0;
+        -webkit-transform: translate(100px, 0);
+    }
+}
+
+@-webkit-keyframes comeLeft1 {
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-100px, 0);
+    }
+}
