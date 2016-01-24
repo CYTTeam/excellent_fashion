@@ -33,3 +33,144 @@
         opacity: 1;
     }
 }
+/**
+ * 引导页品牌切换
+ */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+      }
+}
+/**
+ * 引导页背景滑动
+ */
+@-webkit-keyframes toRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(1000px);
+    }
+}
+
+@-webkit-keyframes toLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(-1000px);
+    }
+}
+/**
+ * 引导页logo变换
+ */
+
+@-webkit-keyframes toTop {
+  from {  
+    -webkit-transform:translate3D(0,220px,0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform:translate3D(0,0,0);
+    opacity: 1;
+    }
+}
+@-webkit-keyframes log-toLeftBotton{
+  0%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity:0;
+  }
+  50% {  
+    -webkit-transform:translate3D(40px,-40px,0);
+    opacity: 0.6;
+  }
+  100%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes log-toLeftTop{
+  0%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity:0;
+  }
+  50% {  
+    -webkit-transform:translate3D(40px,40px,0);
+    opacity: 0.6;
+  }
+  100%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes log-toRightBotton{
+  0%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity:0;
+  }
+  50% {  
+    -webkit-transform:translate3D(-40px,-40px,0);
+    opacity:0.6;
+  }
+  100%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes log-toRight {
+  0%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity:0;
+  }
+  50% {  
+    -webkit-transform:translate3D(-40px,0,0);
+    opacity: 0.6;
+  }
+  100%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes log-toBotton{
+  0%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity:0;
+  }
+  50% {  
+    -webkit-transform:translate3D(0,-40px,0);
+    opacity: 0.6;
+  }
+  100%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity:1;
+  }
+}
+@-webkit-keyframes log-toTop {
+  0%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity:0;
+  }
+  50% {  
+    -webkit-transform:translate3D(0,40px,0);
+    opacity: 0.6;
+  }
+  100%{
+    -webkit-transform:translate3D(0,0,0);
+    opacity:1;
+  }
+}
+/**
+ * 箭头背景滑动
+ */
+@-webkit-keyframes comeRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(-100px, 0);
+    }
+}
+
+@-webkit-keyframes comeLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(100px, 0);
+    }
+}
