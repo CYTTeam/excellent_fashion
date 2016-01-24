@@ -107,19 +107,34 @@ window.onload = function() {
         return children;
     };
 
-
-/**
- * 历史发展线
- *
- */
-    var lineListContent=$(".lineListContent");
-    lineListContent.click(function() {
-       lineListContent.filter('.active')
-       .removeClass("active");
-       $(this).addClass("active");
-    });
-
 }
+
+/* ------------------------------------------------------------
+ * 历史发展轴
+ * ------------------------------------------------------------ */
+ $(function () {
+     var timeData = {
+         2006: 20,
+         2007: 30,
+         2008: 40,
+         2009: 50,
+         2010: 60,
+         2011: 70,
+         2012: 80,
+         2013: 90
+     };
+
+     $('#time-axis').on('click', '.time-year', function() {
+         var year = $(this).text();
+         var percent = timeData[year];
+         var width = $('.time-axis').width();
+         $('.time-axis').css('background-position', percent * width / 100 + 'px 0');
+         $('.time-arrow').css('left', percent * width / 100);
+         $('.time-year').filter('.active')
+         .removeClass("active");
+         $(this).addClass("active");
+     });
+ })
 
 /* ------------------------------------------------------------
  * jQuery滚动监听
@@ -131,8 +146,6 @@ $(function functionName() {
            $(this.element).addClass('animation-slide-up');
        }
    }, {
-       offset: function() {
-         return $(window).height();
-       }
+      offset: '120%'
    });
 })

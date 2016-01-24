@@ -17,39 +17,6 @@
 }
 
 
-#section2 [class|="navigation"] {
-    position: absolute;
-    width: 30px;
-    height: 34px;
-    background-color: #fff;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: 8px;
-}
-
-#section2 .navigation-prev {
-    left: -35px;
-    top: 136px;
-    background-image:url('../images/page7/pre-black.png');
-}
-#section2 .navigation-next {
-    right: -35px;
-    top: 137px;
-    background-image:url('../images/page7/nex-black.png');
-}
-
-#section2 [class|="navigation"]:hover {
-    background-color: rgb(68, 188, 187);
-}
-
-#section2 .navigation-prev:hover {
-    background-image:url('../images/page7/pre-white.png');
-}
-#section2 .navigation-next:hover {
-    background-image:url('../images/page7/nex-white.png');
-}
-
-
 .card {
     cursor: pointer;
 }
