@@ -1,11 +1,16 @@
 /* ------------------------------------------------------------
  * 点击下拉
  * ------------------------------------------------------------ */
-var dropdown_toggle = $(".dropdown-toggle");
+var dropdown_toggle = $(".dropdown");
 var dropdown_menu=$(".dropdown-menu");
-dropdown_toggle.click(function() {
-    dropdown_menu.toggle();
+dropdown_toggle.hover(function() {
+    dropdown_menu.stop(true, true).slideDown();
+    return false;
+}, function() {
+    dropdown_menu.stop(true, true).slideUp();
+    return false;
 });
+
 
 
 /* ------------------------------------------------------------
