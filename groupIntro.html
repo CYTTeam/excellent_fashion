@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>index</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/groupIntro.css">
+    <link href="css/animation.css" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/groupIntro.css">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
   <script src="js/html5shiv.js"></script>
@@ -17,21 +18,30 @@
 </head>
 
 <body>
-    <!-- 菜单栏 -->
-    <div class="section">
-        <div class="Liz-flex"  style="padding: 0 20px;">
-            <div class="Liz-flex-1 Liz-padding-vertical-lg">
-                <img src="images/page1/logo.png" alt="" >
-            </div>
-            <div class="Liz-flex-1">
-                <ul class="Liz-flex Liz-header-nav">
+    <!-- Header -->
+    <div id="header" class="header">
+        <!-- 菜单栏 -->
+        <div id="Liz-navbar" class="Liz-navbar headroom headroom--unpinned">
+            <div class="Liz-flex Liz-flex-align-center">
+                <div class="Liz-flex-1">
+                    <img src="images/page1/logo.png" width="109px">
+                </div>
+                <ul class="Liz-flex Liz-flex-1 Liz-header-nav">
                     <li class="active dropdown Liz-flex-1">
-                        <a href="#" class=" dropdown-toggle">关于卓尚</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">集团文化</a></li>
-                            <li><a href="#">发展历史</a></li>
-                            <li><a href="#">集团荣誉</a></li>
-                            <li><a href="#">董事长致词</a></li>
+                        <a aria-expanded="false" aria-haspopup="true" class=" dropdown-toggle" data-toggle="dropdown" href="#" id="dropdownMenu1">关于卓尚</a>
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
+                            <li>
+                                <a href="#">集团文化</a>
+                            </li>
+                            <li>
+                                <a href="#">发展历史</a>
+                            </li>
+                            <li>
+                                <a href="#">集团荣誉</a>
+                            </li>
+                            <li>
+                                <a href="#">董事长致词</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="Liz-flex-1">
@@ -50,396 +60,396 @@
             </div>
         </div>
     </div>
-    <div class="section">
-        <div class="Liz-container">
-            <ol class="breadcrumb2">
-              <li><a href="#">HOME</a></li>
-              <li class="active">集团介绍</li>
-            </ol>
+
+    <div class="animation-slide-up">
+        <div class="section">
+            <div class="Liz-container">
+                <ol class="breadcrumb2">
+                    <li><a href="#">HOME</a></li>
+                    <li class="active">集团介绍</li>
+                </ol>
+            </div>
+            <hr>
         </div>
-        
-    </div>
-    <hr>
-    <!--group culture  -->
-    <div class="section">
-        <div class="Liz-container Liz-padding-vertical-lg">
-            <div class="Liz-flex  Liz-flex-justify-center">
-                <img src="images\page1\group culture.png">
+        <!--group culture  -->
+        <div class="section">
+            <div class="Liz-container Liz-padding-vertical-lg">
+                <div class="Liz-flex  Liz-flex-justify-center">
+                    <img src="images\page1\group culture.png">
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="section Liz-flex">
+            <div class="Liz-flex-1 Liz-flex Liz-flex-justify-right Liz-flex-align-center" style="margin:20px 0;">
+                <div style="width: 600px;height:600px;overflow:auto;    " class="Liz-scroll">
+                    <pre>
+                        一、卓尚的核心价值观
+                        1.只听对的：不听大的
+                        对的是指：有利于更多数人，更长远利益的选择。
+                        2.用户至上：了解用户，快速服务，满足用户
+                        用户分两类：外部用户、内部用户
+                        内部用户：上级是下级的用户，下道工序是上道工序的用户，提出需求部门是提供服务部门的用户
+                        服务三要素：意识、能力、速度（最关键的是意识）
+                        3.成就他人：
+                        人的命运不仅在于他的能力，更在于他是否能善待身边的每一个人
+                        人只能在成全他人的前提下，才可能成全自己
+                        二、卓尚员工的行为规范：
+                        团队利益  结果导向  积极主动 善于思考
+                        1、三大思维：
+                        a)、产出观代替成本观
+                        b)、逻辑观代替经验观
+                        c)、全局观代替局部观
+                        2、员工都是老总的职务代理人，职务代理人必须要做的三件事：
+                        a)、发现问题
+                        b)、提出方案
+                        c)  贯彻执行
+                        3、  对待公司员工出错的处理方式：
+                        a)  创新的错误——鼓励、表扬
+                        b)  技能的错误——培训、教育
+                        c)  简单、重复的错误——批评、处罚
+                        三、  卓尚的人才观
+                        1.  人才=能力×价值观
+                        2.  能力的三要素：学历、经历、潜力（核心是潜力）
+                        3.  潜力的三要素：
+                        a)  能发现自己的缺点
+                        b)  能发现他人的优点
+                        c)  快速学习，快速改进（核心是快速改进）
+                        4.  人才的选拔原则：
+                        能者上，平者让，庸者下
+                        四、  卓尚的产品观：产品就是人品。
+                        产品的三要素：质量、时间、成本
+                        五、  卓尚的优秀观
+                        人或企业的优秀看三点：价值观、志向、穿透力
+                    </pre>
+                </div>
+            </div>
+            <div class="Liz-flex-1">
+                <img src="images\page1\content-pic1.png" style="height: 640px;width: 100%;">
+            </div>
+            <hr>
+        </div>
+        <!-- development history -->
+        <div class="section section1 opacity0">
+            <div class="Liz-container Liz-padding-vertical-lg">
+                <div class="Liz-flex  Liz-flex-justify-center">
+                    <img src="images\page1\development history.png">
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div id="se" class="section section1 opacity0">
+            <div class="Liz-container Liz-flex-align-bottom Liz-flex-row-reverse">
+                <img src="images/page1/line.png" class=" Liz-line Liz-flex-1" alt="">
+                <ul class="lineList Liz-flex Liz-container Liz-flex-1 Liz-relative">
+                    <li class="Liz-flex-1"></li>
+                    <li class="Liz-flex-1"></li>
+                    <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
+                    <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
+                    <li class="Liz-flex-1 lineListContent Liz-pointer active">2013</li>
+                    <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
+                    <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
+                    <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
+                    <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
+                    <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <!-- group honor -->
+        <div class="section section2 opacity0">
+            <div class="Liz-container Liz-padding-vertical-lg">
+                <div class="Liz-flex  Liz-flex-justify-center">
+                    <img src="images\page1\group honor.png">
+                </div>
             </div>
         </div>
-    </div>
-    <hr>
-    <div class="section Liz-flex">
-        <div class="Liz-flex-1 Liz-flex Liz-flex-justify-right Liz-flex-align-center" style="margin:20px 0;">
-            <div style="width: 600px;height:600px;overflow:auto;    " class="Liz-scroll">
-<pre>
-一、卓尚的核心价值观
-1.只听对的：不听大的
-    对的是指：有利于更多数人，更长远利益的选择。
-2.用户至上：了解用户，快速服务，满足用户
-    用户分两类：外部用户、内部用户
-    内部用户：上级是下级的用户，下道工序是上道工序的用户，提出需求部门是提供服务部门的用户
-    服务三要素：意识、能力、速度（最关键的是意识）
-3.成就他人：
-    人的命运不仅在于他的能力，更在于他是否能善待身边的每一个人
-    人只能在成全他人的前提下，才可能成全自己
-二、卓尚员工的行为规范：
-    团队利益  结果导向  积极主动 善于思考
-1、三大思维：
-    a)、产出观代替成本观
-    b)、逻辑观代替经验观
-    c)、全局观代替局部观
-2、员工都是老总的职务代理人，职务代理人必须要做的三件事：
-    a)、发现问题
-    b)、提出方案
-c)  贯彻执行
-3、  对待公司员工出错的处理方式：
-a)  创新的错误——鼓励、表扬
-b)  技能的错误——培训、教育
-c)  简单、重复的错误——批评、处罚
-三、  卓尚的人才观
-1.  人才=能力×价值观
-2.  能力的三要素：学历、经历、潜力（核心是潜力）
-3.  潜力的三要素：
-a)  能发现自己的缺点
-b)  能发现他人的优点
-c)  快速学习，快速改进（核心是快速改进）
-4.  人才的选拔原则：
-能者上，平者让，庸者下
-四、  卓尚的产品观：产品就是人品。
-产品的三要素：质量、时间、成本
-五、  卓尚的优秀观
-人或企业的优秀看三点：价值观、志向、穿透力
-         </pre>
+        <div class="section section2 Liz-bg-default opacity0">
+            <div class="Liz-container Liz-flex">
+                <div id="slider">
+                    <ul style="left:-1200px">
+                        <li width="1200px" height="272px">
+                            <table class="table Liz-margin-vertical-lg" >
+                                <tr>
+                                    <th>2015</th>
+                                    <td>“三彩”被评为浙江省著名商标</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>中国服装协会第六理事会理事单位</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>杭州市著名商标</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>新下沙人文化家园</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>绿叶奖</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>杭州市高新技术企业</td>
+                                </tr>
+                                <tr>
+                                    <th>2013</th>
+                                    <td>ibudu 2012年度十大女装品牌</td>
+                                </tr>
+                                <tr>
+                                    <th>2012</th>
+                                    <td>供应链联盟战略合作伙伴</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li width="1200px" height="272px">
+                            <table class="table Liz-margin-vertical-lg" >
+                                <tr>
+                                    <th>2015</th>
+                                    <td>“三彩”被评为浙江省著名商标</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>中国服装协会第六理事会理事单位</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>杭州市著名商标</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>新下沙人文化家园</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>绿叶奖</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>杭州市高新技术企业</td>
+                                </tr>
+                                <tr>
+                                    <th>2013</th>
+                                    <td>ibudu 2012年度十大女装品牌</td>
+                                </tr>
+                                <tr>
+                                    <th>2012</th>
+                                    <td>供应链联盟战略合作伙伴</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li width="1200px" height="272px">
+                            <table class="table Liz-margin-vertical-lg" >
+                                <tr>
+                                    <th>2015</th>
+                                    <td>“三彩”被评为浙江省著名商标</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>中国服装协会第六理事会理事单位</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>杭州市著名商标</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>新下沙人文化家园</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>绿叶奖</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>杭州市高新技术企业</td>
+                                </tr>
+                                <tr>
+                                    <th>2013</th>
+                                    <td>ibudu 2012年度十大女装品牌</td>
+                                </tr>
+                                <tr>
+                                    <th>2012</th>
+                                    <td>供应链联盟战略合作伙伴</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li width="1200px" height="272px">
+                            <table class="table Liz-margin-vertical-lg" >
+                                <tr>
+                                    <th>2015</th>
+                                    <td>“三彩”被评为浙江省著名商标</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>中国服装协会第六理事会理事单位</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>杭州市著名商标</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>新下沙人文化家园</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>绿叶奖</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>杭州市高新技术企业</td>
+                                </tr>
+                                <tr>
+                                    <th>2013</th>
+                                    <td>ibudu 2012年度十大女装品牌</td>
+                                </tr>
+                                <tr>
+                                    <th>2012</th>
+                                    <td>供应链联盟战略合作伙伴</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li width="1200px" height="272px">
+                            <table class="table Liz-margin-vertical-lg" >
+                                <tr>
+                                    <th>2015</th>
+                                    <td>“三彩”被评为浙江省著名商标</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>中国服装协会第六理事会理事单位</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>杭州市著名商标</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>新下沙人文化家园</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>绿叶奖</td>
+                                </tr>
+                                <tr>
+                                    <th>2014</th>
+                                    <td>杭州市高新技术企业</td>
+                                </tr>
+                                <tr>
+                                    <th>2013</th>
+                                    <td>ibudu 2012年度十大女装品牌</td>
+                                </tr>
+                                <tr>
+                                    <th>2012</th>
+                                    <td>供应链联盟战略合作伙伴</td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                    <div id="point">
+                        <span index="1" class="on"></span>
+                        <span index="2"></span>
+                        <span index="3"></span>
+                    </div>
+                </div>
+                <div id="arrow_r">
+                </div>
+                <div id="arrow_l">
+                </div>
             </div>
+            <hr>
         </div>
-        <div class="Liz-flex-1">
-            <img src="images\page1\content-pic1.png" style="height: 640px;width: 100%;">
-        </div>
-    </div>
-    <!-- development history -->
-    <hr>
-    <div class="section">
-        <div class="Liz-container Liz-padding-vertical-lg">
-            <div class="Liz-flex  Liz-flex-justify-center">
-                <img src="images\page1\development history.png">
+        <!-- chairman -->
+        <div class="section section3 opacity0">
+            <div class="Liz-container Liz-padding-vertical-lg">
+                <div class="Liz-flex  Liz-flex-justify-center">
+                    <img src="images\page1\chairman.png">
+                </div>
             </div>
+            <hr>
         </div>
-    </div>
-    <hr>
-    <div class="section">
-        <div class="Liz-container Liz-flex-align-bottom Liz-flex-row-reverse">
-            <img src="images/page1/line.png" class=" Liz-line Liz-flex-1" alt="">
-            <ul class="lineList Liz-flex Liz-container Liz-flex-1 Liz-relative">
-                <li class="Liz-flex-1"></li>
-                <li class="Liz-flex-1"></li>
-                <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
-                <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
-                <li class="Liz-flex-1 lineListContent Liz-pointer active">2013</li>
-                <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
-                <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
-                <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
-                <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
-                <li class="Liz-flex-1 lineListContent Liz-pointer">2013</li>
-            </ul>
-        </div>
-    </div>
-    <!-- group honor -->
-    <hr>
-    <div class="section">
-        <div class="Liz-container Liz-padding-vertical-lg">
-            <div class="Liz-flex  Liz-flex-justify-center">
-                <img src="images\page1\group honor.png">
+
+        <div class="section Liz-flex section3 opacity0">
+            <div class="Liz-flex-1">
+                <img src="images/page1/boss.png" alt="" style="height: 640px;width: 100%;">
             </div>
+            <div class="Liz-flex-1">
+                <ul class="navs Liz-flex Liz-flex-justify-center" role="tablist" style="width:618px">
+                    <li role="presentation" class="active">
+                        <a href="#dream" aria-controls="home" role="tab" data-toggle="pill">筑梦卓尚</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#center" aria-controls="profile" role="tab" data-toggle="pill">以终端运营为中心</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#hold" aria-controls="settings" role="tab" data-toggle="pill">以不变应万变</a>
+                    </li>
+                </ul>
+
+                <hr>
+                <div class="text Liz-scroll" style="width: 600px;overflow:auto;padding:0 30px;height: 482px;margin: 20px 0;">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active fade in" id="dream">
+                            <pre>
+                                服装道路，义无反顾
+                                作为一个没有服装行业工作经验的创业者，能从下岗工人一路走到现在，我始终心怀感恩感谢这一路给我帮助、与我同行的所有人。很多人问我，是什么力量支撑我一直坚持服装行业，其实，也有很多服装行业的人转行，我始终坚持并不是因为我的兴趣和爱好，而是因为责任，是因为需要。如果说只有相信自己会成功的人才会成功，那我愿意做一个自信的人，我不怕被同行打败，因为他们是拿兴趣玩儿，而我是在拿命玩儿。
+
+                                内化于心，外化于行
+                                我能够走到今天其实是团队成就了我，我一直在思考我对团队的价值，因此，12年前我开始用心总结我们之所以成功和发展的关键，这也就是我们今天说得公司的企业文化。我常常觉得，很多学生时代学过的例如√4这样的知识如果没有实际用处就产生不了它应有的价值，而我们所说的以“只听对的，客户第一，成就他人”为核心价值观的企业文化却是在我们工作中每天都要用到的行动指南。企业文化不是简单的标语，它实实在在地存在于我们每天的工作中，只有将企业文化内化于心、外化于行，你才有可能成为被卓尚认可、被卓尚需要的同行者。
+
+                                践行梦想，与你同行
+                                前段时间我在企业文化中加了自己的最新感悟，就是“与奋斗者共享未来”，奋斗者的第一个标志就是有伟大梦想。大家都说“梦想还是要有的，万一实现了呢？”我并不认为只有实现梦想才算是成功，当别人的梦想是100分，而你的梦想是10000分，当你达到8000分然后失败了的时候，谁能说你没有成功呢？在活着的时候做了自己想做的事情，我认为这就是幸福。
+                                但从另一方面来讲，梦想如果只停留在脑海中那只能算空想，梦想需要落地、需要践行。在践行梦想的过程中，我们要不断地拓宽视野、不断地充实自己、不断地内向归因、反思自己。对于改变不了的事情，不抱怨、不埋怨，对于可以改变的事情，全心关注、全力以赴。付出总得需要时间来证明回报，而我们迈出的每一步都需要想明白三个问题——你拥有什么？你想得到什么？你愿意失去什么？
+
+                                在卓尚成为服装帝国的道路上，我们需要正确的同路人，换句话说，只要你是奋斗者，我们愿意与你共享未来！
+                            </pre>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="center"><pre>center</pre></div>
+                        <div role="tabpanel" class="tab-pane fade" id="hold"><pre>hold</pre></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
-    </div>
-    <div class="section Liz-bg-default">
-        <div class="Liz-container Liz-flex">
-                    <div id="slider">
-                        <ul style="left:-1200px">
-                            <li width="1200px" height="272px">
-                                <table class="table Liz-margin-vertical-lg" >
-                                    <tr>
-                                        <th>2015</th>
-                                        <td>“三彩”被评为浙江省著名商标</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>中国服装协会第六理事会理事单位</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>杭州市著名商标</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>新下沙人文化家园</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>绿叶奖</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>杭州市高新技术企业</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2013</th>
-                                        <td>ibudu 2012年度十大女装品牌</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2012</th>
-                                        <td>供应链联盟战略合作伙伴</td>
-                                    </tr>
-                                </table>
-                            </li>
-                            <li width="1200px" height="272px">
-                                <table class="table Liz-margin-vertical-lg" >
-                                    <tr>
-                                        <th>2015</th>
-                                        <td>“三彩”被评为浙江省著名商标</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>中国服装协会第六理事会理事单位</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>杭州市著名商标</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>新下沙人文化家园</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>绿叶奖</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>杭州市高新技术企业</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2013</th>
-                                        <td>ibudu 2012年度十大女装品牌</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2012</th>
-                                        <td>供应链联盟战略合作伙伴</td>
-                                    </tr>
-                                </table>
-                            </li>
-                            <li width="1200px" height="272px">
-                                <table class="table Liz-margin-vertical-lg" >
-                                    <tr>
-                                        <th>2015</th>
-                                        <td>“三彩”被评为浙江省著名商标</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>中国服装协会第六理事会理事单位</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>杭州市著名商标</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>新下沙人文化家园</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>绿叶奖</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>杭州市高新技术企业</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2013</th>
-                                        <td>ibudu 2012年度十大女装品牌</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2012</th>
-                                        <td>供应链联盟战略合作伙伴</td>
-                                    </tr>
-                                </table>
-                            </li>
-                            <li width="1200px" height="272px">
-                                <table class="table Liz-margin-vertical-lg" >
-                                    <tr>
-                                        <th>2015</th>
-                                        <td>“三彩”被评为浙江省著名商标</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>中国服装协会第六理事会理事单位</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>杭州市著名商标</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>新下沙人文化家园</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>绿叶奖</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>杭州市高新技术企业</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2013</th>
-                                        <td>ibudu 2012年度十大女装品牌</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2012</th>
-                                        <td>供应链联盟战略合作伙伴</td>
-                                    </tr>
-                                </table>
-                            </li>
-                            <li width="1200px" height="272px">
-                                <table class="table Liz-margin-vertical-lg" >
-                                    <tr>
-                                        <th>2015</th>
-                                        <td>“三彩”被评为浙江省著名商标</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>中国服装协会第六理事会理事单位</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>杭州市著名商标</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>新下沙人文化家园</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>绿叶奖</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2014</th>
-                                        <td>杭州市高新技术企业</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2013</th>
-                                        <td>ibudu 2012年度十大女装品牌</td>
-                                    </tr>
-                                    <tr>
-                                        <th>2012</th>
-                                        <td>供应链联盟战略合作伙伴</td>
-                                    </tr>
-                                </table>
-                            </li>
-                        </ul>
-                        <div id="point">
-                            <span index="1" class="on"></span>
-                            <span index="2"></span>
-                            <span index="3"></span>
+
+        <div class="section4 opacity0">
+            <!-- 品牌 -->
+            <div class="section">
+                <div class="Liz-container Liz-margin-vertical-lg">
+                    <div class="Liz-flex">
+                        <div class="Liz-flex-1 Liz-border-right">
+                            <img src="images/page1/logo1.png" alt="">
+                        </div>
+                        <div class="Liz-flex-1 Liz-border-right Liz-text-center">nn
+                            <img src="images/page1/logo2.png" alt="">
+                        </div>
+                        <div class="Liz-flex-1 Liz-text-center">
+                            <img src="images/page1/logo3.png" alt="">
+                        </div>
+                        <div class="Liz-flex-1 Liz-border-horizontal Liz-text-center">
+                            <img src="images/page1/logo4.png" alt="">
+                        </div>
+                        <div class="Liz-flex-1 text-right">
+                            <img src="images/page1/logo5.png" alt="">
                         </div>
                     </div>
-                    <div id="arrow_r">
+                </div>
+            </div>
+            <!-- footor -->
+            <div class="section Liz-border-vertical Liz-bg-default">
+                <div class="Liz-container Liz-margin-vertical-lg">
+                    <div class="Liz-flex  Liz-flex-justify-center">
+                        <img id="go-header" class="go-header" src="images\page1\top.png">
                     </div>
-                    <div id="arrow_l">
-                    </div>
-        </div>
-    </div>
-    <!-- chairman -->
-    <hr>
-    <div class="section">
-        <div class="Liz-container Liz-padding-vertical-lg">
-            <div class="Liz-flex  Liz-flex-justify-center">
-                <img src="images\page1\chairman.png">
-            </div>
-        </div>
-    </div>
-<hr>
-
-<div class="section Liz-flex">
-    <div class="Liz-flex-1">
-        <img src="images/page1/boss.png" alt="" style="height: 640px;width: 100%;">
-    </div>
-    <div class="Liz-flex-1">
-        <ul class="navs Liz-flex Liz-flex-justify-center" role="tablist" style="width:618px">
-              <li role="presentation" class="active">
-                  <a href="#dream" aria-controls="home" role="tab" data-toggle="pill">筑梦卓尚</a>
-              </li>
-              <li role="presentation">
-                  <a href="#center" aria-controls="profile" role="tab" data-toggle="pill">以终端运营为中心</a>
-              </li>
-              <li role="presentation">
-                  <a href="#hold" aria-controls="settings" role="tab" data-toggle="pill">以不变应万变</a>
-              </li>
-        </ul>
-
-        <hr style="border-color:rgba(192,192,192,1);">
-        <div class="text Liz-scroll" style="width: 600px;overflow:auto;padding:0 30px;height: 482px;margin: 20px 0;">
-         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active fade in" id="dream">
-             <pre>
-服装道路，义无反顾
-作为一个没有服装行业工作经验的创业者，能从下岗工人一路走到现在，我始终心怀感恩感谢这一路给我帮助、与我同行的所有人。很多人问我，是什么力量支撑我一直坚持服装行业，其实，也有很多服装行业的人转行，我始终坚持并不是因为我的兴趣和爱好，而是因为责任，是因为需要。如果说只有相信自己会成功的人才会成功，那我愿意做一个自信的人，我不怕被同行打败，因为他们是拿兴趣玩儿，而我是在拿命玩儿。
-
-内化于心，外化于行
-我能够走到今天其实是团队成就了我，我一直在思考我对团队的价值，因此，12年前我开始用心总结我们之所以成功和发展的关键，这也就是我们今天说得公司的企业文化。我常常觉得，很多学生时代学过的例如√4这样的知识如果没有实际用处就产生不了它应有的价值，而我们所说的以“只听对的，客户第一，成就他人”为核心价值观的企业文化却是在我们工作中每天都要用到的行动指南。企业文化不是简单的标语，它实实在在地存在于我们每天的工作中，只有将企业文化内化于心、外化于行，你才有可能成为被卓尚认可、被卓尚需要的同行者。
-
-践行梦想，与你同行
-前段时间我在企业文化中加了自己的最新感悟，就是“与奋斗者共享未来”，奋斗者的第一个标志就是有伟大梦想。大家都说“梦想还是要有的，万一实现了呢？”我并不认为只有实现梦想才算是成功，当别人的梦想是100分，而你的梦想是10000分，当你达到8000分然后失败了的时候，谁能说你没有成功呢？在活着的时候做了自己想做的事情，我认为这就是幸福。
-但从另一方面来讲，梦想如果只停留在脑海中那只能算空想，梦想需要落地、需要践行。在践行梦想的过程中，我们要不断地拓宽视野、不断地充实自己、不断地内向归因、反思自己。对于改变不了的事情，不抱怨、不埋怨，对于可以改变的事情，全心关注、全力以赴。付出总得需要时间来证明回报，而我们迈出的每一步都需要想明白三个问题——你拥有什么？你想得到什么？你愿意失去什么？
-
-在卓尚成为服装帝国的道路上，我们需要正确的同路人，换句话说，只要你是奋斗者，我们愿意与你共享未来！
-             </pre>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="center"><pre>center</pre></div>
-            <div role="tabpanel" class="tab-pane fade" id="hold"><pre>hold</pre></div>
-        </div>
-        </div>
-    </div>
-
-</div>
-<hr>
-    <!-- 品牌 -->
-    <div class="section">
-        <div class="Liz-container Liz-margin-vertical-lg">
-            <div class="Liz-flex">
-                <div class="Liz-flex-1 Liz-border-right">
-                    <img src="images/page1/logo1.png" alt="">
-                </div>
-                <div class="Liz-flex-1 Liz-border-right Liz-text-center">nn
-                    <img src="images/page1/logo2.png" alt="">
-                </div>
-                <div class="Liz-flex-1 Liz-text-center">
-                    <img src="images/page1/logo3.png" alt="">
-                </div>
-                <div class="Liz-flex-1 Liz-border-horizontal Liz-text-center">
-                    <img src="images/page1/logo4.png" alt="">
-                </div>
-                <div class="Liz-flex-1 text-right">
-                    <img src="images/page1/logo5.png" alt="">
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- footor -->
-    <hr>
-    <div class="section Liz-bg-default">
-        <div class="Liz-container Liz-padding-vertical-lg">
-            <div class="Liz-flex  Liz-flex-justify-center">
-                <img src="images\page1\top.png">
-            </div>
-        </div>
-    </div>
-    <hr>
-    <footer class="section">
-        <div class="Liz-container Liz-padding-vertical-lg">
-            <div class="Liz-flex">
-                <div class="Liz-flex-1 Liz-flex">
+            <footer class="section">
+                <div class="Liz-container Liz-padding-vertical-lg">
+                    <div class="Liz-flex">
+                        <div class="Liz-flex-1 Liz-flex">
 
                             <ul class="footList Liz-flex-1">
                                 <li class="Liz-text-lg">关于卓尚</li>
@@ -476,36 +486,38 @@ c)  快速学习，快速改进（核心是快速改进）
                                 <li>薪酬福利</li>
                             </ul>
 
-                </div>
-                <div class="Liz-flex-1 Liz-flex Liz-flex-justify-right">
-                <div class="Liz-flex-1">
-                     <a href="#" class="Liz-cf"><img src="images\page1\footor-logo.png" class="img-responsive Liz-fr"></a>
-                    <br>
-                    <a href="#" class="Liz-cf"><img src="images\page1\address.png" class="img-responsive Liz-fr"></a>
-                    <br>
-                    <a href="#" class="Liz-cf"><img src="images\page1\phone.png" class="img-responsive Liz-fr"></a>
-                </div>
+                        </div>
+                        <div class="Liz-flex-1 Liz-flex Liz-flex-justify-right">
+                            <div class="Liz-flex-1">
+                                <a href="#" class="Liz-cf"><img src="images\page1\footor-logo.png" class="img-responsive Liz-fr"></a>
+                                <br>
+                                <a href="#" class="Liz-cf"><img src="images\page1\address.png" class="img-responsive Liz-fr"></a>
+                                <br>
+                                <a href="#" class="Liz-cf"><img src="images\page1\phone.png" class="img-responsive Liz-fr"></a>
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </footer>
-    <hr>
-    <div class="section">
-        <div class="Liz-container Liz-margin-vertical-lg Liz-flex">
-            <div class="Liz-flex-1">
-                <img src="images\page1\copy.png" class="img-responsive ">
-            </div>
-            <div class="Liz-flex-1">
-                <img src="images\page1\design.png" class="img-responsive Liz-fr">
+            </footer>
+            <hr>
+            <div class="section">
+                <div class="Liz-container Liz-margin-vertical-lg Liz-flex">
+                    <div class="Liz-flex-1">
+                        <img src="images\page1\copy.png" class="img-responsive ">
+                    </div>
+                    <div class="Liz-flex-1">
+                        <img src="images\page1\design.png" class="img-responsive Liz-fr">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/groupIntro.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/groupIntro.js"></script>
 </body>
 
 </html>
