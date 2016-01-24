@@ -484,7 +484,7 @@ a:hover {
     display: inline-block;
     z-index: 2;
     text-align: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
     top: 130px;
     width: 50px;
     height: 50px;
@@ -515,37 +515,55 @@ a:hover {
     content:"";
     background:#ffffff;
 }
-
-#arrow_r:after {
-    top: 12px;
-    content: url("../images/page1/nex-black.png");
-}
-
-#arrow_l:after {
-    top: 12px;
-    content: url("../images/page1/pre-black.png");
-}
-#arrow_r:hover#arrow_r:after {
-    content: url("../images/page1/nex-white.png");
-}
-
-#arrow_l:hover#arrow_l:after {
-    content: url("../images/page1/pre-white.png");
-}
-
 #arrow_r:hover#arrow_r:before,
 #arrow_l:hover#arrow_l:before {
     content:"";
     background:#44bcbc;
 }
+#arrow_l:before {
+    -webkit-animation: comeRight .3s ease-out forwards;
+}
 
+#arrow_r:before {
+    -webkit-animation: comeLeft .3s ease-out forwards;
+}
 #arrow_l:hover#arrow_l:before {
-
     -webkit-animation: comeLeft .3s ease-out forwards;
 }
 
 #arrow_r:hover#arrow_r:before {
     -webkit-animation: comeRight .3s ease-out forwards;
 }
+
+
+
+
+
+#arrow_r:after {
+    -webkit-animation: comeRight .3s ease-out forwards;
+    top: 12px;
+    content: url("../images/page1/nex-black.png");
+}
+
+#arrow_l:after {
+    -webkit-animation: comeLeft .3s ease-out forwards;
+    top: 12px;
+    content: url("../images/page1/pre-black.png");
+}
+#arrow_r:hover#arrow_r:after {
+    -webkit-animation: comeRight .3s ease-out forwards;
+    content: url("../images/page1/nex-white.png");
+}
+
+#arrow_l:hover#arrow_l:after {
+    -webkit-animation: comeLeft .3s ease-out forwards;
+    content: url("../images/page1/pre-white.png");
+}
+
+
+
+
+
+
 
 
