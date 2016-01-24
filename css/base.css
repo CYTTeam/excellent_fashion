@@ -449,7 +449,7 @@ a:hover {
 .anim-fadeIn {
     -webkit-animation: fadeIn 0.3s ease both;
 }
-.bgHeader{
+/*.bgHeader{
     position: relative;
     background-size: contain;
 }
@@ -462,7 +462,7 @@ a:hover {
 .bgHeader .bgBox{
     position: relative;
     width: 100%;
-}
+}*/
 
 
 /**
