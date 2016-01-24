@@ -51,6 +51,7 @@ a,
 a:visited,
 a:focus,
 a:hover {
+    color:#333;
   text-decoration: none;
 }
 
@@ -543,8 +544,14 @@ a:hover {
 
 .footList {
     line-height: 32px;
+    padding-right: 32px;
 }
-
+/*.footerList li a:link
+,.footerList li a:visited
+,.footerList li a:hover
+,.footerList li a:active{
+    color:;
+}*/
 
 [class|="navigation"] {
     position: absolute;
