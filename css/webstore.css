@@ -53,7 +53,17 @@
     border: 1px solid #ffffff;
     -webkit-animation: fadeIn 0.3s ease both;
 }
-
+.logo1-box:before,
+.logo2-box:before,
+.logo3-box:before,
+.logo4-box:before,
+.logo5-box:before{
+    display: table;
+    position: absolute;
+    bottom: -5px;
+    z-index: 99;
+    cursor: pointer;
+}
 .log1:after,
 .log2:after,
 .log3:after,
@@ -75,6 +85,7 @@
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     z-index: 99;
+    padding-bottom: 65px;
 }
 .log1,
 .log2,
@@ -90,23 +101,23 @@
     height: 100%;
 }
 
-.log1:after {
+.logo1-box:before {
     content: url("../images/page6/logo1.png");
 }
 
-.log2:after {
+.logo2-box:before {
     content: url("../images/page6/logo2.png");
 }
 
-.log3:after {
+.logo3-box:before {
     content: url("../images/page6/logo3.png");
 }
 
-.log4:after {
+.logo4-box:before {
     content: url("../images/page6/logo4.png");
 }
 
-.log5:after {
+.logo5-box:before {
     content: url("../images/page6/logo5.png");
 }
 
@@ -142,22 +153,22 @@
 
 
 
-.log1:hover.log1:after {
+.log1:after {
     content: url("../images/page6/logo1.png");
 }
 
-.log2:hover.log2:after {
+.log2:after {
     content: url("../images/page6/logo1.png");
 }
 
-.log3:hover.log3:after {
+.log3:after {
     content: url("../images/page6/logo1.png");
 }
 
-.log4:hover.log4:after {
+.log4:after {
     content: url("../images/page6/logo1.png");
 }
 
-.log5:hover.log5:after {
+.log5:after {
     content: url("../images/page6/logo1.png");
 }
