@@ -132,7 +132,7 @@ $(function functionName() {
        }
    }, {
        offset: function() {
-         return $(window).height();
+         return $(window).height() * 2;
        }
    });
 })

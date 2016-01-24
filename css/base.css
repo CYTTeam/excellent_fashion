@@ -556,7 +556,7 @@ a:hover {
     display: inline-block;
     z-index: 2;
     text-align: center;
-    /*overflow: hidden;*/
+    background: #ffffff;
     top: 130px;
     width: 50px;
     height: 50px;
@@ -564,12 +564,12 @@ a:hover {
 
 #arrow_l {
     float: left;
-    left: -70px
+    left: -70px;
 }
 
 #arrow_r {
     float: right;
-    right: -70px
+    right: -70px;
 }
 #arrow_r:after,
 #arrow_l:after,
@@ -585,19 +585,14 @@ a:hover {
 #arrow_r:before,
 #arrow_l:before {
     content:"";
-    background:#ffffff;
-}
-#arrow_r:hover#arrow_r:before,
-#arrow_l:hover#arrow_l:before {
-    content:"";
     background:#44bcbc;
 }
 #arrow_l:before {
-    -webkit-animation: comeRight .3s ease-out forwards;
+    -webkit-animation: comeRight1 .3s ease-out forwards;
 }
 
 #arrow_r:before {
-    -webkit-animation: comeLeft .3s ease-out forwards;
+    -webkit-animation: comeLeft1 .3s ease-out forwards;
 }
 #arrow_l:hover#arrow_l:before {
     -webkit-animation: comeLeft .3s ease-out forwards;
@@ -613,14 +608,14 @@ a:hover {
 
 #arrow_r:after {
     -webkit-animation: comeRight .3s ease-out forwards;
-    top: 12px;
     content: url("../images/page1/nex-black.png");
+    top: 12px;
 }
 
 #arrow_l:after {
     -webkit-animation: comeLeft .3s ease-out forwards;
-    top: 12px;
     content: url("../images/page1/pre-black.png");
+    top: 12px;
 }
 #arrow_r:hover#arrow_r:after {
     -webkit-animation: comeRight .3s ease-out forwards;
