@@ -19,3 +19,29 @@ $(function () {
         owl.trigger('owl.next');
     })
 })
+
+/**
+ * jQuery滚动监听
+ */
+
+$(function functionName() {
+    $('#section3').waypoint(function(direction) {
+        if (direction === 'down') {
+            $('#section3').addClass('animation-slide-up');
+            $('#section4').addClass('animation-slide-up');
+        }
+    }, {
+        offset: function() {
+          return $(window).height();
+        }
+    });
+    $('#footer').waypoint(function(direction) {
+        if (direction === 'down') {
+            $('#footer').addClass('animation-slide-up');
+        }
+    }, {
+        offset: function() {
+          return $(window).height();
+        }
+    });
+})

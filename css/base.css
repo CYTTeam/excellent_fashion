@@ -58,6 +58,15 @@ a:hover {
     min-width: 1200px!important;
 }
 
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
 .breadcrumb2 {
     padding: 8px 15px;
     list-style: none;

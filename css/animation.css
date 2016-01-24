@@ -1,27 +1,35 @@
-
 /*从上往下滑出*/
-.animation-slide-up {
-    -webkit-animation: ani-slide-up 0.5s ease-out;
-    animation: ani-slide-up 0.5s ease-out;
-}
 
+.animation-slide-up {
+    -webkit-animation: ani-slide-up .8s cubic-bezier(0, 0, 0.18, 0.8) both;
+    animation: ani-slide-up .8s cubic-bezier(0, 0, 0.18, 0.8) both;
+    position: relative;
+}
 @-webkit-keyframes ani-slide-up {
-  from {
-    top: 400px;
-    opacity: 0;
-  }
-  to {
-    top: 0px;
-    opacity: 1;
-  }
+    0% {
+        top: 400px;
+        opacity: 0;
+    }
+    80% {
+        top: 50px;
+        opacity: 0.5;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
 }
 @keyframes ani-slide-up {
-  from {
-    top: 400px;
-    opacity: 0;
-  }
-  to {
-    top: 0px;
-    opacity: 1;
-  }
+    0% {
+        top: 400px;
+        opacity: 0;
+    }
+    80% {
+        top: 50px;
+        opacity: 0.5;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
 }
