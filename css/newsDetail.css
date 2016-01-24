@@ -1,3 +1,7 @@
+.header {
+    height: 270px;
+    background-image:url('../images/page8/bg-header.png');
+}
 .maintitle {
     font-size: 14px;
     padding: 8px 0;

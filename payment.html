@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>index</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/payment.css">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
   <script src="js/html5shiv.js"></script>
@@ -16,20 +18,30 @@
 </head>
 
 <body>
-    <div class="section" id="header">
-        <div class="Liz-flex" style="padding: 0 20px;">
-            <div class="Liz-flex-1 Liz-padding-vertical-lg">
-                <img src="images/page1/logo.png" alt="">
-            </div>
-            <div class="Liz-flex-1">
-                <ul class="Liz-flex Liz-header-nav">
+    <!-- Header -->
+    <div id="header" class="header">
+        <!-- 菜单栏 -->
+        <div id="Liz-navbar" class="Liz-navbar headroom headroom--unpinned">
+            <div class="Liz-flex Liz-flex-align-center">
+                <div class="Liz-flex-1">
+                    <img src="images/page1/logo.png" width="109px">
+                </div>
+                <ul class="Liz-flex Liz-flex-1 Liz-header-nav">
                     <li class="active dropdown Liz-flex-1">
-                        <a href="#" class=" dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">关于卓尚</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">集团文化</a></li>
-                            <li><a href="#">发展历史</a></li>
-                            <li><a href="#">集团荣誉</a></li>
-                            <li><a href="#">董事长致词</a></li>
+                        <a aria-expanded="false" aria-haspopup="true" class=" dropdown-toggle" data-toggle="dropdown" href="#" id="dropdownMenu1">关于卓尚</a>
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
+                            <li>
+                                <a href="#">集团文化</a>
+                            </li>
+                            <li>
+                                <a href="#">发展历史</a>
+                            </li>
+                            <li>
+                                <a href="#">集团荣誉</a>
+                            </li>
+                            <li>
+                                <a href="#">董事长致词</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="Liz-flex-1">
@@ -47,9 +59,14 @@
                 </ul>
             </div>
         </div>
-        <div class="bgBox">
+        <div class="navicon">
+            <a id="nav-toggle" href="#" class="nav-toggle">
+                <span></span>
+            </a>
         </div>
+        <div class="overlayer active"></div>
     </div>
+
     <div class="section">
         <div class="Liz-container">
             <ol class="breadcrumb2">
@@ -98,7 +115,7 @@
 公司6级及以上员工，及部分从事外勤工作的职位，如采购跟单员等。
 
 通讯补贴
-公司总部6级及以上职位以及销售岗、采购岗、外发业务岗员工，以及加入公司虚拟通信网络的员工。针对适用人群，每人每月补贴100至200元，以现金形式发放；                                                                                                   
+公司总部6级及以上职位以及销售岗、采购岗、外发业务岗员工，以及加入公司虚拟通信网络的员工。针对适用人群，每人每月补贴100至200元，以现金形式发放；
 加入公司虚拟通信网络的员工，每人每月以话费充值形式补贴20元。
 
 住房补贴
@@ -135,7 +152,7 @@ B.行政员工：截止每年12月31日止，在本公司连续工作满2年的�
 3.2 年终绩效奖金发放时间为每年3月底之前。对于绩效指标结果在奖金发放日前无法取值的职位，根据预估值按比例预发，待指标结果确认后予以调整，多退少补。
 3.3 年中，工作时间满考核期三分之二的，按实际考核结果及出勤天数发放绩效奖金，未满三分之二的，不享有绩效奖金；年底，于年终奖金发放日前离职的员工不享有年终奖金。
 3.4公司在发放工资时，代缴由员工个人承担的各项社会保险费用及其他法律法规规定的费用。
-3.5对于离职员工，公司将于次月发放工作日结清费用并核发工资。 
+3.5对于离职员工，公司将于次月发放工作日结清费用并核发工资。
 
 4、薪酬保密原则
 4.1 员工薪酬信息为公司机密，公司所有员工都需遵守密薪原则，即员工不得与同事讨论个人薪酬信息，对个人薪酬的疑问只能向直线上级或人才发展中心提出。
@@ -243,7 +260,8 @@ B.行政员工：截止每年12月31日止，在本公司连续工作满2年的�
             </div>
         </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/headroom.min.js"></script>
+    <script src="js/jquery.headroom.min.js"></script>
     <script type="text/javascript" src="js/base.js"></script>
     <script>
     </script>

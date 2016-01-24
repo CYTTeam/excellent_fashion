@@ -46,16 +46,3 @@ $(function functionName() {
         }
     }, {offset: '120%'});
 })
-
-/* ------------------------------------------------------------
- * 切换导航栏
- * ------------------------------------------------------------ */
-
-$(function() {
-    $('#Liz-navbar').headroom({
-        offset : 400,
-    });
-    $('#nav-toggle').click(function () {
-        $('#Liz-navbar').toggleClass('headroom--top').toggleClass('headroom--not-top');
-    })
-})

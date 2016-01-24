@@ -1,4 +1,7 @@
-
+.header {
+    height: 270px;
+    background-image: url('../images/page4/bg-header.png');
+}
 
 .Liz-devel-nav {
     text-align: center;

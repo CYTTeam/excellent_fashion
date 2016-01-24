@@ -20,3 +20,16 @@ function smoothScroll(btn, target) {
         $('html, body').animate({scrollTop: position}, animationTime);
     })
 }
+
+/* ------------------------------------------------------------
+ * 切换导航栏
+ * ------------------------------------------------------------ */
+
+$(function() {
+    $('#Liz-navbar').headroom({
+        offset : 100,
+    });
+    $('#nav-toggle').click(function () {
+        $('#Liz-navbar').toggleClass('headroom--top').toggleClass('headroom--not-top');
+    })
+})
