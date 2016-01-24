@@ -149,3 +149,16 @@ $(function functionName() {
       offset: '120%'
    });
 })
+
+/* ------------------------------------------------------------
+ * 初始化（滚动到响应的位置）
+ * ------------------------------------------------------------ */
+
+$(function () {
+    window.setTimeout(function () {
+        var author = location.hash;
+        console.log(author);
+        var position = $(author).offset().top;
+        $('html, body').animate({scrollTop: position}, 500);
+    }, 500);
+})
