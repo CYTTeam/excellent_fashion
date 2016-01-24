@@ -506,7 +506,7 @@ a:hover {
     display: inline-block;
     color: rgb(116, 116, 116);
     text-decoration: none;
-    padding: 16px 0;
+    padding: 25px 0;
 }
 
 .Liz-header-nav>li.active {
@@ -524,10 +524,20 @@ a:hover {
 .anim-fadeIn {
     -webkit-animation: fadeIn 0.3s ease both;
 }
-.bgBox {
-    height: 270px;
-    background: url('../images/page3/bg-header.png');
+/*.bgHeader{
+    position: relative;
+    background-size: contain;
 }
+.bgHeader .screen{  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); 
+}
+.bgHeader .bgBox{
+    position: relative;
+    width: 100%;
+}*/
 
 
 /**

@@ -108,11 +108,15 @@ window.onload = function() {
     };
 
 
-
+/**
+ * 历史发展线
+ * 
+ */
     var lineListContent=$(".lineListContent");
     lineListContent.click(function() {
        lineListContent.filter('.active')
        .removeClass("active");
        $(this).addClass("active");
     });
+
 }

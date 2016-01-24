@@ -7,6 +7,7 @@ panel_a.click(function(e) {
         .removeClass('Liz-bg-blue')
         .children('h4')
         .children(".Liz-fullWidth")
+        .children("div")
         .children(".Liz-massage")
         .attr("src", "images/page4/massage2.png");
     $(this).parent('h4').parent('div').addClass('Liz-bg-default')
@@ -15,6 +16,7 @@ panel_a.click(function(e) {
         .children('h4')
         .children(".Liz-fullWidth")
         .children(".Liz-massage")
+        .children("div")
         .attr("src", "images/page4/massage1.png");
     $(this).children("pre")
         .addClass("Liz-text-white")
