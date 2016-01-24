@@ -618,12 +618,7 @@ a:hover {
     background-image: url('../images/page7/nex-white.png');
 }
 
-.bgScreen {
-    /*图片*/
-    position: relative;
-}
-
-.bgScreen .imgScreen {
+.imgScreen {
     position: absolute;
     top: 50%;
     left: 50%;
