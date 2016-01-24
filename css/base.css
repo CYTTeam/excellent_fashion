@@ -54,13 +54,104 @@ a:hover {
   text-decoration: none;
 }
 
+.headroom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s ease-in-out;
+}
+
+.headroom--top {
+    top: -100px;
+}
+
+.headroom--not-top {
+    top: 0;
+}
+
 .section {
     min-width: 1200px!important;
 }
 
 .header {
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.header .overlayer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(68, 188, 188, 0.3);
+    transition: all 0.3s linear;
+}
+
+.header .overlayer.active {
+    background: rgba(255, 255, 255, 0);
+}
+
+.go-header {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    top: 0;
+}
+
+.go-header:hover {
+    top: -5px;
+}
+
+.navicon {
+    position: relative;
+    height: 26px;
+    top: 78px;
+    z-index: 2;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+}
+
+.nav-toggle span {
+    cursor: pointer;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+.nav-toggle span:after, .nav-toggle span:before {
+    cursor: pointer;
+    border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -o-border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    content: '';
+}
+.nav-toggle span:before {
+    top: -10px;
+}
+.nav-toggle span:after {
+    top: 10px;
 }
 
 .opacity0 {
@@ -408,10 +499,6 @@ a:hover {
 }
 
 .Liz-navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
     padding: 0 20px;
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 999;
@@ -449,21 +536,6 @@ a:hover {
 .anim-fadeIn {
     -webkit-animation: fadeIn 0.3s ease both;
 }
-/*.bgHeader{
-    position: relative;
-    background-size: contain;
-}
-.bgHeader .screen{  
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%); 
-}
-.bgHeader .bgBox{
-    position: relative;
-    width: 100%;
-}*/
-
 
 /**
  * footer
@@ -559,11 +631,5 @@ a:hover {
     -webkit-animation: comeLeft .3s ease-out forwards;
     content: url("../images/page1/pre-white.png");
 }
-
-
-
-
-
-
 
 

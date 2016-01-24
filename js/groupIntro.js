@@ -110,7 +110,7 @@ window.onload = function() {
 
 /**
  * 历史发展线
- * 
+ *
  */
     var lineListContent=$(".lineListContent");
     lineListContent.click(function() {
@@ -120,3 +120,19 @@ window.onload = function() {
     });
 
 }
+
+/* ------------------------------------------------------------
+ * jQuery滚动监听
+ * ------------------------------------------------------------ */
+
+$(function functionName() {
+   $('.section1, .section2, .section3, .section4').waypoint(function(direction) {
+       if (direction === 'down') {
+           $(this.element).addClass('animation-slide-up');
+       }
+   }, {
+       offset: function() {
+         return $(window).height();
+       }
+   });
+})
