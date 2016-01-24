@@ -443,23 +443,7 @@ a:hover {
     height: 270px;
     background: url('../images/page3/bg-header.png');
 }
-.Liz-devel-nav {
-    text-align: center;
-    cursor: pointer;
-}
 
-.Liz-devel-nav>li {
-    margin: 0 20px;
-    padding: 10px 0;
-    color: rgba(0, 0, 0, .6);
-    text-decoration: none;
-    background: #C0C0C0;
-}
-
-.Liz-devel-nav>li.active {
-    background: #44bcbc;
-    color: #FFFFFF;
-}
 
 /**
  * footer
