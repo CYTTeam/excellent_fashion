@@ -6,6 +6,7 @@
 
 #carousel-wrap .item{
   background: #fff;
+  border-right: 1px solid rgb(245, 247, 247);
 }
 
 #carousel-wrap .item img{
