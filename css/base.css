@@ -82,6 +82,13 @@ a:hover {
     background-position: center top;
 }
 
+.header:after {
+    content: url('../images/page1/logo0.png');
+    position: absolute;
+    left: 20px;
+    top: 17px;
+}
+
 .header .overlayer {
     position: absolute;
     top: 0;
@@ -112,7 +119,7 @@ a:hover {
 .navicon {
     position: relative;
     height: 26px;
-    top: 78px;
+    top: 20px;
     z-index: 2;
 }
 
@@ -120,7 +127,7 @@ a:hover {
     cursor: pointer;
     padding: 10px 35px 16px 0px;
     position: absolute;
-    right: 30px;
+    right: 20px;
     top: 0;
 }
 
@@ -128,7 +135,7 @@ a:hover {
     cursor: pointer;
     border-radius: 1px;
     -webkit-border-radius: 1px;
-    height: 5px;
+    height: 3px;
     width: 35px;
     background: #fff;
     position: absolute;
@@ -143,7 +150,7 @@ a:hover {
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
     -o-border-radius: 1px;
-    height: 5px;
+    height: 3px;
     width: 35px;
     background: #fff;
     position: absolute;
@@ -536,17 +543,19 @@ a:hover {
     color: rgb(116, 116, 116);
     text-decoration: none;
     padding: 25px 0;
+    font-size: 16px;
 }
 
 .dropdown-menu {
     margin: 0;
     padding: 0;
     border-radius: 0;
+    width: 192px;
 }
 
 .dropdown-menu li>a {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 18px 15px;
+    font-size: 12px;
 }
 
 .anim-fadeIn {

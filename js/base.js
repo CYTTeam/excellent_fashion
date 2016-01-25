@@ -33,8 +33,15 @@ function smoothScroll(btn, target) {
 $(function() {
     $('#Liz-navbar').headroom({
         offset : 100,
+        onTop: function() {
+            $('#nav-toggle').show();
+        },
+        onNotTop: function () {
+            $('#nav-toggle').hide();
+        }
     });
     $('#nav-toggle').click(function () {
-        $('#Liz-navbar').toggleClass('headroom--top').toggleClass('headroom--not-top');
+        $('#Liz-navbar').removeClass('headroom--top').addClass('headroom--not-top');
+        $(this).hide();
     })
 })
