@@ -159,31 +159,20 @@
   }
 }
 /**
- * 箭头背景滑动
+ * 职位滑动
  */
 @-webkit-keyframes comeRight {
-    from {
-        opacity: 0;
-        -webkit-transform: translate(-100px, 0);
+
+    to {
+        -webkit-transform: translate(100px, 0);
     }
 }
 
 @-webkit-keyframes comeLeft {
-    from {
-        opacity: 0;
-        -webkit-transform: translate(100px, 0);
-    }
-}
-@-webkit-keyframes comeRight1 {
+    from{
+    -webkit-transform: translate(100px, 0);
+  }
     to {
-        opacity: 0;
-        -webkit-transform: translate(100px, 0);
-    }
-}
-
-@-webkit-keyframes comeLeft1 {
-    to {
-        opacity: 0;
-        -webkit-transform: translate(-100px, 0);
+        -webkit-transform: translate(0px, 0);
     }
 }

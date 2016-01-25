@@ -164,7 +164,8 @@ a:hover {
 }
 
 .breadcrumb2 {
-    padding: 8px 15px;
+    height: 50px;
+    line-height: 50px;
     list-style: none;
 }
 
@@ -178,11 +179,19 @@ a:hover {
     padding: 50px 0 50px;
 }
 
+.navs li>a {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+}
+
 .navs [role="tab"] {
     color: rgb(116, 116, 116);
     background-color: rgb(236, 236, 236);
     margin-right: 30px;
-    padding: 8px 32px;
 }
 
 .navs .active [role="tab"] {
@@ -529,8 +538,7 @@ a:hover {
     padding: 25px 0;
 }
 
-
-.dropdown-menu{
+.dropdown-menu {
     margin: 0;
     padding: 0;
     border-radius: 0;
@@ -550,14 +558,34 @@ a:hover {
  * footer
  */
 
-.footList {
+.footerLogList {
+    height: 80px;
+    align-items: center;
+}
+
+.footerDesign {
+    height: 50px;
+    align-items: center;
+}
+
+.footList,.footList-brand{
     line-height: 32px;
     padding-right: 32px;
+    font-size: 12px;
+    height: 180px;
+}
+.footList li:nth-child(1)
+,.footList-brand li:nth-child(1){
+    font-size: 16px;
+    line-height: 48px;
+}
+.footList-brand {
+    line-height: 25px;
 }
 
 [class|="navigation"] {
     position: absolute;
-    width: 38px;
+    width: 50px;
     height: 50px;
     cursor: pointer;
     overflow: hidden;
@@ -572,7 +600,7 @@ a:hover {
     transition: left 0.35s;
     line-height: 100%;
     background-repeat: no-repeat;
-    background-position: 11px;
+    background-position: 15px;
 }
 
 [class|="navigation"] span:first-child {
@@ -606,7 +634,7 @@ a:hover {
 }
 
 .navigation-prev span:nth-child(2) {
-    transform: translate(40px, -50px);
+    transform: translate(50px, -50px);
     background-image: url('../images/page7/pre-white.png');
 }
 
@@ -615,7 +643,7 @@ a:hover {
 }
 
 .navigation-next span:nth-child(2) {
-    transform: translate(-40px, -50px);
+    transform: translate(-50px, -50px);
     background-image: url('../images/page7/nex-white.png');
 }
 
