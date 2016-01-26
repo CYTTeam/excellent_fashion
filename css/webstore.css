@@ -52,6 +52,7 @@
     position: relative;
     border: 1px solid #ffffff;
     -webkit-animation: fadeIn 0.3s ease both;
+            animation: fadeIn 0.3s ease both;
 }
 .logo1-box:before,
 .logo2-box:before,
@@ -83,7 +84,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+        -ms-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
     z-index: 99;
     padding-bottom: 65px;
 }

@@ -122,29 +122,34 @@
 .logo1-box:hover.logo1-box:after {
     cursor: pointer;
     -webkit-animation: fadeIn 0.3s ease both;
+            animation: fadeIn 0.3s ease both;
     content: url("../images/page3/logo1.png");
 }
 
 .logo2-box:hover.logo2-box:after {
     cursor: pointer;
     -webkit-animation: fadeIn 0.3s ease both;
+            animation: fadeIn 0.3s ease both;
     content: url("../images/page3/logo1.png");
 }
 
 .logo3-box:hover.logo3-box:after {
     cursor: pointer;
     -webkit-animation: fadeIn 0.3s ease both;
+            animation: fadeIn 0.3s ease both;
     content: url("../images/page3/logo1.png");
 }
 
 .logo4-box:hover.logo4-box:after {
     cursor: pointer;
     -webkit-animation: fadeIn 0.3s ease both;
+            animation: fadeIn 0.3s ease both;
     content: url("../images/page3/logo1.png");
 }
 
 .logo5-box:hover.logo5-box:after {
     cursor: pointer;
     -webkit-animation: fadeIn 0.3s ease both;
+            animation: fadeIn 0.3s ease both;
     content: url("../images/page3/logo1.png");
 }

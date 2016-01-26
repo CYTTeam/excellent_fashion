@@ -16,7 +16,7 @@ dropdown_toggle.hover(function() {
 /* ------------------------------------------------------------
  * 返回顶部
  * ------------------------------------------------------------ */
-smoothScroll('#go-header', '#header');
+smoothScroll('.go-header', '#header');
 
 function smoothScroll(btn, target) {
     var animationTime = 500;

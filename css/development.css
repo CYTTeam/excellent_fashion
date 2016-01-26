@@ -30,6 +30,7 @@
     color: #FFFFFF;
     text-transform:capitalize;
     -webkit-animation: comeRight 0.3s ease both;
+            animation: comeRight 0.3s ease both;
 }
 .panel-title>a {
     list-style-type: none;
@@ -43,6 +44,7 @@
 .panel-a>pre{
     font-size: 16px;
     -webkit-animation: comeLeft 0.3s ease both;
+            animation: comeLeft 0.3s ease both;
 }
 
 

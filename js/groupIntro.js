@@ -114,26 +114,31 @@ window.onload = function() {
  * ------------------------------------------------------------ */
  $(function () {
      var timeData = {
-         2006: 20,
-         2007: 30,
-         2008: 40,
-         2009: 50,
-         2010: 60,
-         2011: 70,
-         2012: 80,
-         2013: 90
+         2006: [20, '2006:卓尚服饰全年销售增加265%'],
+         2007: [30, '2007:卓尚服饰全年销售增加265%'],
+         2008: [40, '2008:卓尚服饰全年销售增加265%'],
+         2009: [50, '2009:卓尚服饰全年销售增加265%'],
+         2010: [60, '2010:卓尚服饰全年销售增加265%'],
+         2011: [70, '2011:卓尚服饰全年销售增加265%'],
+         2012: [80, '2012:卓尚服饰全年销售增加265%'],
+         2013: [90, '2013:卓尚服饰全年销售增加265%']
      };
 
      $('#time-axis').on('click', '.time-year', function() {
          var year = $(this).text();
-         var percent = timeData[year];
+         var percent = timeData[year][0];
          var width = $('.time-axis').width();
-         $('.time-axis').css('background-position', percent * width / 100 + 'px 0');
-         $('.time-arrow').css('left', percent * width / 100);
+         var offset = (60 - percent) * 8;
+         $('.time-label').text(timeData[year][1]).css('left', percent * width / 100 + offset);
+         $('.time-axis').css('background-position', percent * width / 100 + offset + 'px 0');
+         $('.time-arrow').css('left', percent * width / 100 + offset);
+         $('.time-years').css('left', offset);
          $('.time-year').filter('.active')
          .removeClass("active");
          $(this).addClass("active");
      });
+
+     $('.time-year:eq(2)').trigger('click');
  })
 
 /* ------------------------------------------------------------
@@ -157,8 +162,7 @@ $(function functionName() {
 $(function () {
     window.setTimeout(function () {
         var author = location.hash;
-        console.log(author);
-        var position = $(author).offset().top;
+        var position = author && $(author).offset().top;
         $('html, body').animate({scrollTop: position}, 500);
     }, 500);
 })

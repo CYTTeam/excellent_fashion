@@ -24,33 +24,42 @@ body {
 .Liz-img1 {
     background-image: url('../images/page2/bg-1.png');
     -webkit-animation: toRight 2.3s ease both;
+            animation: toRight 2.3s ease both;
 }
 .Liz-img2 {
     background-image: url('../images/page2/bg-3.png');
     -webkit-animation: toLeft 2.3s ease both;
+            animation: toLeft 2.3s ease both;
 }
 .Liz-img3 {
     background-image: url('../images/page2/bg-3.png');
     -webkit-animation: toRight 2.3s ease forwards;
+            animation: toRight 2.3s ease forwards;
 }
 
 .logAnim-toRightBotton{
 	-webkit-animation: log-toRightBotton 1.3s ease 2s both;
+	        animation: log-toRightBotton 1.3s ease 2s both;
 }
 .logAnim-toRight{
 	-webkit-animation: log-toRight 1.3s ease 2s both;
+	        animation: log-toRight 1.3s ease 2s both;
 }
 .logAnim-toBotton{
 	-webkit-animation: log-toBotton 1.3s ease 2s both;
+	        animation: log-toBotton 1.3s ease 2s both;
 }
 .logAnim-toTop{
 	-webkit-animation: log-toTop 1.3s ease 2s both;
+	        animation: log-toTop 1.3s ease 2s both;
 }
 .logAnim-toLeftBotton{
 	-webkit-animation: log-toLeftBotton 1.3s ease 2s both;
+	        animation: log-toLeftBotton 1.3s ease 2s both;
 }
 .logAnim-toLeftTop{
 	-webkit-animation: log-toLeftTop 1.3s ease 2s both;
+	        animation: log-toLeftTop 1.3s ease 2s both;
 }
 
 
@@ -60,13 +69,17 @@ body {
 	left: 50%;
     margin-left: -167px;
 	-webkit-animation: toTop 1.3s ease 3s both;
+	        animation: toTop 1.3s ease 3s both;
     width: 334px;
 }
 .logImg{
 	-webkit-animation: fadeIn 1s ease both;
+	        animation: fadeIn 1s ease both;
 }
 .arrow-right,.arrow-left{
 	display: block;
 	cursor: pointer;
-	flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }

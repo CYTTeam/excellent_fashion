@@ -24,8 +24,6 @@ a {
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -108,7 +106,6 @@ a:hover {
     position: relative;
     cursor: pointer;
     transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
     top: 0;
 }
 
@@ -147,9 +144,6 @@ a:hover {
 .nav-toggle span:before {
     cursor: pointer;
     border-radius: 1px;
-    -moz-border-radius: 1px;
-    -webkit-border-radius: 1px;
-    -o-border-radius: 1px;
     height: 3px;
     width: 35px;
     background: #fff;
@@ -178,8 +172,6 @@ a:hover {
 
 .vmove {
     tiansition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
 }
 
 .navs {
@@ -452,27 +444,39 @@ a:hover {
  */
 
 .Liz-flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .Liz-flex-row {
-    flex-direction: row;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .Liz-flex-row-reverse {
-    flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
 }
 
 .Liz-flex-column {
-    flex-direction: column;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .Liz-flex-column-reverse {
-    flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
 }
 
 .Liz-flex-1 {
-    flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 
@@ -481,23 +485,33 @@ a:hover {
  */
 
 .Liz-flex-justify-right {
-    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .Liz-flex-justify-left {
-    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .Liz-flex-justify-center {
-    justify-content: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .Liz-flex-justify-between {
-    justify-content: space-between;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .Liz-flex-justify-around {
-    justify-content: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 }
 
 
@@ -506,23 +520,38 @@ a:hover {
  */
 
 .Liz-flex-align-bottom {
-    align-items: flex-end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+                -ms-grid-row-align: flex-end;
+            align-items: flex-end;
 }
 
 .Liz-flex-align-top {
-    align-items: flex-start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start;
 }
 
 .Liz-flex-align-center {
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
 }
 
 .Liz-flex-align-between {
-    align-items: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+                -ms-grid-row-align: stretch;
+            align-items: stretch;
 }
 
 .Liz-flex-align-baseline {
-    align-items: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+                -ms-grid-row-align: baseline;
+            align-items: baseline;
 }
 
 .Liz-navbar {
@@ -560,6 +589,7 @@ a:hover {
 
 .anim-fadeIn {
     -webkit-animation: fadeIn 0.3s ease both;
+            animation: fadeIn 0.3s ease both;
 }
 
 
@@ -569,12 +599,18 @@ a:hover {
 
 .footerLogList {
     height: 80px;
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
 }
 
 .footerDesign {
     height: 50px;
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
 }
 
 .footList,.footList-brand{
@@ -643,7 +679,9 @@ a:hover {
 }
 
 .navigation-prev span:nth-child(2) {
-    transform: translate(50px, -50px);
+    -webkit-transform: translate(50px, -50px);
+        -ms-transform: translate(50px, -50px);
+            transform: translate(50px, -50px);
     background-image: url('../images/page7/pre-white.png');
 }
 
@@ -652,7 +690,9 @@ a:hover {
 }
 
 .navigation-next span:nth-child(2) {
-    transform: translate(-50px, -50px);
+    -webkit-transform: translate(-50px, -50px);
+        -ms-transform: translate(-50px, -50px);
+            transform: translate(-50px, -50px);
     background-image: url('../images/page7/nex-white.png');
 }
 
@@ -660,5 +700,7 @@ a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+        -ms-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
 }
