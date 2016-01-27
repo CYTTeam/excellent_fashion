@@ -7,8 +7,13 @@
 
 
 ## <a name="base_info"></a>项目基本信息
-此项目为前端人员开发的页面样式与布局
+此项目为前端人员开发的多页面网站首页
+运用了webpack,postcss等工作流
 
+
+## 项目的启动
+`npm run init`
+`npm run start`
 
 ## <a name="project_structure"></a>项目文件结构
 基本项目结构如下图
