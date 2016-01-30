@@ -55,6 +55,36 @@
     background-position: center;
     position: relative;
     overflow: hidden;
+    .time {
+        width: 33%;
+        position: absolute;
+        left: 50%;
+        bottom: -1em;
+        background-color: #fff;
+        color: #666;
+        text-align: center;
+        padding: 0.8em 0;
+        margin-left: -16.5%;
+    }
+}
+
+.card:hover .card-img2 .text {
+    opacity: 1;
+}
+.card-img2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .text {
+        color: #fff;
+        font-size: 16px;
+        opacity: 0;
+        transition: all 0.4s;
+    }
 }
 
 .card-block {
@@ -82,6 +112,6 @@
 #section2 .card-img {
     height: 167px;
 }
-#section4 .card-img {
+#section4 .card-img2 {
     height: 190px;
 }

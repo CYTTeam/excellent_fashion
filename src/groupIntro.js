@@ -167,7 +167,7 @@ $(function functionName() {
            $(this.element).addClass('animation-slide-up');
        }
    }, {
-      offset: '120%'
+      offset: '50%'
    });
 })
 
