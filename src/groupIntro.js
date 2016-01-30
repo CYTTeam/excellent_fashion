@@ -10,8 +10,24 @@
 require('./js/tab.js');
 require('./js/jquery.waypoints.min.js');
 require('./js/base.js');
+require('./css/rotateHeads.css');
+require('./js/rotateHeads.js');
 require('./css/groupIntro.css');
 
+
+/* ------------------------------------------------------------
+ *	头部的图片轮播
+ * ------------------------------------------------------------ */
+
+$(function () {
+    $('#toggleHeads').rotateHeads([
+        './images/page7/1.png',
+        './images/page7/2.png',
+        './images/page7/3.png',
+        './images/page7/4.png',
+        './images/page7/5.png',
+    ]);
+})
 
 
 window.onload = function() {
@@ -167,7 +183,14 @@ $(function functionName() {
            $(this.element).addClass('animation-slide-up');
        }
    }, {
-      offset: '120%'
+      offset: '50%'
+   });
+   $('#footer').waypoint(function(direction) {
+       if (direction === 'down') {
+           $(this.element).addClass('animation-slide-up');
+       }
+   }, {
+      offset: '100%'
    });
 })
 

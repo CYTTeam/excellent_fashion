@@ -46,12 +46,40 @@ a, a:visited, a:focus, a:hover {
 .section {
     min-width: 1200px!important;
 }
+
 .header {
     position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     .page {
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
+        &.active .imgScreen {
+            animation: ani-headertext-slide-down 1.5s ease-in both;
+        }
+    }
+    .navs {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        .nav {
+            flex: 1;
+            color: #fff;
+            border: 1px solid;
+            text-align: center;
+            cursor: pointer;
+            line-height: 3.5;
+            background-color: rgba(255, 255, 255, 0);
+            transition: all .3s;
+            &:hover {
+                background-color: rgba(68, 188, 188, 0.3);
+            }
+        }
     }
 }
 .header:after {
@@ -133,10 +161,10 @@ a, a:visited, a:focus, a:hover {
 .vmove {
     tiansition: all 0.5s ease;
 }
-.navs {
+.tabs {
     padding: 50px 0 50px;
 }
-.navs li>a {
+.tabs li>a {
     display: inline-block;
     width: 160px;
     height: 40px;
@@ -144,12 +172,12 @@ a, a:visited, a:focus, a:hover {
     text-align: center;
     line-height: 40px;
 }
-.navs [role="tab"] {
+.tabs [role="tab"] {
     color: rgb(116, 116, 116);
     background-color: rgb(236, 236, 236);
     margin-right: 30px;
 }
-.navs .active [role="tab"] {
+.tabs .active [role="tab"] {
     color: #fff;
     background-color: rgb(68, 188, 187);
 }
