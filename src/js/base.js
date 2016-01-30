@@ -11,10 +11,9 @@
 
 require('../css/animation.css');
 require('../css/base.css');
-require('../css/toggleHeads.css');
-require('./headroom.min.js');
 require('./jquery.headroom.min.js');
-require('./rotateHeads.js');
+require('./headroom.min.js');
+
 
 /* ------------------------------------------------------------
  * 点击下拉

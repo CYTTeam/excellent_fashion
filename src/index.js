@@ -11,8 +11,24 @@
 require('./js/owl.carousel.min.js');
 require('./js/jquery.waypoints.min.js');
 require('./js/base.js');
+require('./css/rotateHeads.css');
+require('./js/rotateHeads.js');
 require('./css/index.css');
 
+/* ------------------------------------------------------------
+ *	头部的图片轮播
+ * ------------------------------------------------------------ */
+
+$(function () {
+    $('#header').height(document.documentElement.clientHeight);
+    $('#toggleHeads').rotateHeads([
+        './images/page7/1.png',
+        './images/page7/2.png',
+        './images/page7/3.png',
+        './images/page7/4.png',
+        './images/page7/5.png',
+    ]);
+})
 
 
 /* ------------------------------------------------------------
@@ -51,30 +67,21 @@ $(function functionName() {
         }
     }, {offset: -200});
 
+    $('#section1').waypoint(function(direction) {
+        if (direction === 'down') {
+            $('#section1').addClass('animation-slide-up');
+            $('#section2').addClass('animation-slide-up');
+        }
+    }, {offset: '50%'});
     $('#section3').waypoint(function(direction) {
         if (direction === 'down') {
             $('#section3').addClass('animation-slide-up');
             $('#section4').addClass('animation-slide-up');
         }
-    }, {offset: '120%'});
+    }, {offset: '50%'});
     $('#footer').waypoint(function(direction) {
         if (direction === 'down') {
             $('#footer').addClass('animation-slide-up');
         }
-    }, {offset: '120%'});
-})
-
-/* ------------------------------------------------------------
- *	头部的图片轮播
- * ------------------------------------------------------------ */
-
-$(function () {
-    $('#header').height(document.documentElement.clientHeight);
-    $('#toggleHeads').rotateHeads([
-        './images/page7/1.png',
-        './images/page7/2.png',
-        './images/page7/3.png',
-        './images/page7/4.png',
-        './images/page7/5.png',
-    ]);
+    }, {offset: '100%'});
 })

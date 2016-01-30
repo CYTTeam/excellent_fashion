@@ -170,3 +170,16 @@
         transform: translate(0px, 0);
     }
 }
+
+/**
+ * header page text slide down
+ */
+
+ @keyframes ani-headertext-slide-down {
+     from{
+        transform: translateY(100px) translateX(-50%);
+   }
+     to {
+         transform: translateY(-50%) translateX(-50%);
+     }
+ }

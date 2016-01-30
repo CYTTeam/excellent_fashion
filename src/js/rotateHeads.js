@@ -28,6 +28,7 @@
                     if (counter === number) {
                         pages.slice(0, 1)
                             .css('transform', ' rotateX(0deg) translateZ(' + height / 2 + 'px)')
+                            .addClass('active')
                             .show();
                         pages.slice(1, 2)
                             .css('transform', ' rotateX(-90deg) translateZ(' + height / 2 + 'px)')
@@ -80,15 +81,18 @@
             var rotate, prePage, nextPage;
             var box = this.target.children('.box');
             var _instance = this;
+            prePage = pages.slice(pre, pre + 1).removeClass('active');
+            nowPage = pages.slice(now, now + 1).addClass('active');
+            nextPage = pages.slice(next, next + 1);
             this._setTransition(box);
             box.css('transform', 'perspective(3500px) rotateX(90deg)');
             box.one('transitionend', function() {
                 pages.hide();
                 _instance._clearTransition(box);
                 box.css('transform', 'perspective(3500px) rotateX(0deg)');
-                prePage = pages.slice(pre, pre + 1).show();
-                nowPage = pages.slice(now, now + 1).show();
-                nextPage = pages.slice(next, next + 1).show();
+                prePage.show();
+                nowPage.show();
+                nextPage.show();
                 prePage.css('transform', 'rotateX(90deg) translateZ(' + _instance.height / 2 + 'px)');
                 nowPage.css('transform', 'rotateX(0deg) translateZ(' + _instance.height / 2 + 'px)');
                 nextPage.css('transform', 'rotateX(-90deg) translateZ(' + _instance.height / 2 + 'px)');

@@ -46,12 +46,20 @@ a, a:visited, a:focus, a:hover {
 .section {
     min-width: 1200px!important;
 }
+
 .header {
     position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     .page {
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
+        &.active .imgScreen {
+            animation: ani-headertext-slide-down 1.5s ease-in both;
+        }
     }
     .navs {
         position: absolute;
