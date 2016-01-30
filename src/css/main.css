@@ -47,18 +47,12 @@
     animation: log-toLeftTop 1.3s ease 2s both;
 }
 .logList {
-    position: absolute;
-    bottom: 240px;
-    left: 50%;
-    margin-left: -167px;
     animation: toTop 1.3s ease 3s both;
-    width: 334px;
+    width: 254px;
 }
 .logImg {
     animation: fadeIn 1s ease both;
 }
-.arrow-right, .arrow-left {
-    display: block;
+.arr-right, .arr-left {
     cursor: pointer;
-    flex: 1;
 }

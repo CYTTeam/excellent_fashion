@@ -1,18 +1,14 @@
-/*从上往下滑出*/
+/*内容从下往上滑出*/
 
 .animation-slide-up {
-    animation: ani-slide-up .8s cubic-bezier(0, 0, 0.18, 0.8) both;
+    animation: ani-slide-up 1.2s cubic-bezier(0, 0, 0.18, 0.8) both;
     position: relative;
 }
 
 @keyframes ani-slide-up {
     0% {
-        top: 400px;
+        top: 100px;
         opacity: 0;
-    }
-    80% {
-        top: 50px;
-        opacity: 0.5;
     }
     100% {
         top: 0px;
@@ -112,11 +108,11 @@
 
 @keyframes log-toRight {
   0%{
-      transform:translate3D(-50px,-50px,0);
+      transform:translate3D(-50px,0,0);
       opacity: 0;
   }
   10%{
-      transform:translate3D(-50px,-50px,0);
+      transform:translate3D(-50px,0,0);
       opacity:0.6;
   }
   100%{
@@ -127,11 +123,11 @@
 
 @keyframes log-toBotton{
   0%{
-      transform:translate3D(-50px,-50px,0);
+      transform:translate3D(-50px,0,0);
       opacity: 0;
   }
   10%{
-      transform:translate3D(-50px,-50px,0);
+      transform:translate3D(-50px,0,0);
       opacity:0.6;
   }
   100%{
@@ -142,11 +138,11 @@
 
 @keyframes log-toTop {
   0%{
-      transform:translate3D(-50px,-50px,0);
+      transform:translate3D(50px,0,0);
       opacity: 0;
   }
   10%{
-      transform:translate3D(-50px,-50px,0);
+      transform:translate3D(50px,0,0);
       opacity:0.6;
   }
   100%{

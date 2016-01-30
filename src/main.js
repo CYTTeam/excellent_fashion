@@ -1,32 +1,28 @@
 
+require('./js/owl.carousel.min.js');
 require('./js/base.js');
 require('./css/main.css');
 
 
-var logLeft = $(".arrow-left");
-var logRight = $(".arrow-right");
-var log = $(".logImg");
-var num;
-logLeft.click(function() {
-    if ($('.logImg:first')[0] === log.filter('.Liz-block')[0]) {
-      $('.logImg:first').before($('.logImg:last'));
-    }
-
-   log.filter('.Liz-block')
-   .addClass("Liz-none")
-   .removeClass("Liz-block")
-   .prev()
-   .addClass('Liz-block')
-   .removeClass('Liz-none');
-});
-logRight.click(function() {
-    if ($('.logImg:last')[0] === log.filter('.Liz-block')[0]) {
-      $('.logImg:last').after($('.logImg:first'));
-    }
-    log.filter('.Liz-block')
-   .addClass("Liz-none")
-   .removeClass("Liz-block")
-   .next()
-   .addClass('Liz-block')
-   .removeClass('Liz-none');
-});
+/* ------------------------------------------------------------
+ * 滚动轮
+ * ------------------------------------------------------------ */
+$(function () {
+     var owl = $("#carousel-wrap");
+    owl.owlCarousel({
+        autoPlay: 5000,
+        items : 1,
+        itemsDesktop: false,
+        itemsDesktopSmall: false,
+        itemsTablet: false,
+        itemsTabletSmall: false,
+        itemsMobile: false,
+        pagination: false,
+    });
+    $('.arr-left').click(function () {
+        owl.trigger('owl.prev');
+    })
+    $('.arr-right').click(function () {
+        owl.trigger('owl.next');
+    })
+})

@@ -11,9 +11,10 @@
 
 require('../css/animation.css');
 require('../css/base.css');
+require('../css/toggleHeads.css');
 require('./headroom.min.js');
 require('./jquery.headroom.min.js');
-
+require('./rotateHeads.js');
 
 /* ------------------------------------------------------------
  * 点击下拉
@@ -37,7 +38,7 @@ smoothScroll('.go-header', '#header');
 
 function smoothScroll(btn, target) {
     var animationTime = 500;
-    $(btn).on('click', function() {
+    $(document).on('click', btn, function() {
         var position = $(target).offset().top;
         $('html, body').animate({scrollTop: position}, animationTime);
     })
@@ -51,14 +52,22 @@ $(function() {
     $('#Liz-navbar').headroom({
         offset : 100,
         onTop: function() {
-            $('#nav-toggle').show();
+            $('.navicon').show();
         },
         onNotTop: function () {
-            $('#nav-toggle').hide();
+            $('.navicon').hide();
         }
     });
     $('#nav-toggle').click(function () {
         $('#Liz-navbar').removeClass('headroom--top').addClass('headroom--not-top');
-        $(this).hide();
+        $('.navicon').hide();
     })
+})
+
+/* ------------------------------------------------------------
+ *	加载footer
+ * ------------------------------------------------------------ */
+ var footer = require('../tpl/footer.html');
+$(function () {
+    $('#footer').html(footer);
 })

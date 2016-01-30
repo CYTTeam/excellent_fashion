@@ -63,3 +63,18 @@ $(function functionName() {
         }
     }, {offset: '120%'});
 })
+
+/* ------------------------------------------------------------
+ *	头部的图片轮播
+ * ------------------------------------------------------------ */
+
+$(function () {
+    $('#header').height(document.documentElement.clientHeight);
+    $('#toggleHeads').rotateHeads([
+        './images/page7/1.png',
+        './images/page7/2.png',
+        './images/page7/3.png',
+        './images/page7/4.png',
+        './images/page7/5.png',
+    ]);
+})
