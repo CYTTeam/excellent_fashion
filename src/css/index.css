@@ -70,6 +70,7 @@
 
 .card:hover .card-img2 .text {
     opacity: 1;
+    transform: scale(1.2);
 }
 .card-img2 {
     background-repeat: no-repeat;
@@ -84,6 +85,7 @@
         font-size: 16px;
         opacity: 0;
         transition: all 0.4s;
+        transform: scale(1);
     }
 }
 

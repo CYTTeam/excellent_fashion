@@ -81,7 +81,7 @@ webpackJsonp([10],[
 	
 	
 	// module
-	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\n    position: relative;\n    width: 100%;\n    height: 100%;\n\t-webkit-transform-style: preserve-3d;\n\t        transform-style: preserve-3d;\n    -webkit-transform: perspective(3500px) rotateX(0deg);\n            transform: perspective(3500px) rotateX(0deg);\n}\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    top: 0;\n    display: none;\n}\n", ""]);
+	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 100%;\r\n\t-webkit-transform-style: preserve-3d;\r\n\t        transform-style: preserve-3d;\r\n    -webkit-transform: perspective(3500px) rotateX(0deg);\r\n            transform: perspective(3500px) rotateX(0deg);\r\n}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    left: 0;\r\n    top: 0;\r\n    display: none;\r\n}\r\n", ""]);
 	
 	// exports
 

@@ -100,7 +100,7 @@ a, a:visited, a:focus, a:hover {
     transition: all 0.3s linear;
 }
 .header .overlayer.active {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(68, 188, 188, 0);
 }
 .go-header {
     position: relative;
@@ -278,6 +278,10 @@ a, a:visited, a:focus, a:hover {
 .Liz-padding-vertical-lg {
     padding: 15px 0;
 }
+.Liz-padding-vertical-35px {
+    padding: 35px;
+}
+
 .Liz-padding-10 {
     padding-left: 10px;
     padding-right: 10px;
@@ -561,13 +565,4 @@ a, a:visited, a:focus, a:hover {
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-}
-
-.imgScreen-scale {
-    height: 100%;
-    transition: all .3s;
-    transform: scale(1);
-    &:hover {
-        transform: scale(1.2);
-    }
 }
