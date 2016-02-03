@@ -9,7 +9,7 @@ webpackJsonp([5],{
 	/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(/*! ./css/animation.css */ 2);
 	__webpack_require__(/*! ./css/base.css */ 6);
 	  __webpack_require__(/*! ./css/rotateHeads.css */ 13);
-	__webpack_require__(/*! ./css/news.css */ 47);
+	__webpack_require__(/*! ./css/news.css */ 49);
 	
 	__webpack_require__(/*! ./js/jquery.waypoints.min.js */ 38);
 	__webpack_require__(/*! ./js/base.js */ 17);
@@ -91,7 +91,7 @@ webpackJsonp([5],{
 	
 	
 	// module
-	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 100%;\r\n\t-webkit-transform-style: preserve-3d;\r\n\t        transform-style: preserve-3d;\r\n    -webkit-transform: perspective(3500px) rotateX(0deg);\r\n            transform: perspective(3500px) rotateX(0deg);\r\n}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    left: 0;\r\n    top: 0;\r\n    display: none;\r\n}\r\n", ""]);
+	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\n    position: relative;\n    width: 100%;\n    height: 100%;\n\t-webkit-transform-style: preserve-3d;\n\t        transform-style: preserve-3d;\n    -webkit-transform: perspective(3500px) rotateX(0deg);\n            transform: perspective(3500px) rotateX(0deg);\n}\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    top: 0;\n    display: none;\n}\n", ""]);
 	
 	// exports
 
@@ -242,7 +242,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 47:
+/***/ 49:
 /*!**************************!*\
   !*** ./src/css/news.css ***!
   \**************************/
@@ -251,7 +251,7 @@ webpackJsonp([5],{
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./news.css */ 48);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./news.css */ 50);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 5)(content, {});
@@ -272,7 +272,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 48:
+/***/ 50:
 /*!************************************************************!*\
   !*** ./~/css-loader!./~/postcss-loader!./src/css/news.css ***!
   \************************************************************/
@@ -283,7 +283,7 @@ webpackJsonp([5],{
 	
 	
 	// module
-	exports.push([module.id, ".header {\r\n    height: 270px;\r\n}\r\n\r\n.newList-item {\r\n    padding: 30px 0;\r\n    border-bottom: #ebebeb 1px dotted;\r\n    background-color: white;\r\n    position: relative;\r\n    opacity: 0;\r\n}\r\n\r\n.newList-item:hover {\r\n    background-color: #f5f5f5;\r\n}\r\n\r\n.newList-item:hover .details {\r\n    background-color: #44BCBB;\r\n}\r\n\r\n.newList-item .imgbox {\r\n    float: left;\r\n    border: #f5f5f5 1px solid;\r\n    width: 232px;\r\n    overflow: hidden;\r\n}\r\n\r\n.newList-item .introbox {\r\n    margin-left: 257px;\r\n}\r\n\r\n.newList-item .introbox .tc4 {\r\n    font-size: 14px;\r\n    margin-top: 22px;\r\n    padding-bottom: 15px;\r\n    border-bottom: #ebebeb 1px solid;\r\n    color: #333;\r\n}\r\n\r\n.newList-item .introbox .introCon {\r\n    color: #888888;\r\n    line-height: 18px;\r\n    margin-top: 15px;\r\n}\r\n\r\n.newList-item .details {\r\n    position: absolute;\r\n    background-color: #f5f5f5;\r\n    color: white;\r\n    right: 0;\r\n    top: 56px;\r\n    text-align: center;\r\n    width: 70px;\r\n    height: 27px;\r\n    line-height: 27px;\r\n}\r\n", ""]);
+	exports.push([module.id, ".header {\n    height: 270px;\n}\n\n.newList-item {\n    padding: 30px 0;\n    border-bottom: #ebebeb 1px dotted;\n    background-color: white;\n    position: relative;\n    opacity: 0;\n}\n\n.newList-item:hover {\n    background-color: #f5f5f5;\n}\n\n.newList-item:hover .details {\n    background-color: #44BCBB;\n}\n\n.newList-item .imgbox {\n    float: left;\n    border: #f5f5f5 1px solid;\n    width: 232px;\n    overflow: hidden;\n}\n\n.newList-item .introbox {\n    margin-left: 257px;\n}\n\n.newList-item .introbox .tc4 {\n    font-size: 14px;\n    margin-top: 22px;\n    padding-bottom: 15px;\n    border-bottom: #ebebeb 1px solid;\n    color: #333;\n}\n\n.newList-item .introbox .introCon {\n    color: #888888;\n    line-height: 18px;\n    margin-top: 15px;\n}\n\n.newList-item .details {\n    position: absolute;\n    background-color: #f5f5f5;\n    color: white;\n    right: 0;\n    top: 56px;\n    text-align: center;\n    width: 70px;\n    height: 27px;\n    line-height: 27px;\n}\n", ""]);
 	
 	// exports
 

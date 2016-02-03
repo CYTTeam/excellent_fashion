@@ -23,11 +23,11 @@ require('./js/rotateHeads.js');
 
 $(function () {
     $('#toggleHeads').rotateHeads([
-        './images/page7/1.png',
-        './images/page7/2.png',
-        './images/page7/3.png',
-        './images/page7/4.png',
-        './images/page7/5.png',
+        './images/1.png',
+        './images/2.png',
+        './images/3.png',
+        './images/4.png',
+        './images/5.png',
     ]);
 })
 

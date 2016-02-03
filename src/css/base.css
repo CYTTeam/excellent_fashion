@@ -562,3 +562,12 @@ a, a:visited, a:focus, a:hover {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
+
+.imgScreen-scale {
+    height: 100%;
+    transition: all .3s;
+    transform: scale(1);
+    &:hover {
+        transform: scale(1.2);
+    }
+}

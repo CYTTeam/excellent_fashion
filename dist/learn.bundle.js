@@ -74,7 +74,7 @@ webpackJsonp([3],{
 	
 	
 	// module
-	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 100%;\r\n\t-webkit-transform-style: preserve-3d;\r\n\t        transform-style: preserve-3d;\r\n    -webkit-transform: perspective(3500px) rotateX(0deg);\r\n            transform: perspective(3500px) rotateX(0deg);\r\n}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    left: 0;\r\n    top: 0;\r\n    display: none;\r\n}\r\n", ""]);
+	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\n    position: relative;\n    width: 100%;\n    height: 100%;\n\t-webkit-transform-style: preserve-3d;\n\t        transform-style: preserve-3d;\n    -webkit-transform: perspective(3500px) rotateX(0deg);\n            transform: perspective(3500px) rotateX(0deg);\n}\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    top: 0;\n    display: none;\n}\n", ""]);
 	
 	// exports
 
@@ -249,7 +249,7 @@ webpackJsonp([3],{
 	
 	
 	// module
-	exports.push([module.id, ".bg-tree{\r\n\tbackground-image: url(" + __webpack_require__(/*! ../images/page5/bg-tree.png */ 44) + ");\r\n    background-size: cover;\r\n    background-position: 50% 50%;\r\n}\r\n\r\n.header {\r\n    height: 270px;\r\n}\r\n", ""]);
+	exports.push([module.id, ".bg-tree{\n\tbackground-image: url(" + __webpack_require__(/*! ../images/page5/bg-tree.png */ 44) + ");\n    background-size: cover;\n    background-position: 50% 50%;\n}\n\n.header {\n    height: 270px;\n}\n", ""]);
 	
 	// exports
 
