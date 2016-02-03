@@ -9,8 +9,6 @@
  * 公共依赖模块
  * ------------------------------------------------------------ */
 
-require('../css/animation.css');
-require('../css/base.css');
 require('./jquery.headroom.min.js');
 require('./headroom.min.js');
 

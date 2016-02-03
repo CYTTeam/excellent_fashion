@@ -1,6 +1,5 @@
 .header {
     height: 270px;
-    background-image: url('../images/page4/bg-header.png');
 }
 .logo1-box {
     background-size: cover;
@@ -32,10 +31,7 @@
     height: 829px;
     background-position: 50% 0%;
 }
-.bgBox {
-    height: 270px;
-    background: url('../images/page6/bg-header.png');
-}
+
 .logo1-box, .logo2-box, .logo3-box, .logo4-box, .logo5-box {
     position: relative;
     border: 1px solid #ffffff;

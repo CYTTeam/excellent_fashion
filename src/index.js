@@ -8,12 +8,17 @@
  * 依赖模块
  * ------------------------------------------------------------ */
 
+
+
+ require('./css/animation.css');
+ require('./css/base.css');
+ require('./css/rotateHeads.css');
+ require('./css/index.css');
+
 require('./js/owl.carousel.min.js');
 require('./js/jquery.waypoints.min.js');
 require('./js/base.js');
-require('./css/rotateHeads.css');
 require('./js/rotateHeads.js');
-require('./css/index.css');
 
 /* ------------------------------------------------------------
  *	头部的图片轮播
@@ -22,11 +27,11 @@ require('./css/index.css');
 $(function () {
     $('#header').height(document.documentElement.clientHeight);
     $('#toggleHeads').rotateHeads([
-        './images/page7/1.png',
-        './images/page7/2.png',
-        './images/page7/3.png',
-        './images/page7/4.png',
-        './images/page7/5.png',
+        './images/1.png',
+        './images/2.png',
+        './images/3.png',
+        './images/4.png',
+        './images/5.png',
     ]);
 })
 

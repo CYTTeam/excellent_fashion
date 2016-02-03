@@ -16,7 +16,7 @@
             var counter = 0;
             var scale = this.scale = (3500 - height / 2) / 3500; //视距（屏幕后的视点到屏幕的距离）减去translatez除视距,求出3dbox的缩放比例
             target.css('transform', 'scale(' + scale + ',' + scale + ')');
-            options.forEach((value, index) => {
+            options.forEach(function (value, index) {
                 var img = $('<img class="header-img" />');
                 img.attr('src', value);
                 pages

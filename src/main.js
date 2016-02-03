@@ -1,7 +1,9 @@
+require('./css/animation.css');
+require('./css/base.css');
+require('./css/main.css');
 
 require('./js/owl.carousel.min.js');
 require('./js/base.js');
-require('./css/main.css');
 
 
 /* ------------------------------------------------------------

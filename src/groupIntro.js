@@ -6,13 +6,15 @@
 /* ------------------------------------------------------------
  * 依赖模块
  * ------------------------------------------------------------ */
+ require('./css/animation.css');
+ require('./css/base.css');
+ require('./css/rotateHeads.css');
+ require('./css/groupIntro.css');
 
 require('./js/tab.js');
 require('./js/jquery.waypoints.min.js');
 require('./js/base.js');
-require('./css/rotateHeads.css');
 require('./js/rotateHeads.js');
-require('./css/groupIntro.css');
 
 
 /* ------------------------------------------------------------
@@ -178,7 +180,7 @@ window.onload = function() {
  * ------------------------------------------------------------ */
 
 $(function functionName() {
-   $('.section1, .section2, .section3, .section4').waypoint(function(direction) {
+   $('.section1, .section2, .section3').waypoint(function(direction) {
        if (direction === 'down') {
            $(this.element).addClass('animation-slide-up');
        }

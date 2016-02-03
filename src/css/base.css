@@ -22,6 +22,7 @@ body, html {
     margin: 0;
     font-family: Arial, "Microsoft Yahei", "微软雅黑";
 }
+
 pre {
     background: none;
     border: none;
@@ -119,7 +120,7 @@ a, a:visited, a:focus, a:hover {
 }
 .nav-toggle {
     cursor: pointer;
-    padding: 10px 35px 16px 0px;
+    padding: 9px 24px 10px 0px;
     position: absolute;
     right: 20px;
     top: 0;
@@ -127,8 +128,8 @@ a, a:visited, a:focus, a:hover {
 .nav-toggle span {
     cursor: pointer;
     border-radius: 1px;
-    height: 3px;
-    width: 35px;
+    height: 2px;
+    width: 24px;
     background: #fff;
     position: absolute;
     display: block;
@@ -137,18 +138,18 @@ a, a:visited, a:focus, a:hover {
 .nav-toggle span:after, .nav-toggle span:before {
     cursor: pointer;
     border-radius: 1px;
-    height: 3px;
-    width: 35px;
+    height: 2px;
+    width: 24px;
     background: #fff;
     position: absolute;
     display: block;
     content: '';
 }
 .nav-toggle span:before {
-    top: -10px;
+    top: -8px;
 }
 .nav-toggle span:after {
-    top: 10px;
+    top: 8px;
 }
 .opacity0 {
     opacity: 0;
@@ -281,6 +282,9 @@ a, a:visited, a:focus, a:hover {
     padding-left: 10px;
     padding-right: 10px;
 }
+.Liz-padding-top-10px {
+    padding-top: 10px;
+}
 
 /*清除margin*/
 
@@ -309,6 +313,10 @@ a, a:visited, a:focus, a:hover {
 }
 .Liz-margin-left-30px {
     margin-left: 30px;
+}
+
+.Liz-margin-bottom-50px {
+    margin-bottom: 50px;
 }
 
 /**
@@ -454,7 +462,7 @@ a, a:visited, a:focus, a:hover {
     color: rgb(116, 116, 116);
     text-decoration: none;
     padding: 25px 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 .dropdown-menu {
     margin: 0;
@@ -465,6 +473,7 @@ a, a:visited, a:focus, a:hover {
 .dropdown-menu li>a {
     padding: 18px 15px;
     font-size: 12px;
+    border-top: 1px solid #E4DADA;
 }
 .anim-fadeIn {
     animation: fadeIn 0.3s ease both;
@@ -489,11 +498,11 @@ a, a:visited, a:focus, a:hover {
     height: 180px;
 }
 .footList li:nth-child(1), .footList-brand li:nth-child(1) {
-    font-size: 16px;
-    line-height: 48px;
+    font-size: 14px;
+    line-height: 56px;
 }
 .footList-brand {
-    line-height: 25px;
+    height: 230px;
 }
 [class|="navigation"] {
     position: absolute;

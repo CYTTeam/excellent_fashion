@@ -1,5 +1,8 @@
-require('./js/base.js');
+require('./css/animation.css');
+require('./css/base.css');
 require('./css/subbrand.css');
+require('./js/base.js');
+
 $(".weixinIco").mouseover(function(){
 	console.log("mouseover");
   $(".weixinIco2")
