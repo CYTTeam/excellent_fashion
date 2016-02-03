@@ -9,7 +9,7 @@ webpackJsonp([6],{
 	/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(/*! ./css/animation.css */ 2);
 	__webpack_require__(/*! ./css/base.css */ 6);
 	  __webpack_require__(/*! ./css/rotateHeads.css */ 13);
-	__webpack_require__(/*! ./css/newsDetail.css */ 51);
+	__webpack_require__(/*! ./css/newsDetail.css */ 49);
 	
 	__webpack_require__(/*! ./js/base.js */ 17);
 	__webpack_require__(/*! ./js/rotateHeads.js */ 32);
@@ -73,7 +73,7 @@ webpackJsonp([6],{
 	
 	
 	// module
-	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 100%;\r\n\t-webkit-transform-style: preserve-3d;\r\n\t        transform-style: preserve-3d;\r\n    -webkit-transform: perspective(3500px) rotateX(0deg);\r\n            transform: perspective(3500px) rotateX(0deg);\r\n}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    left: 0;\r\n    top: 0;\r\n    display: none;\r\n}\r\n", ""]);
+	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\n    position: relative;\n    width: 100%;\n    height: 100%;\n\t-webkit-transform-style: preserve-3d;\n\t        transform-style: preserve-3d;\n    -webkit-transform: perspective(3500px) rotateX(0deg);\n            transform: perspective(3500px) rotateX(0deg);\n}\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    top: 0;\n    display: none;\n}\n", ""]);
 	
 	// exports
 
@@ -207,7 +207,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 51:
+/***/ 49:
 /*!********************************!*\
   !*** ./src/css/newsDetail.css ***!
   \********************************/
@@ -216,7 +216,7 @@ webpackJsonp([6],{
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./newsDetail.css */ 52);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./newsDetail.css */ 50);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 5)(content, {});
@@ -237,7 +237,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 52:
+/***/ 50:
 /*!******************************************************************!*\
   !*** ./~/css-loader!./~/postcss-loader!./src/css/newsDetail.css ***!
   \******************************************************************/
@@ -248,7 +248,7 @@ webpackJsonp([6],{
 	
 	
 	// module
-	exports.push([module.id, ".header {\r\n    height: 270px;\r\n}\r\n.maintitle {\r\n    font-size: 14px;\r\n    padding: 8px 0;\r\n    font-weight: bold;\r\n    text-align: center;\r\n}\r\n\r\n.subtitle {\r\n    text-align: right;\r\n    padding-bottom: 5px;\r\n    border-bottom: #ebebeb 1px solid;\r\n    margin-bottom: 20px;\r\n    color: #dcdcdc;\r\n    text-align: center;\r\n}\r\n\r\n.maintext {\r\n    color: #666666;\r\n    line-height: 20px;\r\n}\r\n\r\n.share-link {\r\n    width: 28px;\r\n    height: 28px;\r\n    display: inline-block;\r\n    margin: 0 5px;\r\n}\r\n", ""]);
+	exports.push([module.id, ".header {\n    height: 270px;\n}\n.maintitle {\n    font-size: 14px;\n    padding: 8px 0;\n    font-weight: bold;\n    text-align: center;\n}\n\n.subtitle {\n    text-align: right;\n    padding-bottom: 5px;\n    border-bottom: #ebebeb 1px solid;\n    margin-bottom: 20px;\n    color: #dcdcdc;\n    text-align: center;\n}\n\n.maintext {\n    color: #666666;\n    line-height: 24px;\n}\n\n.share-link {\n    width: 28px;\n    height: 28px;\n    display: inline-block;\n    margin: 0 5px;\n}\n", ""]);
 	
 	// exports
 

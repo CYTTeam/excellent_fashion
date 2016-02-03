@@ -21,10 +21,10 @@ webpackJsonp([2],{
 	 __webpack_require__(/*! ./css/animation.css */ 2);
 	 __webpack_require__(/*! ./css/base.css */ 6);
 	 __webpack_require__(/*! ./css/rotateHeads.css */ 13);
-	 __webpack_require__(/*! ./css/index.css */ 39);
+	 __webpack_require__(/*! ./css/index.css */ 37);
 	
-	__webpack_require__(/*! ./js/owl.carousel.min.js */ 41);
-	__webpack_require__(/*! ./js/jquery.waypoints.min.js */ 38);
+	__webpack_require__(/*! ./js/owl.carousel.min.js */ 39);
+	__webpack_require__(/*! ./js/jquery.waypoints.min.js */ 36);
 	__webpack_require__(/*! ./js/base.js */ 17);
 	__webpack_require__(/*! ./js/rotateHeads.js */ 32);
 	
@@ -144,7 +144,7 @@ webpackJsonp([2],{
 	
 	
 	// module
-	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 100%;\r\n\t-webkit-transform-style: preserve-3d;\r\n\t        transform-style: preserve-3d;\r\n    -webkit-transform: perspective(3500px) rotateX(0deg);\r\n            transform: perspective(3500px) rotateX(0deg);\r\n}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    left: 0;\r\n    top: 0;\r\n    display: none;\r\n}\r\n", ""]);
+	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\n    position: relative;\n    width: 100%;\n    height: 100%;\n\t-webkit-transform-style: preserve-3d;\n\t        transform-style: preserve-3d;\n    -webkit-transform: perspective(3500px) rotateX(0deg);\n            transform: perspective(3500px) rotateX(0deg);\n}\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    top: 0;\n    display: none;\n}\n", ""]);
 	
 	// exports
 
@@ -278,7 +278,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 38:
+/***/ 36:
 /*!****************************************!*\
   !*** ./src/js/jquery.waypoints.min.js ***!
   \****************************************/
@@ -295,7 +295,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 39:
+/***/ 37:
 /*!***************************!*\
   !*** ./src/css/index.css ***!
   \***************************/
@@ -304,7 +304,7 @@ webpackJsonp([2],{
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./index.css */ 40);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./index.css */ 38);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 5)(content, {});
@@ -325,7 +325,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 40:
+/***/ 38:
 /*!*************************************************************!*\
   !*** ./~/css-loader!./~/postcss-loader!./src/css/index.css ***!
   \*************************************************************/
@@ -336,14 +336,14 @@ webpackJsonp([2],{
 	
 	
 	// module
-	exports.push([module.id, "\r\n\r\n\r\n#carousel-wrap .item{\r\n  background: #fff;\r\n  border-right: 1px solid rgb(245, 247, 247);\r\n}\r\n\r\n\r\n\r\n#section2 {\r\n    padding: 30px 0 50px;\r\n    background-color: rgb(245, 247, 247);\r\n}\r\n\r\n\r\n.card {\r\n    cursor: pointer;\r\n}\r\n.card-img:after, .card-img:before {\r\n    width: 100%;\r\n    content: \"\";\r\n    display: block;\r\n    background-color: #44BCBC;\r\n    background-color: rgba(68, 188, 188, 0.3);\r\n    position: absolute;\r\n    -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);\r\n            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);\r\n    z-index: 10;\r\n    height: 0;\r\n}\r\n\r\n.card-img:before {\r\n    top: -100%;\r\n    left: -100%;\r\n}\r\n.card-img:after {\r\n    right: -100%;\r\n    bottom: -100%;\r\n}\r\n\r\n.card:hover .card-img:before {\r\n    top: 0;\r\n    left: 0;\r\n    height: 100%;\r\n}\r\n.card:hover .card-img:after {\r\n    right: 0;\r\n    bottom: 0;\r\n    height: 100%;\r\n}\r\n\r\n\r\n.card-img {\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n    background-position: center;\r\n    position: relative;\r\n    overflow: hidden;\r\n}\r\n\r\n\r\n.card-img .time {\r\n  width: 33%;\r\n  position: absolute;\r\n  left: 50%;\r\n  bottom: -1em;\r\n  background-color: #fff;\r\n  color: #666;\r\n  text-align: center;\r\n  padding: 0.8em 0;\r\n  margin-left: -16.5%;\r\n}\r\n\r\n.card:hover .card-img2 .text {\r\n    opacity: 1;\r\n    -webkit-transform: scale(1.2);\r\n            transform: scale(1.2);\r\n}\r\n.card-img2 {\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n    background-position: center;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n    -webkit-justify-content: center;\r\n        -ms-flex-pack: center;\r\n            justify-content: center;\r\n    overflow: hidden;\r\n}\r\n.card-img2 .text {\r\n  color: #fff;\r\n  font-size: 16px;\r\n  opacity: 0;\r\n  -webkit-transition: all 0.4s;\r\n  transition: all 0.4s;\r\n  -webkit-transform: scale(1);\r\n  transform: scale(1);\r\n}\r\n\r\n.card-block {\r\n    padding:1em;\r\n}\r\n\r\n.card-title {\r\n    font-size: 14px;\r\n    font-weight: bold;\r\n    margin-bottom: 1em;\r\n    text-align: center;\r\n}\r\n\r\n.more-btn {\r\n    margin: 21px;\r\n    padding: 8px 52px;\r\n    background-color: transparent;\r\n    border: 1px dashed #999;\r\n}\r\n\r\n#section4 {\r\n    padding: 30px 0 50px;\r\n}\r\n\r\n#section2 .card-img {\r\n    height: 167px;\r\n}\r\n#section4 .card-img2 {\r\n    height: 190px;\r\n}\r\n", ""]);
+	exports.push([module.id, "\n\n\n#carousel-wrap .item{\n  background: #fff;\n  border-right: 1px solid rgb(245, 247, 247);\n}\n\n\n\n#section2 {\n    padding: 30px 0 50px;\n    background-color: rgb(245, 247, 247);\n}\n\n\n.card {\n    cursor: pointer;\n}\n.card-img:after, .card-img:before {\n    width: 100%;\n    content: \"\";\n    display: block;\n    background-color: #44BCBC;\n    background-color: rgba(68, 188, 188, 0.3);\n    position: absolute;\n    -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);\n            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);\n    z-index: 10;\n    height: 0;\n}\n\n.card-img:before {\n    top: -100%;\n    left: -100%;\n}\n.card-img:after {\n    right: -100%;\n    bottom: -100%;\n}\n\n.card:hover .card-img:before {\n    top: 0;\n    left: 0;\n    height: 100%;\n}\n.card:hover .card-img:after {\n    right: 0;\n    bottom: 0;\n    height: 100%;\n}\n\n\n.card-img {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    position: relative;\n    overflow: hidden;\n}\n\n\n.card-img .time {\n  width: 33%;\n  position: absolute;\n  left: 50%;\n  bottom: -1em;\n  background-color: #fff;\n  color: #666;\n  text-align: center;\n  padding: 0.8em 0;\n  margin-left: -16.5%;\n}\n\n.card:hover .card-img2 .text {\n    opacity: 1;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n}\n.card-img2 {\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    overflow: hidden;\n}\n.card-img2 .text {\n  color: #fff;\n  font-size: 16px;\n  opacity: 0;\n  -webkit-transition: all 0.4s;\n  transition: all 0.4s;\n  -webkit-transform: scale(1);\n  transform: scale(1);\n}\n\n.card-block {\n    padding:1em;\n}\n\n.card-title {\n    font-size: 14px;\n    font-weight: bold;\n    margin-bottom: 1em;\n    text-align: center;\n}\n\n.more-btn {\n    margin: 21px;\n    padding: 8px 52px;\n    background-color: transparent;\n    border: 1px dashed #999;\n}\n\n#section4 {\n    padding: 30px 0 50px;\n}\n\n#section2 .card-img {\n    height: 167px;\n}\n#section4 .card-img2 {\n    height: 190px;\n}\n", ""]);
 	
 	// exports
 
 
 /***/ },
 
-/***/ 41:
+/***/ 39:
 /*!************************************!*\
   !*** ./src/js/owl.carousel.min.js ***!
   \************************************/

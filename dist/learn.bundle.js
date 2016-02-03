@@ -10,7 +10,7 @@ webpackJsonp([3],{
 	__webpack_require__(/*! ./css/animation.css */ 2);
 	__webpack_require__(/*! ./css/base.css */ 6);
 	__webpack_require__(/*! ./css/rotateHeads.css */ 13);
-	__webpack_require__(/*! ./css/learn.css */ 42);
+	__webpack_require__(/*! ./css/learn.css */ 40);
 	
 	__webpack_require__(/*! ./js/base.js */ 17);
 	__webpack_require__(/*! ./js/rotateHeads.js */ 32);
@@ -74,7 +74,7 @@ webpackJsonp([3],{
 	
 	
 	// module
-	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 100%;\r\n\t-webkit-transform-style: preserve-3d;\r\n\t        transform-style: preserve-3d;\r\n    -webkit-transform: perspective(3500px) rotateX(0deg);\r\n            transform: perspective(3500px) rotateX(0deg);\r\n}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    left: 0;\r\n    top: 0;\r\n    display: none;\r\n}\r\n", ""]);
+	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\n    position: relative;\n    width: 100%;\n    height: 100%;\n\t-webkit-transform-style: preserve-3d;\n\t        transform-style: preserve-3d;\n    -webkit-transform: perspective(3500px) rotateX(0deg);\n            transform: perspective(3500px) rotateX(0deg);\n}\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    top: 0;\n    display: none;\n}\n", ""]);
 	
 	// exports
 
@@ -208,7 +208,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 42:
+/***/ 40:
 /*!***************************!*\
   !*** ./src/css/learn.css ***!
   \***************************/
@@ -217,7 +217,7 @@ webpackJsonp([3],{
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./learn.css */ 43);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./learn.css */ 41);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 5)(content, {});
@@ -238,7 +238,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 43:
+/***/ 41:
 /*!*************************************************************!*\
   !*** ./~/css-loader!./~/postcss-loader!./src/css/learn.css ***!
   \*************************************************************/
@@ -249,14 +249,14 @@ webpackJsonp([3],{
 	
 	
 	// module
-	exports.push([module.id, ".bg-tree{\r\n\tbackground-image: url(" + __webpack_require__(/*! ../images/page5/bg-tree.png */ 44) + ");\r\n    background-size: cover;\r\n    background-position: 50% 50%;\r\n}\r\n\r\n.header {\r\n    height: 270px;\r\n}\r\n", ""]);
+	exports.push([module.id, ".bg-tree{\n\tbackground-image: url(" + __webpack_require__(/*! ../images/page5/bg-tree.png */ 42) + ");\n    background-size: cover;\n    background-position: 50% 50%;\n}\n\n.header {\n    height: 270px;\n}\n", ""]);
 	
 	// exports
 
 
 /***/ },
 
-/***/ 44:
+/***/ 42:
 /*!**************************************!*\
   !*** ./src/images/page5/bg-tree.png ***!
   \**************************************/

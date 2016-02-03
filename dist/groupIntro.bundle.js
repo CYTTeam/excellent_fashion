@@ -19,8 +19,8 @@ webpackJsonp([1],{
 	 __webpack_require__(/*! ./css/rotateHeads.css */ 13);
 	 __webpack_require__(/*! ./css/groupIntro.css */ 33);
 	
-	__webpack_require__(/*! ./js/tab.js */ 37);
-	__webpack_require__(/*! ./js/jquery.waypoints.min.js */ 38);
+	__webpack_require__(/*! ./js/tab.js */ 35);
+	__webpack_require__(/*! ./js/jquery.waypoints.min.js */ 36);
 	__webpack_require__(/*! ./js/base.js */ 17);
 	__webpack_require__(/*! ./js/rotateHeads.js */ 32);
 	
@@ -156,31 +156,28 @@ webpackJsonp([1],{
 	 * ------------------------------------------------------------ */
 	 $(function () {
 	     var timeData = {
-	         2006: [20, '2006:卓尚服饰全年销售增加265%'],
-	         2007: [30, '2007:卓尚服饰全年销售增加265%'],
-	         2008: [40, '2008:卓尚服饰全年销售增加265%'],
-	         2009: [50, '2009:卓尚服饰全年销售增加265%'],
-	         2010: [60, '2010:卓尚服饰全年销售增加265%'],
-	         2011: [70, '2011:卓尚服饰全年销售增加265%'],
-	         2012: [80, '2012:卓尚服饰全年销售增加265%'],
-	         2013: [90, '2013:卓尚服饰全年销售增加265%']
+	         2006: [1, '2006:卓尚服饰全年销售增加265%'],
+	         2007: [2, '2007:卓尚服饰全年销售增加265%'],
+	         2008: [3, '2008:卓尚服饰全年销售增加265%'],
+	         2009: [4, '2009:卓尚服饰全年销售增加265%'],
+	         2010: [5, '2010:卓尚服饰全年销售增加265%'],
+	         2011: [6, '2011:卓尚服饰全年销售增加265%'],
+	         2012: [7, '2012:卓尚服饰全年销售增加265%'],
+	         2013: [8, '2013:卓尚服饰全年销售增加265%']
 	     };
 	
 	     $('#time-axis').on('click', '.time-year', function() {
 	         var year = $(this).text();
-	         var percent = timeData[year][0];
-	         var width = $('.time-axis').width();
-	         var offset = (60 - percent) * 8;
-	         $('.time-label').text(timeData[year][1]).css('left', percent * width / 100 + offset);
-	         $('.time-axis').css('background-position', percent * width / 100 + offset + 'px 0');
-	         $('.time-arrow').css('left', percent * width / 100 + offset);
+	         var percent = timeData[year][0] - 1;
+	         var offset = - 120 * percent;
+	         $('.time-label').text(timeData[year][1]);
 	         $('.time-years').css('left', offset);
 	         $('.time-year').filter('.active')
 	         .removeClass("active");
 	         $(this).addClass("active");
 	     });
 	
-	     $('.time-year:eq(2)').trigger('click');
+	     $('.time-year:eq(0)').trigger('click');
 	 })
 	
 	/* ------------------------------------------------------------
@@ -261,7 +258,7 @@ webpackJsonp([1],{
 	
 	
 	// module
-	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 100%;\r\n\t-webkit-transform-style: preserve-3d;\r\n\t        transform-style: preserve-3d;\r\n    -webkit-transform: perspective(3500px) rotateX(0deg);\r\n            transform: perspective(3500px) rotateX(0deg);\r\n}\r\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    left: 0;\r\n    top: 0;\r\n    display: none;\r\n}\r\n", ""]);
+	exports.push([module.id, "div[data-role=\"cyt-turnPage-3d\"] {height: 100%;}\ndiv[data-role=\"cyt-turnPage-3d\"] .box {\n    position: relative;\n    width: 100%;\n    height: 100%;\n\t-webkit-transform-style: preserve-3d;\n\t        transform-style: preserve-3d;\n    -webkit-transform: perspective(3500px) rotateX(0deg);\n            transform: perspective(3500px) rotateX(0deg);\n}\ndiv[data-role=\"cyt-turnPage-3d\"] .page {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    left: 0;\n    top: 0;\n    display: none;\n}\n", ""]);
 	
 	// exports
 
@@ -436,7 +433,7 @@ webpackJsonp([1],{
 	
 	
 	// module
-	exports.push([module.id, ".header {\n    height: 270px;\n}\n\n/**\n * chairmen\n */\n\n.chairmanText {\n    max-height: 553px;\n    overflow: auto;\n}\n\n/**\n *group honor\n */\n\n#slider {\n    width: 1200px;\n    height: 390px;\n    margin: 0 auto;\n    position: relative;\n    overflow: hidden;\n    font-size: 16px;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n#slider ul {\n    width: 6000px;\n    position: absolute;\n}\n#slider ul li {\n    width: 1200px;\n    float: left;\n}\n#point {\n    position: absolute;\n    display: inline-block;\n    float: left;\n    top: 360px;\n    left: 567px;\n    font-size: 60px;\n    z-index: 2;\n}\n#point span {\n    float: left;\n    height: 8px;\n    width: 8px;\n    border: 1px solid #44bcbc;\n    border-radius: 5px;\n    background: #ffffff;\n    margin-left: 10px;\n}\n#point .on {\n    background: #44bcbc;\n}\n\n/**\n * development history\n */\n\n#time-axis {\n    overflow: hidden;\n}\n.time-axis {\n    margin-top: 15%;\n    margin-bottom: 5%;\n    background-image: url(" + __webpack_require__(/*! ../images/page1/line.png */ 35) + ");\n    background-repeat: repeat-x;\n    height: 10px;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n}\n.time-years {\n    font-size: 0;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n    left: 0;\n}\n.time-years li {\n    display: inline-block;\n    text-align: center;\n    font-size: 16px;\n    padding-bottom: 55px;\n    margin-top: -30px;\n}\n.time-years li.active {\n    font-size: 20px;\n    color: #44bcbc;\n}\n.time-arrow {\n    height: 10px;\n    width: 15px;\n    position: absolute;\n    top: 168px;\n    margin-left: 7px;\n    background: url(" + __webpack_require__(/*! ../images/page1/top-angle.png */ 36) + ") no-repeat;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n    margin-left: 45px;\n    left: 0;\n}\n.time-label {\n    width: 205px;\n    line-height: 24px;\n    font-size: 20px;\n    color: #888;\n    position: absolute;\n    top: 56px;\n    left: 0;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n}\n\n/**\n * group culture\n */\n\n.time-year {\n    margin-left: -53px;\n    padding-left: 71px;\n    overflow: auto;\n}\n.Liz-scroll {\n    margin-right: 20px;\n    padding-right: 20px;\n}\n\n/* 滚动条整体部分width,height,background,border */\n\n.Liz-scroll::-webkit-scrollbar {\n    width: 5px;\n    height: 10px;\n}\n\n/* 滚动条两端的按钮。可以用display:none让其不显示 */\n\n.Liz-scroll::-webkit-scrollbar-button {\n    display: none;\n}\n\n/*   内层轨道，滚动条中间部分（除去） */\n\n.Liz-scroll::-webkit-scrollbar-track-piece {\n    background: #C0C0C0;\n}\n\n/*  滚动条里面可以拖动的那部分 */\n\n.Liz-scroll::-webkit-scrollbar-thumb {\n    background: #44bcbc;\n    border-radius: 4px;\n}\n", ""]);
+	exports.push([module.id, ".header {\n    height: 270px;\n}\n\n/**\n * chairmen\n */\n\n.chairmanText {\n    max-height: 553px;\n    overflow: auto;\n}\n\n/**\n *group honor\n */\n\n#slider {\n    width: 1200px;\n    height: 390px;\n    margin: 0 auto;\n    position: relative;\n    overflow: hidden;\n    font-size: 16px;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n#slider ul {\n    width: 6000px;\n    position: absolute;\n}\n#slider ul li {\n    width: 1200px;\n    float: left;\n}\n#point {\n    position: absolute;\n    display: inline-block;\n    float: left;\n    top: 360px;\n    left: 567px;\n    font-size: 60px;\n    z-index: 2;\n}\n#point span {\n    float: left;\n    height: 8px;\n    width: 8px;\n    border: 1px solid #44bcbc;\n    border-radius: 5px;\n    background: #ffffff;\n    margin-left: 10px;\n}\n#point .on {\n    background: #44bcbc;\n}\n\n/**\n * development history\n */\n\n#time-axis {\n    overflow: hidden;\n}\n.time-axis {\n    margin-top: 15%;\n    margin-bottom: 5%;\n    background-image: url(" + __webpack_require__(/*! ../images/page1/line.png */ 74) + ");\n    background-repeat: repeat-x;\n    height: 10px;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n    background-position: 76px 0;\n}\n.time-years {\n    font-size: 0;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n    left: 0;\n    margin-left: 308px;\n}\n.time-years li {\n    display: inline-block;\n    text-align: center;\n    font-size: 16px;\n    padding-bottom: 55px;\n    margin-top: -30px;\n}\n.time-years li.active {\n    font-size: 20px;\n    color: #44bcbc;\n}\n.time-arrow {\n    height: 10px;\n    width: 15px;\n    position: absolute;\n    top: 168px;\n    left: 50%;\n    background: url(" + __webpack_require__(/*! ../images/page1/top-angle.png */ 75) + ") no-repeat;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n}\n\n.time-label {\n    margin-left: -30px;\n    width: 205px;\n    line-height: 24px;\n    font-size: 20px;\n    color: #888;\n    position: absolute;\n    top: 56px;\n    left: 50%;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n}\n\n/**\n * group culture\n */\n\n.time-year {\n    overflow: auto;\n}\n.Liz-scroll {\n    margin-right: 20px;\n    padding-right: 20px;\n}\n\n/* 滚动条整体部分width,height,background,border */\n\n.Liz-scroll::-webkit-scrollbar {\n    width: 5px;\n    height: 10px;\n}\n\n/* 滚动条两端的按钮。可以用display:none让其不显示 */\n\n.Liz-scroll::-webkit-scrollbar-button {\n    display: none;\n}\n\n/*   内层轨道，滚动条中间部分（除去） */\n\n.Liz-scroll::-webkit-scrollbar-track-piece {\n    background: #C0C0C0;\n}\n\n/*  滚动条里面可以拖动的那部分 */\n\n.Liz-scroll::-webkit-scrollbar-thumb {\n    background: #44bcbc;\n    border-radius: 4px;\n}\n", ""]);
 	
 	// exports
 
@@ -444,26 +441,6 @@ webpackJsonp([1],{
 /***/ },
 
 /***/ 35:
-/*!***********************************!*\
-  !*** ./src/images/page1/line.png ***!
-  \***********************************/
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAALCAYAAABvY3RqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVEM0JDM0M2QkRGMzExRTU4OERERDc3QTNENzBCNkEwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVEM0JDM0M3QkRGMzExRTU4OERERDc3QTNENzBCNkEwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUQzQkMzQzRCREYzMTFFNTg4RERENzdBM0Q3MEI2QTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUQzQkMzQzVCREYzMTFFNTg4RERENzdBM0Q3MEI2QTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6ZvmqgAAABCUlEQVR42uzcXYrCMBiG0aQ7yR67jN52e+lSokULFUQU/Pkaz4HCwLyDNM9dmJlca20JAAAAAIIazk++Pmn39aMn9G6e5y7ew05ffZ2Lvnb62ulrp6+dvnb66utcLk+utW6XWetvYuVSyt2brmVZQu/GcbzZTdN0yPew01dfffV1fp/c7bZf7fvuz/3V+/7b5+qrr3PW1znrq6++UT53SAAAAAAQmAssAAAAAEJzgQUAAABAaPsLrPzkz0TfpU7ew05ffZ2Lvnb62ulrp6+dvnb66utc1m+21lIPXvknZ+iLvuiLvuirr776oi/6Hoc/IQQAAAAgNBdYAAAAAITmAgsAAACA0E4CDACF2SThZsQNowAAAABJRU5ErkJggg=="
-
-/***/ },
-
-/***/ 36:
-/*!****************************************!*\
-  !*** ./src/images/page1/top-angle.png ***!
-  \****************************************/
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjg1QzY1MzNFQkRGMzExRTVCNEY3Q0RFOUIxQTE3QjAxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjg1QzY1MzNGQkRGMzExRTVCNEY3Q0RFOUIxQTE3QjAxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODVDNjUzM0NCREYzMTFFNUI0RjdDREU5QjFBMTdCMDEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ODVDNjUzM0RCREYzMTFFNUI0RjdDREU5QjFBMTdCMDEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6swMOgAAAAe0lEQVR42mJ02bOHAQ8IgdJrcClgwaNZBIinQtkHgfg1NkVMeAyYDsRiUDwNlyImPE4PwcPHawCy05EBSEyUGANgTkcHWL3CRMDphLyGYgAup2Pzihg2A3A5HZtXpqIbQMjpOL3CBA3ZqQykA7BXmKAhK0aGAWCvAAQYAFEAEng2j5i5AAAAAElFTkSuQmCC"
-
-/***/ },
-
-/***/ 37:
 /*!***********************!*\
   !*** ./src/js/tab.js ***!
   \***********************/
@@ -629,7 +606,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 38:
+/***/ 36:
 /*!****************************************!*\
   !*** ./src/js/jquery.waypoints.min.js ***!
   \****************************************/
@@ -643,6 +620,26 @@ webpackJsonp([1],{
 	*/
 	!function(){"use strict";function t(o){if(!o)throw new Error("No options passed to Waypoint constructor");if(!o.element)throw new Error("No element option passed to Waypoint constructor");if(!o.handler)throw new Error("No handler option passed to Waypoint constructor");this.key="waypoint-"+e,this.options=t.Adapter.extend({},t.defaults,o),this.element=this.options.element,this.adapter=new t.Adapter(this.element),this.callback=o.handler,this.axis=this.options.horizontal?"horizontal":"vertical",this.enabled=this.options.enabled,this.triggerPoint=null,this.group=t.Group.findOrCreate({name:this.options.group,axis:this.axis}),this.context=t.Context.findOrCreateByElement(this.options.context),t.offsetAliases[this.options.offset]&&(this.options.offset=t.offsetAliases[this.options.offset]),this.group.add(this),this.context.add(this),i[this.key]=this,e+=1}var e=0,i={};t.prototype.queueTrigger=function(t){this.group.queueTrigger(this,t)},t.prototype.trigger=function(t){this.enabled&&this.callback&&this.callback.apply(this,t)},t.prototype.destroy=function(){this.context.remove(this),this.group.remove(this),delete i[this.key]},t.prototype.disable=function(){return this.enabled=!1,this},t.prototype.enable=function(){return this.context.refresh(),this.enabled=!0,this},t.prototype.next=function(){return this.group.next(this)},t.prototype.previous=function(){return this.group.previous(this)},t.invokeAll=function(t){var e=[];for(var o in i)e.push(i[o]);for(var n=0,r=e.length;r>n;n++)e[n][t]()},t.destroyAll=function(){t.invokeAll("destroy")},t.disableAll=function(){t.invokeAll("disable")},t.enableAll=function(){t.invokeAll("enable")},t.refreshAll=function(){t.Context.refreshAll()},t.viewportHeight=function(){return window.innerHeight||document.documentElement.clientHeight},t.viewportWidth=function(){return document.documentElement.clientWidth},t.adapters=[],t.defaults={context:window,continuous:!0,enabled:!0,group:"default",horizontal:!1,offset:0},t.offsetAliases={"bottom-in-view":function(){return this.context.innerHeight()-this.adapter.outerHeight()},"right-in-view":function(){return this.context.innerWidth()-this.adapter.outerWidth()}},window.Waypoint=t}(),function(){"use strict";function t(t){window.setTimeout(t,1e3/60)}function e(t){this.element=t,this.Adapter=n.Adapter,this.adapter=new this.Adapter(t),this.key="waypoint-context-"+i,this.didScroll=!1,this.didResize=!1,this.oldScroll={x:this.adapter.scrollLeft(),y:this.adapter.scrollTop()},this.waypoints={vertical:{},horizontal:{}},t.waypointContextKey=this.key,o[t.waypointContextKey]=this,i+=1,this.createThrottledScrollHandler(),this.createThrottledResizeHandler()}var i=0,o={},n=window.Waypoint,r=window.onload;e.prototype.add=function(t){var e=t.options.horizontal?"horizontal":"vertical";this.waypoints[e][t.key]=t,this.refresh()},e.prototype.checkEmpty=function(){var t=this.Adapter.isEmptyObject(this.waypoints.horizontal),e=this.Adapter.isEmptyObject(this.waypoints.vertical);t&&e&&(this.adapter.off(".waypoints"),delete o[this.key])},e.prototype.createThrottledResizeHandler=function(){function t(){e.handleResize(),e.didResize=!1}var e=this;this.adapter.on("resize.waypoints",function(){e.didResize||(e.didResize=!0,n.requestAnimationFrame(t))})},e.prototype.createThrottledScrollHandler=function(){function t(){e.handleScroll(),e.didScroll=!1}var e=this;this.adapter.on("scroll.waypoints",function(){(!e.didScroll||n.isTouch)&&(e.didScroll=!0,n.requestAnimationFrame(t))})},e.prototype.handleResize=function(){n.Context.refreshAll()},e.prototype.handleScroll=function(){var t={},e={horizontal:{newScroll:this.adapter.scrollLeft(),oldScroll:this.oldScroll.x,forward:"right",backward:"left"},vertical:{newScroll:this.adapter.scrollTop(),oldScroll:this.oldScroll.y,forward:"down",backward:"up"}};for(var i in e){var o=e[i],n=o.newScroll>o.oldScroll,r=n?o.forward:o.backward;for(var s in this.waypoints[i]){var a=this.waypoints[i][s],l=o.oldScroll<a.triggerPoint,h=o.newScroll>=a.triggerPoint,p=l&&h,u=!l&&!h;(p||u)&&(a.queueTrigger(r),t[a.group.id]=a.group)}}for(var c in t)t[c].flushTriggers();this.oldScroll={x:e.horizontal.newScroll,y:e.vertical.newScroll}},e.prototype.innerHeight=function(){return this.element==this.element.window?n.viewportHeight():this.adapter.innerHeight()},e.prototype.remove=function(t){delete this.waypoints[t.axis][t.key],this.checkEmpty()},e.prototype.innerWidth=function(){return this.element==this.element.window?n.viewportWidth():this.adapter.innerWidth()},e.prototype.destroy=function(){var t=[];for(var e in this.waypoints)for(var i in this.waypoints[e])t.push(this.waypoints[e][i]);for(var o=0,n=t.length;n>o;o++)t[o].destroy()},e.prototype.refresh=function(){var t,e=this.element==this.element.window,i=e?void 0:this.adapter.offset(),o={};this.handleScroll(),t={horizontal:{contextOffset:e?0:i.left,contextScroll:e?0:this.oldScroll.x,contextDimension:this.innerWidth(),oldScroll:this.oldScroll.x,forward:"right",backward:"left",offsetProp:"left"},vertical:{contextOffset:e?0:i.top,contextScroll:e?0:this.oldScroll.y,contextDimension:this.innerHeight(),oldScroll:this.oldScroll.y,forward:"down",backward:"up",offsetProp:"top"}};for(var r in t){var s=t[r];for(var a in this.waypoints[r]){var l,h,p,u,c,d=this.waypoints[r][a],f=d.options.offset,w=d.triggerPoint,y=0,g=null==w;d.element!==d.element.window&&(y=d.adapter.offset()[s.offsetProp]),"function"==typeof f?f=f.apply(d):"string"==typeof f&&(f=parseFloat(f),d.options.offset.indexOf("%")>-1&&(f=Math.ceil(s.contextDimension*f/100))),l=s.contextScroll-s.contextOffset,d.triggerPoint=y+l-f,h=w<s.oldScroll,p=d.triggerPoint>=s.oldScroll,u=h&&p,c=!h&&!p,!g&&u?(d.queueTrigger(s.backward),o[d.group.id]=d.group):!g&&c?(d.queueTrigger(s.forward),o[d.group.id]=d.group):g&&s.oldScroll>=d.triggerPoint&&(d.queueTrigger(s.forward),o[d.group.id]=d.group)}}return n.requestAnimationFrame(function(){for(var t in o)o[t].flushTriggers()}),this},e.findOrCreateByElement=function(t){return e.findByElement(t)||new e(t)},e.refreshAll=function(){for(var t in o)o[t].refresh()},e.findByElement=function(t){return o[t.waypointContextKey]},window.onload=function(){r&&r(),e.refreshAll()},n.requestAnimationFrame=function(e){var i=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||t;i.call(window,e)},n.Context=e}(),function(){"use strict";function t(t,e){return t.triggerPoint-e.triggerPoint}function e(t,e){return e.triggerPoint-t.triggerPoint}function i(t){this.name=t.name,this.axis=t.axis,this.id=this.name+"-"+this.axis,this.waypoints=[],this.clearTriggerQueues(),o[this.axis][this.name]=this}var o={vertical:{},horizontal:{}},n=window.Waypoint;i.prototype.add=function(t){this.waypoints.push(t)},i.prototype.clearTriggerQueues=function(){this.triggerQueues={up:[],down:[],left:[],right:[]}},i.prototype.flushTriggers=function(){for(var i in this.triggerQueues){var o=this.triggerQueues[i],n="up"===i||"left"===i;o.sort(n?e:t);for(var r=0,s=o.length;s>r;r+=1){var a=o[r];(a.options.continuous||r===o.length-1)&&a.trigger([i])}}this.clearTriggerQueues()},i.prototype.next=function(e){this.waypoints.sort(t);var i=n.Adapter.inArray(e,this.waypoints),o=i===this.waypoints.length-1;return o?null:this.waypoints[i+1]},i.prototype.previous=function(e){this.waypoints.sort(t);var i=n.Adapter.inArray(e,this.waypoints);return i?this.waypoints[i-1]:null},i.prototype.queueTrigger=function(t,e){this.triggerQueues[e].push(t)},i.prototype.remove=function(t){var e=n.Adapter.inArray(t,this.waypoints);e>-1&&this.waypoints.splice(e,1)},i.prototype.first=function(){return this.waypoints[0]},i.prototype.last=function(){return this.waypoints[this.waypoints.length-1]},i.findOrCreate=function(t){return o[t.axis][t.name]||new i(t)},n.Group=i}(),function(){"use strict";function t(t){this.$element=e(t)}var e=__webpack_provided_window_dot_jQuery,i=window.Waypoint;e.each(["innerHeight","innerWidth","off","offset","on","outerHeight","outerWidth","scrollLeft","scrollTop"],function(e,i){t.prototype[i]=function(){var t=Array.prototype.slice.call(arguments);return this.$element[i].apply(this.$element,t)}}),e.each(["extend","inArray","isEmptyObject"],function(i,o){t[o]=e[o]}),i.adapters.push({name:"jquery",Adapter:t}),i.Adapter=t}(),function(){"use strict";function t(t){return function(){var i=[],o=arguments[0];return t.isFunction(arguments[0])&&(o=t.extend({},arguments[1]),o.handler=arguments[0]),this.each(function(){var n=t.extend({},o,{element:this});"string"==typeof n.context&&(n.context=t(this).closest(n.context)[0]),i.push(new e(n))}),i}}var e=window.Waypoint;__webpack_provided_window_dot_jQuery&&(__webpack_provided_window_dot_jQuery.fn.waypoint=t(__webpack_provided_window_dot_jQuery)),window.Zepto&&(window.Zepto.fn.waypoint=t(window.Zepto))}();
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! jquery */ 1)))
+
+/***/ },
+
+/***/ 74:
+/*!***********************************!*\
+  !*** ./src/images/page1/line.png ***!
+  \***********************************/
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAALCAYAAABvY3RqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVEM0JDM0M2QkRGMzExRTU4OERERDc3QTNENzBCNkEwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVEM0JDM0M3QkRGMzExRTU4OERERDc3QTNENzBCNkEwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUQzQkMzQzRCREYzMTFFNTg4RERENzdBM0Q3MEI2QTAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUQzQkMzQzVCREYzMTFFNTg4RERENzdBM0Q3MEI2QTAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6ZvmqgAAABCUlEQVR42uzcXYrCMBiG0aQ7yR67jN52e+lSokULFUQU/Pkaz4HCwLyDNM9dmJlca20JAAAAAIIazk++Pmn39aMn9G6e5y7ew05ffZ2Lvnb62ulrp6+dvnb66utcLk+utW6XWetvYuVSyt2brmVZQu/GcbzZTdN0yPew01dfffV1fp/c7bZf7fvuz/3V+/7b5+qrr3PW1znrq6++UT53SAAAAAAQmAssAAAAAEJzgQUAAABAaPsLrPzkz0TfpU7ew05ffZ2Lvnb62ulrp6+dvnb66utc1m+21lIPXvknZ+iLvuiLvuirr776oi/6Hoc/IQQAAAAgNBdYAAAAAITmAgsAAACA0E4CDACF2SThZsQNowAAAABJRU5ErkJggg=="
+
+/***/ },
+
+/***/ 75:
+/*!****************************************!*\
+  !*** ./src/images/page1/top-angle.png ***!
+  \****************************************/
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjg1QzY1MzNFQkRGMzExRTVCNEY3Q0RFOUIxQTE3QjAxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjg1QzY1MzNGQkRGMzExRTVCNEY3Q0RFOUIxQTE3QjAxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODVDNjUzM0NCREYzMTFFNUI0RjdDREU5QjFBMTdCMDEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ODVDNjUzM0RCREYzMTFFNUI0RjdDREU5QjFBMTdCMDEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6swMOgAAAAe0lEQVR42mJ02bOHAQ8IgdJrcClgwaNZBIinQtkHgfg1NkVMeAyYDsRiUDwNlyImPE4PwcPHawCy05EBSEyUGANgTkcHWL3CRMDphLyGYgAup2Pzihg2A3A5HZtXpqIbQMjpOL3CBA3ZqQykA7BXmKAhK0aGAWCvAAQYAFEAEng2j5i5AAAAAElFTkSuQmCC"
 
 /***/ }
 
