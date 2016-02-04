@@ -3,6 +3,7 @@ node_modules/
 dist/*.png
 dist/*.js
 dist/*.html
+dist/*.css
 dist/images
 dist/*.js.map
 config.json
