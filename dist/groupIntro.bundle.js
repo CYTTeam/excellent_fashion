@@ -57,7 +57,7 @@ webpackJsonp([1],[
 	                index = 1;
 	            };
 	            if (index == 0) {
-	                index = 3;
+	                index = 4;
 	            };
 	            showPoint();
 	            animate(-1200);
@@ -68,7 +68,7 @@ webpackJsonp([1],[
 	        if (!animated) {
 	            index--;
 	            if (index == 0) {
-	                index = 3;
+	                index = 4;
 	            };
 	            if (index == 4) {
 	                index = 1;
@@ -126,9 +126,9 @@ webpackJsonp([1],[
 	            } else {
 	                animated = false;
 	                if (left > -1200) {
-	                    ul.style.left = -3600 + 'px';
+	                    ul.style.left = -4800 + 'px';
 	                };
-	                if (left < -3600) {
+	                if (left < -4800) {
 	                    ul.style.left = -1200 + 'px';
 	                };
 	            }
@@ -778,7 +778,11 @@ webpackJsonp([1],[
 	
 	
 	// module
+<<<<<<< HEAD
 	exports.push([module.id, ".header {\n    height: 270px;\n}\n\n/**\n * chairmen\n */\n\n.chairmanText {\n    max-height: 553px;\n    overflow: auto;\n}\n\n/**\n *group honor\n */\n\n#slider {\n    width: 1200px;\n    height: 390px;\n    margin: 0 auto;\n    position: relative;\n    overflow: hidden;\n    font-size: 16px;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n#slider ul {\n    width: 6000px;\n    position: absolute;\n}\n#slider ul li {\n    width: 1200px;\n    float: left;\n}\n#point {\n    position: absolute;\n    display: inline-block;\n    float: left;\n    top: 360px;\n    left: 567px;\n    font-size: 60px;\n    z-index: 2;\n}\n#point span {\n    float: left;\n    height: 8px;\n    width: 8px;\n    border: 1px solid #44bcbc;\n    border-radius: 5px;\n    background: #ffffff;\n    margin-left: 10px;\n}\n#point .on {\n    background: #44bcbc;\n}\n\n/**\n * development history\n */\n\n#time-axis {\n    overflow: hidden;\n}\n.time-axis {\n    margin-top: 15%;\n    margin-bottom: 5%;\n    background-image: url(" + __webpack_require__(/*! ../images/page1/line.png */ 37) + ");\n    background-repeat: repeat-x;\n    height: 10px;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n    background-position: 76px 0;\n}\n.time-years {\n    font-size: 0;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n    left: 0;\n    margin-left: 550px;\n    position: relative;\n}\n.time-years li {\n    cursor: pointer;\n    display: inline-block;\n    text-align: center;\n    font-size: 16px;\n    padding-bottom: 55px;\n    margin-top: -30px;\n    width: 120px;\n}\n.time-years li.active {\n    font-size: 20px;\n    color: #44bcbc;\n}\n.time-arrow {\n    height: 10px;\n    width: 15px;\n    position: absolute;\n    top: 168px;\n    left: 50%;\n    background: url(" + __webpack_require__(/*! ../images/page1/top-angle.png */ 38) + ") no-repeat;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n}\n\n.time-label {\n    margin-left: -80px;\n    width: 300px;\n    line-height: 24px;\n    font-size: 20px;\n    color: #888;\n    position: absolute;\n    bottom: 167px;\n    left: 50%;\n    -webkit-transition: all 0.4s ease-out;\n            transition: all 0.4s ease-out;\n}\n\n/**\n * group culture\n */\n\n.Liz-scroll {\n    margin-right: 20px;\n    padding-right: 20px;\n}\n\n/* 滚动条整体部分width,height,background,border */\n\n.Liz-scroll::-webkit-scrollbar {\n    width: 5px;\n    height: 10px;\n}\n\n/* 滚动条两端的按钮。可以用display:none让其不显示 */\n\n.Liz-scroll::-webkit-scrollbar-button {\n    display: none;\n}\n\n/*   内层轨道，滚动条中间部分（除去） */\n\n.Liz-scroll::-webkit-scrollbar-track-piece {\n    background: #C0C0C0;\n}\n\n/*  滚动条里面可以拖动的那部分 */\n\n.Liz-scroll::-webkit-scrollbar-thumb {\n    background: #44bcbc;\n    border-radius: 4px;\n}\n", ""]);
+=======
+	exports.push([module.id, ".header {\r\n    height: 270px;\r\n}\r\n\r\n/**\r\n * chairmen\r\n */\r\n\r\n.chairmanText {\r\n    max-height: 553px;\r\n    overflow: auto;\r\n}\r\n\r\n/**\r\n *group honor\r\n */\r\n\r\n#slider {\r\n    width: 1200px;\r\n    height: 390px;\r\n    margin: 0 auto;\r\n    position: relative;\r\n    overflow: hidden;\r\n    font-size: 16px;\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\r\n}\r\n#slider ul {\r\n    width: 6000px;\r\n    position: absolute;\r\n}\r\n#slider ul li {\r\n    width: 1200px;\r\n    float: left;\r\n}\r\n#point {\r\n    position: absolute;\r\n    display: inline-block;\r\n    float: left;\r\n    top: 360px;\r\n    left: 567px;\r\n    font-size: 60px;\r\n    z-index: 2;\r\n}\r\n#point span {\r\n    float: left;\r\n    height: 8px;\r\n    width: 8px;\r\n    border: 1px solid #44bcbc;\r\n    border-radius: 5px;\r\n    background: #ffffff;\r\n    margin-left: 10px;\r\n}\r\n#point .on {\r\n    background: #44bcbc;\r\n}\r\n\r\n/**\r\n * development history\r\n */\r\n\r\n#time-axis {\r\n    overflow: hidden;\r\n}\r\n.time-axis {\r\n    margin-top: 15%;\r\n    margin-bottom: 5%;\r\n    background-image: url(" + __webpack_require__(/*! ../images/page1/line.png */ 37) + ");\r\n    background-repeat: repeat-x;\r\n    height: 10px;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n    background-position: 76px 0;\r\n}\r\n.time-years {\r\n    font-size: 0;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n    left: 0;\r\n    margin-left: 550px;\r\n    position: relative;\r\n}\r\n.time-years li {\r\n    cursor: pointer;\r\n    display: inline-block;\r\n    text-align: center;\r\n    font-size: 16px;\r\n    padding-bottom: 55px;\r\n    margin-top: -30px;\r\n    width: 120px;\r\n}\r\n.time-years li.active {\r\n    font-size: 20px;\r\n    color: #44bcbc;\r\n}\r\n.time-arrow {\r\n    height: 10px;\r\n    width: 15px;\r\n    position: absolute;\r\n    top: 168px;\r\n    left: 50%;\r\n    background: url(" + __webpack_require__(/*! ../images/page1/top-angle.png */ 38) + ") no-repeat;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n}\r\n\r\n.time-label {\r\n    margin-left: -80px;\r\n    width: 300px;\r\n    line-height: 24px;\r\n    font-size: 20px;\r\n    color: #888;\r\n    position: absolute;\r\n    bottom: 167px;\r\n    left: 50%;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n}\r\n\r\n/**\r\n * group culture\r\n */\r\n\r\n.Liz-scroll {\r\n    margin-right: 20px;\r\n    padding-right: 20px;\r\n}\r\n\r\n/* 滚动条整体部分width,height,background,border */\r\n\r\n.Liz-scroll::-webkit-scrollbar {\r\n    width: 5px;\r\n    height: 10px;\r\n}\r\n\r\n/* 滚动条两端的按钮。可以用display:none让其不显示 */\r\n\r\n.Liz-scroll::-webkit-scrollbar-button {\r\n    display: none;\r\n}\r\n\r\n/*   内层轨道，滚动条中间部分（除去） */\r\n\r\n.Liz-scroll::-webkit-scrollbar-track-piece {\r\n    background: #C0C0C0;\r\n}\r\n\r\n/*  滚动条里面可以拖动的那部分 */\r\n\r\n.Liz-scroll::-webkit-scrollbar-thumb {\r\n    background: #44bcbc;\r\n    border-radius: 4px;\r\n}\r\n", ""]);
+>>>>>>> c6673c25fc02f2d03715bd62754e4b4814515514
 	
 	// exports
 
