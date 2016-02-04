@@ -74,14 +74,17 @@
     font-size: 0;
     transition: all 0.4s ease-out;
     left: 0;
-    margin-left: 308px;
+    margin-left: 550px;
+    position: relative;
 }
 .time-years li {
+    cursor: pointer;
     display: inline-block;
     text-align: center;
     font-size: 16px;
     padding-bottom: 55px;
     margin-top: -30px;
+    width: 120px;
 }
 .time-years li.active {
     font-size: 20px;
@@ -98,13 +101,13 @@
 }
 
 .time-label {
-    margin-left: -30px;
-    width: 205px;
+    margin-left: -80px;
+    width: 300px;
     line-height: 24px;
     font-size: 20px;
     color: #888;
     position: absolute;
-    top: 56px;
+    bottom: 167px;
     left: 50%;
     transition: all 0.4s ease-out;
 }
@@ -113,9 +116,6 @@
  * group culture
  */
 
-.time-year {
-    overflow: auto;
-}
 .Liz-scroll {
     margin-right: 20px;
     padding-right: 20px;

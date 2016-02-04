@@ -25,6 +25,7 @@ var common = {
         main: path.join(APP_PATH, 'main'),
         news: path.join(APP_PATH, 'news'),
         newsDetail: path.join(APP_PATH, 'newsDetail'),
+        public: path.join(APP_PATH, 'public'),
         payment: path.join(APP_PATH, 'payment'),
         subbrand: path.join(APP_PATH, 'subbrand'),
         webstore: path.join(APP_PATH, 'webstore'),
@@ -98,6 +99,11 @@ var common = {
             filename: 'news.html',
             template: './src/news.html',
             chunks: ['vendor', 'news'],
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'public.html',
+            template: './src/public.html',
+            chunks: ['vendor', 'public'],
         }),
         new HtmlWebpackPlugin({
             filename: 'newsDetail.html',
