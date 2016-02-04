@@ -154,8 +154,11 @@ a, a:visited, a:focus, a:hover {
 .nav-toggle span:after {
     top: 8px;
 }
-.opacity0 {
-    opacity: 0;
+.opacity1{
+    opacity: 1!important;
+}
+.opacity0{
+    opacity: 0!important;
 }
 .breadcrumb2 {
     height: 50px;
@@ -284,7 +287,9 @@ a, a:visited, a:focus, a:hover {
 .Liz-padding-vertical-35px {
     padding: 35px;
 }
-
+.Liz-padding-vertical-32px {
+    padding: 32px auto;
+}
 .Liz-padding-10 {
     padding-left: 10px;
     padding-right: 10px;
@@ -386,7 +391,6 @@ a, a:visited, a:focus, a:hover {
     border-right: 1px solid #C0C0C0;
 }
 .Liz-border-vertical {
-    border: 1px solid transparent;
     border-top: 1px solid #C0C0C0;
     border-bottom: 1px solid #C0C0C0;
 }
