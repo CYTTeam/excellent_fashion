@@ -21,10 +21,10 @@ webpackJsonp([2],{
 	 __webpack_require__(/*! ./css/animation.css */ 2);
 	 __webpack_require__(/*! ./css/base.css */ 6);
 	 __webpack_require__(/*! ./css/rotateHeads.css */ 13);
-	 __webpack_require__(/*! ./css/index.css */ 37);
+	 __webpack_require__(/*! ./css/index.css */ 39);
 	
-	__webpack_require__(/*! ./js/owl.carousel.min.js */ 39);
-	__webpack_require__(/*! ./js/jquery.waypoints.min.js */ 36);
+	__webpack_require__(/*! ./js/owl.carousel.min.js */ 41);
+	__webpack_require__(/*! ./js/jquery.waypoints.min.js */ 38);
 	__webpack_require__(/*! ./js/base.js */ 17);
 	__webpack_require__(/*! ./js/rotateHeads.js */ 32);
 	
@@ -278,7 +278,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 36:
+/***/ 38:
 /*!****************************************!*\
   !*** ./src/js/jquery.waypoints.min.js ***!
   \****************************************/
@@ -295,7 +295,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 37:
+/***/ 39:
 /*!***************************!*\
   !*** ./src/css/index.css ***!
   \***************************/
@@ -304,7 +304,7 @@ webpackJsonp([2],{
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./index.css */ 38);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./index.css */ 40);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 5)(content, {});
@@ -325,7 +325,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 38:
+/***/ 40:
 /*!*************************************************************!*\
   !*** ./~/css-loader!./~/postcss-loader!./src/css/index.css ***!
   \*************************************************************/
@@ -343,7 +343,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 39:
+/***/ 41:
 /*!************************************!*\
   !*** ./src/js/owl.carousel.min.js ***!
   \************************************/

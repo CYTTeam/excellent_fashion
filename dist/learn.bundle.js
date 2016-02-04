@@ -10,7 +10,7 @@ webpackJsonp([3],{
 	__webpack_require__(/*! ./css/animation.css */ 2);
 	__webpack_require__(/*! ./css/base.css */ 6);
 	__webpack_require__(/*! ./css/rotateHeads.css */ 13);
-	__webpack_require__(/*! ./css/learn.css */ 40);
+	__webpack_require__(/*! ./css/learn.css */ 42);
 	
 	__webpack_require__(/*! ./js/base.js */ 17);
 	__webpack_require__(/*! ./js/rotateHeads.js */ 32);
@@ -208,7 +208,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 40:
+/***/ 42:
 /*!***************************!*\
   !*** ./src/css/learn.css ***!
   \***************************/
@@ -217,7 +217,7 @@ webpackJsonp([3],{
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./learn.css */ 41);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./learn.css */ 43);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 5)(content, {});
@@ -238,7 +238,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 41:
+/***/ 43:
 /*!*************************************************************!*\
   !*** ./~/css-loader!./~/postcss-loader!./src/css/learn.css ***!
   \*************************************************************/
@@ -249,14 +249,14 @@ webpackJsonp([3],{
 	
 	
 	// module
-	exports.push([module.id, ".bg-tree{\n\tbackground-image: url(" + __webpack_require__(/*! ../images/page5/bg-tree.png */ 42) + ");\n    background-size: cover;\n    background-position: 50% 50%;\n}\n\n.header {\n    height: 270px;\n}\n", ""]);
+	exports.push([module.id, ".bg-tree{\n\tbackground-image: url(" + __webpack_require__(/*! ../images/page5/bg-tree.png */ 44) + ");\n    background-size: cover;\n    background-position: 50% 50%;\n}\n\n.header {\n    height: 270px;\n}\n", ""]);
 	
 	// exports
 
 
 /***/ },
 
-/***/ 42:
+/***/ 44:
 /*!**************************************!*\
   !*** ./src/images/page5/bg-tree.png ***!
   \**************************************/

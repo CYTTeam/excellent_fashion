@@ -21,8 +21,9 @@
 .newList-item .imgbox {
     float: left;
     border: #f5f5f5 1px solid;
-    width: 232px;
+    width: 240px;
     overflow: hidden;
+    height: 136px;
 }
 
 .newList-item .introbox {

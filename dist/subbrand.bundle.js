@@ -8,7 +8,7 @@ webpackJsonp([8],{
 
 	/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(/*! ./css/animation.css */ 2);
 	__webpack_require__(/*! ./css/base.css */ 6);
-	__webpack_require__(/*! ./css/subbrand.css */ 53);
+	__webpack_require__(/*! ./css/subbrand.css */ 55);
 	__webpack_require__(/*! ./js/base.js */ 17);
 	
 	$(".weixinIco").mouseover(function(){
@@ -29,7 +29,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 53:
+/***/ 55:
 /*!******************************!*\
   !*** ./src/css/subbrand.css ***!
   \******************************/
@@ -38,7 +38,7 @@ webpackJsonp([8],{
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./subbrand.css */ 54);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./subbrand.css */ 56);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 5)(content, {});
@@ -59,7 +59,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 54:
+/***/ 56:
 /*!****************************************************************!*\
   !*** ./~/css-loader!./~/postcss-loader!./src/css/subbrand.css ***!
   \****************************************************************/
@@ -70,14 +70,14 @@ webpackJsonp([8],{
 	
 	
 	// module
-	exports.push([module.id, ".header {\n    height: 72px;\n    background: #C0C0C0;\n    background: rgba(192, 192, 192, .2);\n}\n\n.brandBg {\n    background-image: url(" + __webpack_require__(/*! ../images/page3/bg.png */ 55) + ");\n}\n\n.brandListBg {\n    background: #E1E1E1;\n    background: rgba(225, 225, 225, .5);\n}\n\n.section {\n    width: 100%;\n}\n\n.verticalCenter {\n    position: relative;\n}\n\n.verticalCenter .Center {\n    position: absolute;\n    z-index: 99;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translateY(-80%) translateX(-50%);\n    transform: translateY(-80%) translateX(-50%);\n}\n\n.brandImgList .brandImgBox{\n    position: relative;\n    display: inline-block;\n    opacity: 0;\n    -webkit-transition: all 0.8s ease;\n    transition: all 0.8s ease;\n}\n\n.brandImgList .brandImgBox .brandPic {\n    width: 100%;\n    height: 100%;\n}\n\n.brandImgList :hover {\n    opacity: 1;\n}\n.icoList{\n\twidth: 100%;\n\tposition: absolute;\n\tbottom: 30px;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: -ms-flexbox;\n\tdisplay: flex;\n}\n.icoList li{\n    -webkit-box-flex:1;\n    -webkit-flex:1;\n    -ms-flex:1;\n    flex:1;\n    margin:0 10px;\n}\n.weixinIco2{\n\twidth: 140px;\n\theight: 147px;\n\tposition: absolute;\n\tbottom: 60px;\n\tleft: 50%;\n\t-webkit-transform:translateX(-50%);\n\t        transform:translateX(-50%);\n\tbackground-image:url(" + __webpack_require__(/*! ../images/page3/erweima.png */ 56) + "); \n}", ""]);
+	exports.push([module.id, ".header {\n    height: 72px;\n    background: #C0C0C0;\n    background: rgba(192, 192, 192, .2);\n}\n\n.brandBg {\n    background-image: url(" + __webpack_require__(/*! ../images/page3/bg.png */ 57) + ");\n}\n\n.brandListBg {\n    background: #E1E1E1;\n    background: rgba(225, 225, 225, .5);\n}\n\n.section {\n    width: 100%;\n}\n\n.verticalCenter {\n    position: relative;\n}\n\n.verticalCenter .Center {\n    position: absolute;\n    z-index: 99;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translateY(-80%) translateX(-50%);\n    transform: translateY(-80%) translateX(-50%);\n}\n\n.brandImgList .brandImgBox{\n    position: relative;\n    display: inline-block;\n    opacity: 0;\n    -webkit-transition: all 0.8s ease;\n    transition: all 0.8s ease;\n}\n\n.brandImgList .brandImgBox .brandPic {\n    width: 100%;\n    height: 100%;\n}\n\n.brandImgList :hover {\n    opacity: 1;\n}\n.icoList{\n\twidth: 100%;\n\tposition: absolute;\n\tbottom: 30px;\n\tdisplay: -webkit-box;\n\tdisplay: -webkit-flex;\n\tdisplay: -ms-flexbox;\n\tdisplay: flex;\n}\n.icoList li{\n    -webkit-box-flex:1;\n    -webkit-flex:1;\n    -ms-flex:1;\n    flex:1;\n    margin:0 10px;\n}\n.weixinIco2{\n\twidth: 140px;\n\theight: 147px;\n\tposition: absolute;\n\tbottom: 60px;\n\tleft: 50%;\n\t-webkit-transform:translateX(-50%);\n\t        transform:translateX(-50%);\n\tbackground-image:url(" + __webpack_require__(/*! ../images/page3/erweima.png */ 58) + "); \n}", ""]);
 	
 	// exports
 
 
 /***/ },
 
-/***/ 55:
+/***/ 57:
 /*!*********************************!*\
   !*** ./src/images/page3/bg.png ***!
   \*********************************/
@@ -87,7 +87,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 56:
+/***/ 58:
 /*!**************************************!*\
   !*** ./src/images/page3/erweima.png ***!
   \**************************************/

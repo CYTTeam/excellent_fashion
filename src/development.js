@@ -10,7 +10,8 @@
  require('./css/base.css');
   require('./css/rotateHeads.css');
  require('./css/development.css');
-
+require('./js/transition.js');
+ require('./js/collapse.js');
 require('./js/base.js');
 require('./js/rotateHeads.js');
 

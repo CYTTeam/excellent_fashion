@@ -9,7 +9,7 @@ webpackJsonp([7],{
 	/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(/*! ./css/animation.css */ 2);
 	__webpack_require__(/*! ./css/base.css */ 6);
 	__webpack_require__(/*! ./css/rotateHeads.css */ 13);
-	__webpack_require__(/*! ./css/payment.css */ 51);
+	__webpack_require__(/*! ./css/payment.css */ 53);
 	
 	__webpack_require__(/*! ./js/base.js */ 17);
 	__webpack_require__(/*! ./js/rotateHeads.js */ 32);
@@ -207,7 +207,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 51:
+/***/ 53:
 /*!*****************************!*\
   !*** ./src/css/payment.css ***!
   \*****************************/
@@ -216,7 +216,7 @@ webpackJsonp([7],{
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./payment.css */ 52);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./payment.css */ 54);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 5)(content, {});
@@ -237,7 +237,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 52:
+/***/ 54:
 /*!***************************************************************!*\
   !*** ./~/css-loader!./~/postcss-loader!./src/css/payment.css ***!
   \***************************************************************/

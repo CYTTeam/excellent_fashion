@@ -9,9 +9,9 @@ webpackJsonp([5],{
 	/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(/*! ./css/animation.css */ 2);
 	__webpack_require__(/*! ./css/base.css */ 6);
 	  __webpack_require__(/*! ./css/rotateHeads.css */ 13);
-	__webpack_require__(/*! ./css/news.css */ 47);
+	__webpack_require__(/*! ./css/news.css */ 49);
 	
-	__webpack_require__(/*! ./js/jquery.waypoints.min.js */ 36);
+	__webpack_require__(/*! ./js/jquery.waypoints.min.js */ 38);
 	__webpack_require__(/*! ./js/base.js */ 17);
 	__webpack_require__(/*! ./js/rotateHeads.js */ 32);
 	
@@ -225,7 +225,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 36:
+/***/ 38:
 /*!****************************************!*\
   !*** ./src/js/jquery.waypoints.min.js ***!
   \****************************************/
@@ -242,7 +242,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 47:
+/***/ 49:
 /*!**************************!*\
   !*** ./src/css/news.css ***!
   \**************************/
@@ -251,7 +251,7 @@ webpackJsonp([5],{
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./news.css */ 48);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./news.css */ 50);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 5)(content, {});
@@ -272,7 +272,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 48:
+/***/ 50:
 /*!************************************************************!*\
   !*** ./~/css-loader!./~/postcss-loader!./src/css/news.css ***!
   \************************************************************/
@@ -283,7 +283,7 @@ webpackJsonp([5],{
 	
 	
 	// module
-	exports.push([module.id, ".header {\n    height: 270px;\n}\n\n.newList-item {\n    padding: 30px 0;\n    border-bottom: #ebebeb 1px dotted;\n    background-color: white;\n    position: relative;\n    opacity: 0;\n}\n\n.newList-item:hover {\n    background-color: #f5f5f5;\n}\n\n.newList-item:hover .details {\n    background-color: #44BCBB;\n}\n\n.newList-item .imgbox {\n    float: left;\n    border: #f5f5f5 1px solid;\n    width: 232px;\n    overflow: hidden;\n}\n\n.newList-item .introbox {\n    margin-left: 257px;\n}\n\n.newList-item .introbox .tc4 {\n    font-size: 14px;\n    margin-top: 22px;\n    padding-bottom: 15px;\n    border-bottom: #ebebeb 1px solid;\n    color: #333;\n}\n\n.newList-item .introbox .introCon {\n    color: #888888;\n    line-height: 24px;\n    margin-top: 15px;\n}\n\n.newList-item .details {\n    position: absolute;\n    background-color: #f5f5f5;\n    color: white;\n    right: 0;\n    top: 56px;\n    text-align: center;\n    width: 70px;\n    height: 27px;\n    line-height: 27px;\n}\n", ""]);
+	exports.push([module.id, ".header {\n    height: 270px;\n}\n\n.newList-item {\n    padding: 30px 0;\n    border-bottom: #ebebeb 1px dotted;\n    background-color: white;\n    position: relative;\n    opacity: 0;\n}\n\n.newList-item:hover {\n    background-color: #f5f5f5;\n}\n\n.newList-item:hover .details {\n    background-color: #44BCBB;\n}\n\n.newList-item .imgbox {\n    float: left;\n    border: #f5f5f5 1px solid;\n    width: 240px;\n    overflow: hidden;\n    height: 136px;\n}\n\n.newList-item .introbox {\n    margin-left: 257px;\n}\n\n.newList-item .introbox .tc4 {\n    font-size: 14px;\n    margin-top: 22px;\n    padding-bottom: 15px;\n    border-bottom: #ebebeb 1px solid;\n    color: #333;\n}\n\n.newList-item .introbox .introCon {\n    color: #888888;\n    line-height: 24px;\n    margin-top: 15px;\n}\n\n.newList-item .details {\n    position: absolute;\n    background-color: #f5f5f5;\n    color: white;\n    right: 0;\n    top: 56px;\n    text-align: center;\n    width: 70px;\n    height: 27px;\n    line-height: 27px;\n}\n", ""]);
 	
 	// exports
 
