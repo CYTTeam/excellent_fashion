@@ -48,6 +48,9 @@ a, a:visited, a:focus, a:hover {
     min-width: 1200px!important;
 }
 
+.line-height-24 {
+    line-height: 24px;
+}
 .header {
     position: relative;
     overflow: hidden;

@@ -17,12 +17,12 @@ webpackJsonp([1],{
 	 __webpack_require__(/*! ./css/animation.css */ 2);
 	 __webpack_require__(/*! ./css/base.css */ 6);
 	 __webpack_require__(/*! ./css/rotateHeads.css */ 13);
-	 __webpack_require__(/*! ./css/groupIntro.css */ 33);
+	 __webpack_require__(/*! ./css/groupIntro.css */ 35);
 	
-	__webpack_require__(/*! ./js/tab.js */ 37);
-	__webpack_require__(/*! ./js/jquery.waypoints.min.js */ 38);
-	__webpack_require__(/*! ./js/base.js */ 17);
-	__webpack_require__(/*! ./js/rotateHeads.js */ 32);
+	__webpack_require__(/*! ./js/tab.js */ 39);
+	__webpack_require__(/*! ./js/jquery.waypoints.min.js */ 40);
+	__webpack_require__(/*! ./js/base.js */ 19);
+	__webpack_require__(/*! ./js/rotateHeads.js */ 34);
 	
 	
 	/* ------------------------------------------------------------
@@ -156,31 +156,28 @@ webpackJsonp([1],{
 	 * ------------------------------------------------------------ */
 	 $(function () {
 	     var timeData = {
-	         2006: [20, '2006:卓尚服饰全年销售增加265%'],
-	         2007: [30, '2007:卓尚服饰全年销售增加265%'],
-	         2008: [40, '2008:卓尚服饰全年销售增加265%'],
-	         2009: [50, '2009:卓尚服饰全年销售增加265%'],
-	         2010: [60, '2010:卓尚服饰全年销售增加265%'],
-	         2011: [70, '2011:卓尚服饰全年销售增加265%'],
-	         2012: [80, '2012:卓尚服饰全年销售增加265%'],
-	         2013: [90, '2013:卓尚服饰全年销售增加265%']
+	         2006: [1, '2006:卓尚服饰全年销售增加265%'],
+	         2007: [2, '2007:卓尚服饰全年销售增加265%'],
+	         2008: [3, '2008:卓尚服饰全年销售增加265%'],
+	         2009: [4, '2009:卓尚服饰全年销售增加265%'],
+	         2010: [5, '2010:卓尚服饰全年销售增加265%'],
+	         2011: [6, '2011:卓尚服饰全年销售增加265%'],
+	         2012: [7, '2012:卓尚服饰全年销售增加265%'],
+	         2013: [8, '2013:卓尚服饰全年销售增加265%']
 	     };
 	
 	     $('#time-axis').on('click', '.time-year', function() {
 	         var year = $(this).text();
-	         var percent = timeData[year][0];
-	         var width = $('.time-axis').width();
-	         var offset = (60 - percent) * 8;
-	         $('.time-label').text(timeData[year][1]).css('left', percent * width / 100 + offset);
-	         $('.time-axis').css('background-position', percent * width / 100 + offset + 'px 0');
-	         $('.time-arrow').css('left', percent * width / 100 + offset);
+	         var percent = timeData[year][0] - 1;
+	         var offset = - 120 * percent;
+	         $('.time-label').text(timeData[year][1]);
 	         $('.time-years').css('left', offset);
 	         $('.time-year').filter('.active')
 	         .removeClass("active");
 	         $(this).addClass("active");
 	     });
 	
-	     $('.time-year:eq(2)').trigger('click');
+	     $('.time-year:eq(0)').trigger('click');
 	 })
 	
 	/* ------------------------------------------------------------
@@ -268,7 +265,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 32:
+/***/ 34:
 /*!*******************************!*\
   !*** ./src/js/rotateHeads.js ***!
   \*******************************/
@@ -395,7 +392,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 33:
+/***/ 35:
 /*!********************************!*\
   !*** ./src/css/groupIntro.css ***!
   \********************************/
@@ -404,7 +401,7 @@ webpackJsonp([1],{
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./groupIntro.css */ 34);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./groupIntro.css */ 36);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 5)(content, {});
@@ -425,7 +422,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 34:
+/***/ 36:
 /*!******************************************************************!*\
   !*** ./~/css-loader!./~/postcss-loader!./src/css/groupIntro.css ***!
   \******************************************************************/
@@ -436,14 +433,14 @@ webpackJsonp([1],{
 	
 	
 	// module
-	exports.push([module.id, ".header {\r\n    height: 270px;\r\n}\r\n\r\n/**\r\n * chairmen\r\n */\r\n\r\n.chairmanText {\r\n    max-height: 553px;\r\n    overflow: auto;\r\n}\r\n\r\n/**\r\n *group honor\r\n */\r\n\r\n#slider {\r\n    width: 1200px;\r\n    height: 390px;\r\n    margin: 0 auto;\r\n    position: relative;\r\n    overflow: hidden;\r\n    font-size: 16px;\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\r\n}\r\n#slider ul {\r\n    width: 6000px;\r\n    position: absolute;\r\n}\r\n#slider ul li {\r\n    width: 1200px;\r\n    float: left;\r\n}\r\n#point {\r\n    position: absolute;\r\n    display: inline-block;\r\n    float: left;\r\n    top: 360px;\r\n    left: 567px;\r\n    font-size: 60px;\r\n    z-index: 2;\r\n}\r\n#point span {\r\n    float: left;\r\n    height: 8px;\r\n    width: 8px;\r\n    border: 1px solid #44bcbc;\r\n    border-radius: 5px;\r\n    background: #ffffff;\r\n    margin-left: 10px;\r\n}\r\n#point .on {\r\n    background: #44bcbc;\r\n}\r\n\r\n/**\r\n * development history\r\n */\r\n\r\n#time-axis {\r\n    overflow: hidden;\r\n}\r\n.time-axis {\r\n    margin-top: 15%;\r\n    margin-bottom: 5%;\r\n    background-image: url(" + __webpack_require__(/*! ../images/page1/line.png */ 35) + ");\r\n    background-repeat: repeat-x;\r\n    height: 10px;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n}\r\n.time-years {\r\n    font-size: 0;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n    left: 0;\r\n}\r\n.time-years li {\r\n    display: inline-block;\r\n    text-align: center;\r\n    font-size: 16px;\r\n    padding-bottom: 55px;\r\n    margin-top: -30px;\r\n}\r\n.time-years li.active {\r\n    font-size: 20px;\r\n    color: #44bcbc;\r\n}\r\n.time-arrow {\r\n    height: 10px;\r\n    width: 15px;\r\n    position: absolute;\r\n    top: 168px;\r\n    margin-left: 7px;\r\n    background: url(" + __webpack_require__(/*! ../images/page1/top-angle.png */ 36) + ") no-repeat;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n    margin-left: 45px;\r\n    left: 0;\r\n}\r\n.time-label {\r\n    width: 205px;\r\n    line-height: 24px;\r\n    font-size: 20px;\r\n    color: #888;\r\n    position: absolute;\r\n    top: 56px;\r\n    left: 0;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n}\r\n\r\n/**\r\n * group culture\r\n */\r\n\r\n.time-year {\r\n    margin-left: -53px;\r\n    padding-left: 71px;\r\n    overflow: auto;\r\n}\r\n.Liz-scroll {\r\n    margin-right: 20px;\r\n    padding-right: 20px;\r\n}\r\n\r\n/* 滚动条整体部分width,height,background,border */\r\n\r\n.Liz-scroll::-webkit-scrollbar {\r\n    width: 5px;\r\n    height: 10px;\r\n}\r\n\r\n/* 滚动条两端的按钮。可以用display:none让其不显示 */\r\n\r\n.Liz-scroll::-webkit-scrollbar-button {\r\n    display: none;\r\n}\r\n\r\n/*   内层轨道，滚动条中间部分（除去） */\r\n\r\n.Liz-scroll::-webkit-scrollbar-track-piece {\r\n    background: #C0C0C0;\r\n}\r\n\r\n/*  滚动条里面可以拖动的那部分 */\r\n\r\n.Liz-scroll::-webkit-scrollbar-thumb {\r\n    background: #44bcbc;\r\n    border-radius: 4px;\r\n}\r\n", ""]);
+	exports.push([module.id, ".header {\r\n    height: 270px;\r\n}\r\n\r\n/**\r\n * chairmen\r\n */\r\n\r\n.chairmanText {\r\n    max-height: 553px;\r\n    overflow: auto;\r\n}\r\n\r\n/**\r\n *group honor\r\n */\r\n\r\n#slider {\r\n    width: 1200px;\r\n    height: 390px;\r\n    margin: 0 auto;\r\n    position: relative;\r\n    overflow: hidden;\r\n    font-size: 16px;\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\r\n}\r\n#slider ul {\r\n    width: 6000px;\r\n    position: absolute;\r\n}\r\n#slider ul li {\r\n    width: 1200px;\r\n    float: left;\r\n}\r\n#point {\r\n    position: absolute;\r\n    display: inline-block;\r\n    float: left;\r\n    top: 360px;\r\n    left: 567px;\r\n    font-size: 60px;\r\n    z-index: 2;\r\n}\r\n#point span {\r\n    float: left;\r\n    height: 8px;\r\n    width: 8px;\r\n    border: 1px solid #44bcbc;\r\n    border-radius: 5px;\r\n    background: #ffffff;\r\n    margin-left: 10px;\r\n}\r\n#point .on {\r\n    background: #44bcbc;\r\n}\r\n\r\n/**\r\n * development history\r\n */\r\n\r\n#time-axis {\r\n    overflow: hidden;\r\n}\r\n.time-axis {\r\n    margin-top: 15%;\r\n    margin-bottom: 5%;\r\n    background-image: url(" + __webpack_require__(/*! ../images/page1/line.png */ 37) + ");\r\n    background-repeat: repeat-x;\r\n    height: 10px;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n    background-position: 76px 0;\r\n}\r\n.time-years {\r\n    font-size: 0;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n    left: 0;\r\n    margin-left: 308px;\r\n}\r\n.time-years li {\r\n    display: inline-block;\r\n    text-align: center;\r\n    font-size: 16px;\r\n    padding-bottom: 55px;\r\n    margin-top: -30px;\r\n}\r\n.time-years li.active {\r\n    font-size: 20px;\r\n    color: #44bcbc;\r\n}\r\n.time-arrow {\r\n    height: 10px;\r\n    width: 15px;\r\n    position: absolute;\r\n    top: 168px;\r\n    left: 50%;\r\n    background: url(" + __webpack_require__(/*! ../images/page1/top-angle.png */ 38) + ") no-repeat;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n}\r\n\r\n.time-label {\r\n    margin-left: -30px;\r\n    width: 205px;\r\n    line-height: 24px;\r\n    font-size: 20px;\r\n    color: #888;\r\n    position: absolute;\r\n    top: 56px;\r\n    left: 50%;\r\n    -webkit-transition: all 0.4s ease-out;\r\n            transition: all 0.4s ease-out;\r\n}\r\n\r\n/**\r\n * group culture\r\n */\r\n\r\n.time-year {\r\n    overflow: auto;\r\n}\r\n.Liz-scroll {\r\n    margin-right: 20px;\r\n    padding-right: 20px;\r\n}\r\n\r\n/* 滚动条整体部分width,height,background,border */\r\n\r\n.Liz-scroll::-webkit-scrollbar {\r\n    width: 5px;\r\n    height: 10px;\r\n}\r\n\r\n/* 滚动条两端的按钮。可以用display:none让其不显示 */\r\n\r\n.Liz-scroll::-webkit-scrollbar-button {\r\n    display: none;\r\n}\r\n\r\n/*   内层轨道，滚动条中间部分（除去） */\r\n\r\n.Liz-scroll::-webkit-scrollbar-track-piece {\r\n    background: #C0C0C0;\r\n}\r\n\r\n/*  滚动条里面可以拖动的那部分 */\r\n\r\n.Liz-scroll::-webkit-scrollbar-thumb {\r\n    background: #44bcbc;\r\n    border-radius: 4px;\r\n}\r\n", ""]);
 	
 	// exports
 
 
 /***/ },
 
-/***/ 35:
+/***/ 37:
 /*!***********************************!*\
   !*** ./src/images/page1/line.png ***!
   \***********************************/
@@ -453,7 +450,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 36:
+/***/ 38:
 /*!****************************************!*\
   !*** ./src/images/page1/top-angle.png ***!
   \****************************************/
@@ -463,7 +460,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 37:
+/***/ 39:
 /*!***********************!*\
   !*** ./src/js/tab.js ***!
   \***********************/
@@ -629,7 +626,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 38:
+/***/ 40:
 /*!****************************************!*\
   !*** ./src/js/jquery.waypoints.min.js ***!
   \****************************************/

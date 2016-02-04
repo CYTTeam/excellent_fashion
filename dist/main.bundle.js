@@ -8,10 +8,10 @@ webpackJsonp([4],{
 
 	/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(/*! ./css/animation.css */ 2);
 	__webpack_require__(/*! ./css/base.css */ 6);
-	__webpack_require__(/*! ./css/main.css */ 45);
+	__webpack_require__(/*! ./css/main.css */ 47);
 	
-	__webpack_require__(/*! ./js/owl.carousel.min.js */ 41);
-	__webpack_require__(/*! ./js/base.js */ 17);
+	__webpack_require__(/*! ./js/owl.carousel.min.js */ 43);
+	__webpack_require__(/*! ./js/base.js */ 19);
 	
 	
 	/* ------------------------------------------------------------
@@ -41,7 +41,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 41:
+/***/ 43:
 /*!************************************!*\
   !*** ./src/js/owl.carousel.min.js ***!
   \************************************/
@@ -98,7 +98,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 45:
+/***/ 47:
 /*!**************************!*\
   !*** ./src/css/main.css ***!
   \**************************/
@@ -107,7 +107,7 @@ webpackJsonp([4],{
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./main.css */ 46);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/postcss-loader!./main.css */ 48);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 5)(content, {});
@@ -128,7 +128,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 46:
+/***/ 48:
 /*!************************************************************!*\
   !*** ./~/css-loader!./~/postcss-loader!./src/css/main.css ***!
   \************************************************************/
@@ -139,14 +139,14 @@ webpackJsonp([4],{
 	
 	
 	// module
-	exports.push([module.id, ".Liz-main-container, html, body {\r\n    width: 100%;\r\n    height: 100%;\r\n    overflow: hidden;\r\n}\r\n.Liz-img {\r\n    width: 100%;\r\n    height: 33.33333%;\r\n    background-repeat: repeat-x;\r\n    background-size: cover;\r\n    background-position-x: 0%;\r\n}\r\n.Liz-screen {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    background: #E1E1E1;\r\n    background: rgba(225, 225, 225, .9);\r\n}\r\n.Liz-img1 {\r\n    background-image: url(" + __webpack_require__(/*! ../images/page2/bg-1.png */ 47) + ");\r\n    -webkit-animation: toRight 2.3s ease both;\r\n            animation: toRight 2.3s ease both;\r\n}\r\n.Liz-img2 {\r\n    background-image: url(" + __webpack_require__(/*! ../images/page2/bg-3.png */ 48) + ");\r\n    -webkit-animation: toLeft 2.3s ease both;\r\n            animation: toLeft 2.3s ease both;\r\n}\r\n.Liz-img3 {\r\n    background-image: url(" + __webpack_require__(/*! ../images/page2/bg-3.png */ 48) + ");\r\n    -webkit-animation: toRight 2.3s ease forwards;\r\n            animation: toRight 2.3s ease forwards;\r\n}\r\n.logAnim-toRightBotton {\r\n    -webkit-animation: log-toRightBotton 1.3s ease 2s both;\r\n            animation: log-toRightBotton 1.3s ease 2s both;\r\n}\r\n.logAnim-toRight {\r\n    -webkit-animation: log-toRight 1.3s ease 2s both;\r\n            animation: log-toRight 1.3s ease 2s both;\r\n}\r\n.logAnim-toBotton {\r\n    -webkit-animation: log-toBotton 1.3s ease 2s both;\r\n            animation: log-toBotton 1.3s ease 2s both;\r\n}\r\n.logAnim-toTop {\r\n    -webkit-animation: log-toTop 1.3s ease 2s both;\r\n            animation: log-toTop 1.3s ease 2s both;\r\n}\r\n.logAnim-toLeftBotton {\r\n    -webkit-animation: log-toLeftBotton 1.3s ease 2s both;\r\n            animation: log-toLeftBotton 1.3s ease 2s both;\r\n}\r\n.logAnim-toLeftTop {\r\n    -webkit-animation: log-toLeftTop 1.3s ease 2s both;\r\n            animation: log-toLeftTop 1.3s ease 2s both;\r\n}\r\n.logList {\r\n    -webkit-animation: toTop 1.3s ease 3s both;\r\n            animation: toTop 1.3s ease 3s both;\r\n    width: 254px;\r\n}\r\n.logImg {\r\n    -webkit-animation: fadeIn 1s ease both;\r\n            animation: fadeIn 1s ease both;\r\n}\r\n.arr-right, .arr-left {\r\n    cursor: pointer;\r\n}\r\n", ""]);
+	exports.push([module.id, ".Liz-main-container, html, body {\r\n    width: 100%;\r\n    height: 100%;\r\n    overflow: hidden;\r\n}\r\n.Liz-img {\r\n    width: 100%;\r\n    height: 33.33333%;\r\n    background-repeat: repeat-x;\r\n    background-size: cover;\r\n    background-position-x: 0%;\r\n}\r\n.Liz-screen {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    background: #E1E1E1;\r\n    background: rgba(225, 225, 225, .9);\r\n}\r\n.Liz-img1 {\r\n    background-image: url(" + __webpack_require__(/*! ../images/page2/bg-1.png */ 49) + ");\r\n    -webkit-animation: toRight 2.3s ease both;\r\n            animation: toRight 2.3s ease both;\r\n}\r\n.Liz-img2 {\r\n    background-image: url(" + __webpack_require__(/*! ../images/page2/bg-3.png */ 50) + ");\r\n    -webkit-animation: toLeft 2.3s ease both;\r\n            animation: toLeft 2.3s ease both;\r\n}\r\n.Liz-img3 {\r\n    background-image: url(" + __webpack_require__(/*! ../images/page2/bg-3.png */ 50) + ");\r\n    -webkit-animation: toRight 2.3s ease forwards;\r\n            animation: toRight 2.3s ease forwards;\r\n}\r\n.logAnim-toRightBotton {\r\n    -webkit-animation: log-toRightBotton 1.3s ease 2s both;\r\n            animation: log-toRightBotton 1.3s ease 2s both;\r\n}\r\n.logAnim-toRight {\r\n    -webkit-animation: log-toRight 1.3s ease 2s both;\r\n            animation: log-toRight 1.3s ease 2s both;\r\n}\r\n.logAnim-toBotton {\r\n    -webkit-animation: log-toBotton 1.3s ease 2s both;\r\n            animation: log-toBotton 1.3s ease 2s both;\r\n}\r\n.logAnim-toTop {\r\n    -webkit-animation: log-toTop 1.3s ease 2s both;\r\n            animation: log-toTop 1.3s ease 2s both;\r\n}\r\n.logAnim-toLeftBotton {\r\n    -webkit-animation: log-toLeftBotton 1.3s ease 2s both;\r\n            animation: log-toLeftBotton 1.3s ease 2s both;\r\n}\r\n.logAnim-toLeftTop {\r\n    -webkit-animation: log-toLeftTop 1.3s ease 2s both;\r\n            animation: log-toLeftTop 1.3s ease 2s both;\r\n}\r\n.logList {\r\n    -webkit-animation: toTop 1.3s ease 3s both;\r\n            animation: toTop 1.3s ease 3s both;\r\n    width: 254px;\r\n}\r\n.logImg {\r\n    -webkit-animation: fadeIn 1s ease both;\r\n            animation: fadeIn 1s ease both;\r\n}\r\n.arr-right, .arr-left {\r\n    cursor: pointer;\r\n}\r\n", ""]);
 	
 	// exports
 
 
 /***/ },
 
-/***/ 47:
+/***/ 49:
 /*!***********************************!*\
   !*** ./src/images/page2/bg-1.png ***!
   \***********************************/
@@ -156,7 +156,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 48:
+/***/ 50:
 /*!***********************************!*\
   !*** ./src/images/page2/bg-3.png ***!
   \***********************************/

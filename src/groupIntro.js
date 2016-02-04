@@ -148,31 +148,28 @@ window.onload = function() {
  * ------------------------------------------------------------ */
  $(function () {
      var timeData = {
-         2006: [20, '2006:卓尚服饰全年销售增加265%'],
-         2007: [30, '2007:卓尚服饰全年销售增加265%'],
-         2008: [40, '2008:卓尚服饰全年销售增加265%'],
-         2009: [50, '2009:卓尚服饰全年销售增加265%'],
-         2010: [60, '2010:卓尚服饰全年销售增加265%'],
-         2011: [70, '2011:卓尚服饰全年销售增加265%'],
-         2012: [80, '2012:卓尚服饰全年销售增加265%'],
-         2013: [90, '2013:卓尚服饰全年销售增加265%']
+         2006: [1, '2006:卓尚服饰全年销售增加265%'],
+         2007: [2, '2007:卓尚服饰全年销售增加265%'],
+         2008: [3, '2008:卓尚服饰全年销售增加265%'],
+         2009: [4, '2009:卓尚服饰全年销售增加265%'],
+         2010: [5, '2010:卓尚服饰全年销售增加265%'],
+         2011: [6, '2011:卓尚服饰全年销售增加265%'],
+         2012: [7, '2012:卓尚服饰全年销售增加265%'],
+         2013: [8, '2013:卓尚服饰全年销售增加265%']
      };
 
      $('#time-axis').on('click', '.time-year', function() {
          var year = $(this).text();
-         var percent = timeData[year][0];
-         var width = $('.time-axis').width();
-         var offset = (60 - percent) * 8;
-         $('.time-label').text(timeData[year][1]).css('left', percent * width / 100 + offset);
-         $('.time-axis').css('background-position', percent * width / 100 + offset + 'px 0');
-         $('.time-arrow').css('left', percent * width / 100 + offset);
+         var percent = timeData[year][0] - 1;
+         var offset = - 120 * percent;
+         $('.time-label').text(timeData[year][1]);
          $('.time-years').css('left', offset);
          $('.time-year').filter('.active')
          .removeClass("active");
          $(this).addClass("active");
      });
 
-     $('.time-year:eq(2)').trigger('click');
+     $('.time-year:eq(0)').trigger('click');
  })
 
 /* ------------------------------------------------------------
