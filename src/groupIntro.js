@@ -50,7 +50,7 @@ window.onload = function() {
                 index = 1;
             };
             if (index == 0) {
-                index = 3;
+                index = 4;
             };
             showPoint();
             animate(-1200);
@@ -61,7 +61,7 @@ window.onload = function() {
         if (!animated) {
             index--;
             if (index == 0) {
-                index = 3;
+                index = 4;
             };
             if (index == 4) {
                 index = 1;
@@ -119,9 +119,9 @@ window.onload = function() {
             } else {
                 animated = false;
                 if (left > -1200) {
-                    ul.style.left = -3600 + 'px';
+                    ul.style.left = -4800 + 'px';
                 };
-                if (left < -3600) {
+                if (left < -4800) {
                     ul.style.left = -1200 + 'px';
                 };
             }
