@@ -1,6 +1,7 @@
+require('./css/bootstrap.min.css');
 require('./css/animation.css');
 require('./css/base.css');
-  require('./css/rotateHeads.css');
+require('./css/rotateHeads.css');
 require('./css/webstore.css');
 require('./js/base.js');
 require('./js/rotateHeads.js');
