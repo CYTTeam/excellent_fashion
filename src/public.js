@@ -2,6 +2,7 @@
 require('./css/animation.css');
 require('./css/base.css');
  require('./css/rotateHeads.css');
+ require('./css/public.css');
 
 require('./js/base.js');
 require('./js/rotateHeads.js');

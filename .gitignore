@@ -5,5 +5,10 @@ dist/*.js
 dist/*.html
 dist/*.css
 dist/images
+dist/*.woff2
+dist/*.svg
+dist/*.ttf
+dist/*.eot
+dist/*.woff
 dist/*.js.map
 config.json
