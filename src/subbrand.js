@@ -1,7 +1,34 @@
 require('./css/animation.css');
 require('./css/base.css');
 require('./css/subbrand.css');
-require('./js/base.js');
+
+
+/* ------------------------------------------------------------
+ * 点击下拉
+ * ------------------------------------------------------------ */
+var dropdown_toggle = $(".dropdown");
+var dropdown_menu=$(".dropdown-menu");
+dropdown_toggle.hover(function() {
+    dropdown_menu.stop(true, true).slideDown();
+    return false;
+}, function() {
+    dropdown_menu.stop(true, true).slideUp();
+    return false;
+});
+
+
+/* ------------------------------------------------------------
+ * 返回顶部
+ * ------------------------------------------------------------ */
+smoothScroll('.go-header', '#header');
+
+function smoothScroll(btn, target) {
+    var animationTime = 500;
+    $(document).on('click', btn, function() {
+        var position = $(target).offset().top;
+        $('html, body').animate({scrollTop: position}, animationTime);
+    })
+}
 
 
   myHover($(".brandIpc1"),$(".Brandbg1"));
