@@ -47,7 +47,7 @@ $(function() {
 
         if (!animated) {
             index++;
-            if (index == 4) {
+            if (index == 5) {
                 index = 1;
             };
             if (index == 0) {
@@ -64,7 +64,7 @@ $(function() {
             if (index == 0) {
                 index = 4;
             };
-            if (index == 4) {
+            if (index == 5) {
                 index = 1;
             };
             showPoint();

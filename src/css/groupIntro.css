@@ -53,7 +53,9 @@
 #point .on {
     background: #44bcbc;
 }
-
+.table tbody tr th:first-child{
+    width: 178px;
+}
 /**
  * development history
  */
