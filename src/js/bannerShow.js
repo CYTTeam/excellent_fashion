@@ -1,6 +1,6 @@
 
 if (!!document.createElement("canvas").getContext) {
-        require.ensure([], function() {
+        require.ensure([], function(require) {
             require('./cav.js');
             var t = {
                 width: 1.5,

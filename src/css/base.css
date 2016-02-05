@@ -482,6 +482,7 @@ a, a:visited, a:focus, a:hover {
     padding: 0;
     border-radius: 0;
     width: 192px;
+    border: none;
 }
 .dropdown-menu li>a {
     padding: 18px 15px;

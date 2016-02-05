@@ -12,19 +12,40 @@
 require('./jquery.headroom.min.js');
 require('./headroom.min.js');
 
+/* ------------------------------------------------------------
+*	加载footer
+* ------------------------------------------------------------ */
+var footer = require('../tpl/footer.html');
+$(function () {
+    $('#footer').html(footer);
+})
+
+/* ------------------------------------------------------------
+*	加载navbar
+* ------------------------------------------------------------ */
+
+var navbar = require('../tpl/navbar.html');
+$(function () {
+    $('#Liz-navbar').html(navbar);
+})
 
 /* ------------------------------------------------------------
  * 点击下拉
  * ------------------------------------------------------------ */
-var dropdown_toggle = $(".dropdown");
-var dropdown_menu=$(".dropdown-menu");
-dropdown_toggle.hover(function() {
-    dropdown_menu.stop(true, true).slideDown();
-    return false;
-}, function() {
-    dropdown_menu.stop(true, true).slideUp();
-    return false;
-});
+
+$(function () {
+    var dropdown = $(".dropdown");
+    dropdown.hover(function() {
+        var dropdown_menu = $(this).find(".dropdown-menu");
+        dropdown_menu.stop(true, true).slideDown(300);
+        return false;
+    }, function() {
+        var dropdown_menu = $(this).find(".dropdown-menu");
+        dropdown_menu.stop(true, true).slideUp(100);
+        return false;
+    });
+
+})
 
 
 
@@ -59,12 +80,4 @@ $(function() {
         $('#Liz-navbar').removeClass('headroom--top').addClass('headroom--not-top');
         $('.navicon').hide();
     })
-})
-
-/* ------------------------------------------------------------
- *	加载footer
- * ------------------------------------------------------------ */
- var footer = require('../tpl/footer.html');
-$(function () {
-    $('#footer').html(footer);
 })

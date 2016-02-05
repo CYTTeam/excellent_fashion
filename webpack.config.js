@@ -73,7 +73,7 @@ var common = {
         new HtmlWebpackPlugin({
             filename: 'main.html',
             template: './src/main.html',
-            chunks: ['vendor', 'index'],
+            chunks: ['vendor', 'main'],
         }),
         new HtmlWebpackPlugin({
             filename: 'development.html',
@@ -89,11 +89,6 @@ var common = {
             filename: 'learn.html',
             template: './src/learn.html',
             chunks: ['vendor', 'learn'],
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'main.html',
-            template: './src/main.html',
-            chunks: ['vendor', 'main'],
         }),
         new HtmlWebpackPlugin({
             filename: 'news.html',
@@ -124,6 +119,11 @@ var common = {
             filename: 'webstore.html',
             template: './src/webstore.html',
             chunks: ['vendor', 'webstore'],
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './src/index.html',
+            chunks: ['vendor', 'index'],
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
