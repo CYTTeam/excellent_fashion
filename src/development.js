@@ -1,4 +1,3 @@
-
 ///////////////
 // development.js //
 ///////////////
@@ -6,13 +5,13 @@
 /* ------------------------------------------------------------
  * 依赖模块
  * ------------------------------------------------------------ */
- require('./css/bootstrap.min.css');
- require('./css/animation.css');
- require('./css/base.css');
-  require('./css/rotateHeads.css');
- require('./css/development.css');
+require('./css/bootstrap.min.css');
+require('./css/animation.css');
+require('./css/base.css');
+require('./css/rotateHeads.css');
+require('./css/development.css');
 require('./js/transition.js');
- require('./js/collapse.js');
+require('./js/collapse.js');
 require('./js/base.js');
 require('./js/rotateHeads.js');
 
@@ -20,7 +19,7 @@ require('./js/rotateHeads.js');
  *	头部的图片轮播
  * ------------------------------------------------------------ */
 
-$(function () {
+$(function() {
     $('#toggleHeads').rotateHeads([
         './images/1.png',
         './images/2.png',
@@ -32,7 +31,7 @@ $(function () {
 
 
 var panel_heading = $(".panel-heading");
-var panel_a= $(".panel-a");
+var panel_a = $(".panel-a");
 panel_a.click(function(e) {
     panel_a.parent('h4').parent('div').filter('.Liz-bg-blue')
         .addClass('Liz-bg-default')
@@ -56,8 +55,8 @@ panel_a.click(function(e) {
         .addClass("Liz-text-white")
         .removeClass("Liz-text-black");
     panel_a.parent('h4').parent('div').filter('.Liz-bg-default')
-    	.children('h4')
-    	.children('a')
+        .children('h4')
+        .children('a')
         .children("pre")
         .addClass("Liz-text-white")
         .addClass("Liz-text-black")
