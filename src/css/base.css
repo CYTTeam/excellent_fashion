@@ -71,6 +71,7 @@ a, a:visited, a:focus, a:hover {
         left: 0;
         width: 100%;
         z-index: 2;
+        display: flex;
         .nav {
             flex: 1;
             color: #fff;
@@ -80,6 +81,7 @@ a, a:visited, a:focus, a:hover {
             line-height: 3.5;
             background-color: rgba(255, 255, 255, 0);
             transition: all .3s;
+            display: block;
             &:hover {
                 background-color: rgba(68, 188, 188, 0.3);
             }

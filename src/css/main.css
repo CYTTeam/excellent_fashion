@@ -1,58 +1,119 @@
-.Liz-main-container, html, body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+
+
+
+#carousel-wrap .item{
+  background: #fff;
+  border-right: 1px solid rgb(245, 247, 247);
 }
-.Liz-img {
-    width: 100%;
-    height: 33.33333%;
-    background-repeat: repeat-x;
-    background-size: cover;
-    background-position-x: 0%;
+
+
+
+#section2 {
+    padding: 30px 0 50px;
+    background-color: rgb(245, 247, 247);
 }
-.Liz-screen {
+
+
+.card {
+    cursor: pointer;
+}
+.card-img:after, .card-img:before {
+    width: 100%;
+    content: "";
+    display: block;
+    background-color: rgba(68, 188, 188, 0.3);
     position: absolute;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 10;
+    height: 0;
+}
+
+.card-img:before {
+    top: -100%;
+    left: -100%;
+}
+.card-img:after {
+    right: -100%;
+    bottom: -100%;
+}
+
+.card:hover .card-img:before {
     top: 0;
     left: 0;
-    background: rgba(225, 225, 225, .9);
+    height: 100%;
 }
-.Liz-img1 {
-    background-image: url('../images/page2/bg-1.png');
-    animation: toRight 2.3s ease both;
+.card:hover .card-img:after {
+    right: 0;
+    bottom: 0;
+    height: 100%;
 }
-.Liz-img2 {
-    background-image: url('../images/page2/bg-3.png');
-    animation: toLeft 2.3s ease both;
+
+
+.card-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    .time {
+        width: 33%;
+        position: absolute;
+        left: 50%;
+        bottom: -1em;
+        background-color: #fff;
+        color: #666;
+        text-align: center;
+        padding: 0.8em 0;
+        margin-left: -16.5%;
+    }
 }
-.Liz-img3 {
-    background-image: url('../images/page2/bg-3.png');
-    animation: toRight 2.3s ease forwards;
+
+.card:hover .card-img2 .text {
+    opacity: 1;
+    transform: scale(1.2);
 }
-.logAnim-toRightBotton {
-    animation: log-toRightBotton 1.3s ease 2s both;
+.card-img2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .text {
+        color: #fff;
+        font-size: 16px;
+        opacity: 0;
+        transition: all 0.4s;
+        transform: scale(1);
+    }
 }
-.logAnim-toRight {
-    animation: log-toRight 1.3s ease 2s both;
+
+.card-block {
+    padding:1em;
 }
-.logAnim-toBotton {
-    animation: log-toBotton 1.3s ease 2s both;
+
+.card-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
 }
-.logAnim-toTop {
-    animation: log-toTop 1.3s ease 2s both;
+
+.more-btn {
+    margin: 21px;
+    padding: 8px 52px;
+    background-color: transparent;
+    border: 1px dashed #999;
 }
-.logAnim-toLeftBotton {
-    animation: log-toLeftBotton 1.3s ease 2s both;
+
+#section4 {
+    padding: 30px 0 50px;
 }
-.logAnim-toLeftTop {
-    animation: log-toLeftTop 1.3s ease 2s both;
+
+#section2 .card-img {
+    height: 167px;
 }
-.logList {
-    animation: toTop 1.3s ease 3s both;
-    width: 254px;
-}
-.logImg {
-    animation: fadeIn 1s ease both;
-}
-.arr-right, .arr-left {
-    cursor: pointer;
+#section4 .card-img2 {
+    height: 190px;
 }

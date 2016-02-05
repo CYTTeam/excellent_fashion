@@ -25,7 +25,7 @@ tian_ya_hai_jiao_api/         项目根目录
 ├── images/  				  包含网站所有的静态图片资源
 ├── fonts		              包含网站所有的网络字体资源
 ├── README.md				  包含对此此项目的一些介绍，就是当前说看到的内容
-├── index.html  			  首页
+├── main.html  			  首页
 ├── main.html  			      引导页
 ├── groupIntro.html  		  集团介绍
 ├── webstore.html  		      旗下品牌、商城

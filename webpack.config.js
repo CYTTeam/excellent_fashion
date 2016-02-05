@@ -44,7 +44,7 @@ var common = {
         }, {
             test: /\.html$/,
             exclude: /node_modules/,
-            loader: 'html!html-minify'
+            loader: 'html'
         }, {
             test: /\.(ttf|eot|svg|otf)(\?v=\d(\.\d){2})?$/,
             loader: 'file'
@@ -71,8 +71,8 @@ var common = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: './src/index.html',
+            filename: 'main.html',
+            template: './src/main.html',
             chunks: ['vendor', 'index'],
         }),
         new HtmlWebpackPlugin({
