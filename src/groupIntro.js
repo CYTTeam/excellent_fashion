@@ -32,18 +32,18 @@ $(function() {
 })
 
 
-window.onload = function() {
+$(function() {
     var index = 1; //记录点击
     var timer;
     var animated = false;
     var slider = document.getElementById('slider');
     var point = document.getElementById('point').getElementsByTagName('span');
-    var arrow_l = document.getElementById('arrow_l');
-    var arrow_r = document.getElementById('arrow_r');
+    var arrow_l = $('#arrow_l');
+    var arrow_r = $('#arrow_r');
     var Children = getChild(slider);
     var ul = Children[0];
     point[0].className = 'on';
-    arrow_r.addEventListener('click', function() {
+    arrow_r.on('click', function() {
 
         if (!animated) {
             index++;
@@ -57,7 +57,7 @@ window.onload = function() {
             animate(-1200);
         }
     });
-    arrow_l.addEventListener('click', function() {
+    arrow_l.on('click', function() {
 
         if (!animated) {
             index--;
@@ -141,7 +141,7 @@ window.onload = function() {
         return children;
     };
 
-}
+});
 
 /* ------------------------------------------------------------
  * 历史发展轴
