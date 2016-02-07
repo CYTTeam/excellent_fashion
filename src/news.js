@@ -1,10 +1,12 @@
- require('./css/bootstrap.min.css');
+require('./css/bootstrap.min.css');
 require('./css/animation.css');
 require('./css/base.css');
-  require('./css/rotateHeads.css');
+require('./css/rotateHeads.css');
 require('./css/news.css');
 
 require('./js/jquery.waypoints.min.js');
+require('./js/transition.js');
+require('./js/tab.js');
 require('./js/base.js');
 require('./js/rotateHeads.js');
 
@@ -21,6 +23,19 @@ $(function () {
         './images/5.png',
     ]);
 })
+
+
+/* ------------------------------------------------------------
+ * tabs监听事件
+ * ------------------------------------------------------------ */
+
+$(function () {
+    $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+        var text = e.target.innerHTML;
+        $('.breadcrumb2 .active').text(text);
+    })
+})
+
 
 /* ------------------------------------------------------------
  * jQuery滚动监听
