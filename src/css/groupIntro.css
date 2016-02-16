@@ -148,3 +148,20 @@
     background: #44bcbc;
     border-radius: 4px;
 }
+
+
+/* 缩放过渡  */
+.transition-zoom-up {
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.transition-zoom-up:hover {
+    transform: scale(1.2);
+}
+
+.background-center {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

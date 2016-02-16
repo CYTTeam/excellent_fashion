@@ -14,6 +14,8 @@
  require('./css/base.css');
  require('./css/rotateHeads.css');
  require('./css/main.css');
+ require('./css/owl.carousel.css');
+ require('./css/owl.theme.css');
 
 require('./js/owl.carousel.min.js');
 require('./js/jquery.waypoints.min.js');

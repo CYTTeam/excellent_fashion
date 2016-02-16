@@ -48,13 +48,18 @@
     height: 100%;
 }
 
+.card:hover .card-img {
+    background-size: 120% 120%;
+}
+
 
 .card-img {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     position: relative;
     overflow: hidden;
+    transition: background-size 0.4s;
     .time {
         width: 33%;
         position: absolute;
@@ -72,14 +77,21 @@
     opacity: 1;
     transform: scale(1.2);
 }
+
+.card:hover .card-img2 {
+    background-size: 120% 120%;
+}
+
+
 .card-img2 {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition: background-size 0.4s;
     .text {
         color: #fff;
         font-size: 16px;

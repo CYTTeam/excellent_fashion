@@ -2,6 +2,8 @@
 require('./css/animation.css');
 require('./css/base.css');
 require('./css/index.css');
+require('./css/owl.carousel.css');
+require('./css/owl.theme.css');
 
 require('./js/owl.carousel.min.js');
 require('./js/bannerShow.js');

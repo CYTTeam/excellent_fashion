@@ -1,14 +1,4 @@
 node_modules/
 *.log
-dist/*.png
-dist/*.js
-dist/*.html
-dist/*.css
-dist/images
-dist/*.woff2
-dist/*.svg
-dist/*.ttf
-dist/*.eot
-dist/*.woff
-dist/*.js.map
+dist
 config.json

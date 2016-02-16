@@ -32,7 +32,7 @@ var common = {
     },
     output: {
         path: 'dist',
-        filename: '[name].bundle.js',
+        filename: 'js/[name].bundle.js',
     },
     module: {
         loaders: [{
@@ -130,7 +130,7 @@ var common = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery',
         }),
-        new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
+        new webpack.optimize.CommonsChunkPlugin('vendor', 'js/vendor.bundle.js'),
     ],
 };
 
@@ -164,7 +164,7 @@ if (TARGET === 'build') {
             }]
         },
         plugins: [
-            new ExtractTextPlugin('[name].css', {
+            new ExtractTextPlugin('./css/[name].css', {
                 disable: false,
                 allChunks: true,
             })
